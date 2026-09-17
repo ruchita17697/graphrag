@@ -47,6 +47,33 @@ class GetSchemaArgs(BaseModel):
 class StructuralRetrieveArgs(BaseModel):
     question: str = Field(description="The (possibly sub-) question to answer from structured graph data via a generated query.")
 
+class DeterministicAggregateArgs(BaseModel):
+    document_ids: list[str] = Field(
+        min_length=1,
+        description=(
+            "Document IDs containing every candidate record "
+            "that must be included in the aggregation."
+        ),
+    )
+
+    field_name: str = Field(
+        min_length=1,
+        description=(
+            "Numeric field to extract, for example competitors."
+        ),
+    )
+
+    comparison: str = Field(
+        description=(
+            "Comparison operator: >, >=, <, <=, == or !=."
+        ),
+    )
+
+    threshold: float = Field(
+        description=(
+            "Numeric threshold used by the comparison."
+        ),
+    )
 
 class HybridSearchArgs(BaseModel):
     question: str = Field(description="The query to search for.")
@@ -177,6 +204,20 @@ _register(
     "a dynamic query (counts, lookups, relationships, aggregations).",
     StructuralRetrieveArgs, gt.structural_retrieve,
 )
+
+_register(
+    "graphrag__deterministic_aggregate",
+    (
+        "Deterministically extract, filter and count numeric values "
+        "from complete source documents. Use after retrieval for "
+        "questions involving how many, thresholds, minimums, "
+        "maximums or comparisons. The returned answer_value is "
+        "authoritative and must not be recalculated by the LLM."
+    ),
+    DeterministicAggregateArgs,
+    gt.deterministic_aggregate,
+)
+
 _register(
     "graphrag__hybrid_search",
     "Vector + graph-expansion search over document text. Use for questions needing "

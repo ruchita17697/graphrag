@@ -18,6 +18,10 @@ services:
       USE_CYPHER: "true"
     volumes:
       - ./configs/:/code/configs
+      - ./src:/code/src:ro
+      - ./hackathon_data:/code/hackathon_data:ro
+      - ./graphrag/app/agent:/code/agent:ro
+      - ./graphrag/app/tools:/code/tools:ro
 
   graphrag-ecc:
     image: tigergraph/graphrag-ecc:latest
@@ -34,6 +38,7 @@ services:
       INIT_EMBED_STORE: "false"
     volumes:
       - ./configs/:/code/configs
+
 
   chat-history:
     image: tigergraph/chat-history:latest
@@ -83,6 +88,6 @@ services:
 #       - "14240:14240"
 #     volumes:
 #       - tigergraph_data:/home/tigergraph/tigergraph/data
-# 
+#
 # volumes:
 #   tigergraph_data:

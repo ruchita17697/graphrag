@@ -15,7 +15,7 @@
 """Agentic orchestration: plan -> execute -> (evaluate & maybe extend) ->
 synthesize.
 
-Implemented as a bounded control loop rather than a LangGraph StateGraph —
+Implemented as a bounded control loop rather than a LangGraph StateGraph â€”
 the flow is linear with a single replan loop, so a plain loop is clearer
 and fully testable. The classic engine keeps its LangGraph; this one can
 adopt LangGraph later if checkpointing/streaming-graph features are needed.
@@ -26,6 +26,7 @@ import time
 
 from agent.agentic_executor import cap_for_trace, execute_plan, _run_step, _usage_since
 from agent.agentic_planner import plan_question
+from agent.agentic_plan_validator import require_valid_plan
 from agent.agentic_synthesizer import _gather, has_context, synthesize
 from common.llm_services.base_llm import get_collected_usage
 from common.py_schemas import GraphRAGResponse, PlanStep
@@ -79,6 +80,12 @@ def run_agentic(ctx, llm, question, conversation=None) -> GraphRAGResponse:
     _u0 = len(get_collected_usage() or [])
     _t0 = time.time()
     plan = plan_question(llm, question, conversation, ctx=ctx)
+
+    plan = require_valid_plan(
+    plan=plan,
+    question=question,
+    ctx=ctx,
+)
     agent_steps.append({
         "node": "plan", "kind": "plan",
         "duration_s": round(time.time() - _t0, 3),
@@ -100,7 +107,7 @@ def run_agentic(ctx, llm, question, conversation=None) -> GraphRAGResponse:
         # produced no context, fall back to a hybrid search directly rather
         # than relying on the planner to add one on replan. Runs at most once.
         # Shares the classic engine's ``enable_router_fallback`` knob (default
-        # True) so both engines fall back — or don't — consistently.
+        # True) so both engines fall back â€” or don't â€” consistently.
         used = {t.get("tool") for t in agent_steps}
         if (_cfg.get("enable_router_fallback", True)
                 and not has_context(results)
@@ -125,6 +132,12 @@ def run_agentic(ctx, llm, question, conversation=None) -> GraphRAGResponse:
         _u0 = len(get_collected_usage() or [])
         _t0 = time.time()
         plan = plan_question(llm, question, conversation, prior_results=prior, ctx=ctx)
+
+        plan = require_valid_plan(
+    plan=plan,
+    question=question,
+    ctx=ctx,
+)
         agent_steps.append({
             "node": f"replan {replans}", "kind": "plan",
             "duration_s": round(time.time() - _t0, 3),

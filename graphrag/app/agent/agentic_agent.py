@@ -16,7 +16,7 @@
 
 Public-API twin of ``TigerGraphAgent``: same constructor shape and
 ``question_for_agent(question, conversation)`` returning a
-``GraphRAGResponse``, and the same ``Q`` progress queue — so the WS and
+``GraphRAGResponse``, and the same ``Q`` progress queue â€” so the WS and
 REST entry points drive it identically. Internally it runs the
 plan -> execute -> synthesize loop (``agentic_graph.run_agentic``) over the
 GraphRAG tool layer instead of the fixed classic LangGraph.
@@ -32,6 +32,7 @@ from pydantic import BaseModel, Field
 from agent.Q import Q, DONE
 from agent.agentic_graph import run_agentic
 from agent.agentic_react import run_react
+from agent.agentic_plan_validator import PlanValidationError
 from tools import GenerateCypher, GenerateFunction, MapQuestionToSchema
 from tools.graphrag_tools import GraphRAGToolContext
 
@@ -64,7 +65,7 @@ class _Triage(BaseModel):
 def _triage_question(llm, question, convo):
     """One cheap classify-and-answer call. Returns a ``_Triage`` or ``None`` if
     triage itself fails (caller then proceeds with normal retrieval). Uses only
-    the question + conversation — no schema, no MCP, no DB."""
+    the question + conversation â€” no schema, no MCP, no DB."""
     try:
         user = (
             f"## Conversation\n{json.dumps(convo or [])[:2000]}\n\n"
@@ -238,11 +239,41 @@ class AgenticAgent:
             style = _resolve_style(self.agent_style, config_style)
             try:
                 if style == "planned":
-                    answer = run_agentic(ctx, self.llm, question, convo)
+                    answer = run_agentic(
+                        ctx,
+                        self.llm,
+                        question,
+                        convo,
+                    )
                 else:
-                    # "reactive" (UI) / "react" (config) -> free tool-calling loop
-                    answer = run_react(ctx, self.llm, question, convo)
+                    answer = run_react(
+                        ctx,
+                        self.llm,
+                        question,
+                        convo,
+                    )
+
+            except PlanValidationError as plan_exc:
+                logger.warning(
+                    "request_id=%s planned-agent validation failed: %s; "
+                    "switching to Reactive",
+                    req_id_cv.get(),
+                    plan_exc,
+                )
+
+                ctx.emit(
+                    "Planned approach was invalid; switching to Reactive"
+                )
+
+                answer = run_react(
+                    ctx,
+                    self.llm,
+                    question,
+                    convo,
+                )
+
             except Exception as run_exc:
+
                 # Runtime backstop (GML-2169): if the model turns out not to
                 # support tool-calling, disable Agentic for it and answer via the
                 # classic engine. Only trigger on a confident tool-support signal;

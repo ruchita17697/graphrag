@@ -1,0 +1,8 @@
+services:
+  graphrag:
+    volumes:
+      - ./src:/code/src:ro
+      - ./hackathon_data:/code/hackathon_data:ro
+      - ./graphrag/app/tools/graphrag_tools.py:/code/tools/graphrag_tools.py:ro
+      - ./graphrag/app/tools/tool_registry.py:/code/tools/tool_registry.py:ro
+      - ./graphrag/app/agent/agentic_react.py:/code/agent/agentic_react.py:ro

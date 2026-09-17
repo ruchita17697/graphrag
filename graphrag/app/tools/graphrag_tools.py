@@ -89,6 +89,158 @@ def _result_is_empty(result: Any) -> bool:
         return True
     return False
 
+# --------------------------------------------------------------------------
+# Deterministic aggregation
+# --------------------------------------------------------------------------
+
+def deterministic_aggregate(
+    ctx: GraphRAGToolContext,
+    document_ids: list[str],
+    field_name: str,
+    comparison: str,
+    threshold: float,
+) -> dict:
+    """Fetch complete local documents and perform numeric aggregation.
+
+    The LLM supplies the document IDs and aggregation parameters, but
+    ordinary Python performs extraction, comparison and counting.
+    """
+
+    from src.tools.aggregate import filter_and_count
+    from src.tools.document_fetch import LocalDocumentStore
+
+    ctx.emit("Computing a verified aggregation")
+
+    import re
+
+    normalized_ids: list[str] = []
+    seen: set[str] = set()
+
+    for document_id in document_ids:
+        raw_id = str(document_id).strip()
+
+        raw_id = raw_id.replace("\\", "/").rsplit("/", 1)[-1]
+
+        if raw_id.lower().endswith(".txt"):
+            raw_id = raw_id[:-4]
+
+        match = re.fullmatch(
+            r"(Q\d+)(?:_chunk_\d+)?",
+            raw_id,
+            flags=re.IGNORECASE,
+        )
+
+        if match:
+            normalized = match.group(1).upper()
+        else:
+            normalized = raw_id.upper()
+
+        if normalized and normalized not in seen:
+            seen.add(normalized)
+            normalized_ids.append(normalized)
+
+    if not normalized_ids:
+        return _empty(
+            "deterministic aggregation received no document IDs"
+        )
+
+    store = LocalDocumentStore()
+
+    try:
+        documents = store.fetch_many(
+            normalized_ids,
+            required=False,
+        )
+    except Exception as exc:
+        logger.warning(
+            f"deterministic document fetch failed: {exc}"
+        )
+        return _empty(
+            f"deterministic document fetch failed: {exc}"
+        )
+
+    if not documents:
+        return _empty(
+            "deterministic aggregation found no documents"
+        )
+
+    fetched_ids = {
+        document.document_id
+        for document in documents
+    }
+
+    missing_ids = [
+        document_id
+        for document_id in normalized_ids
+        if document_id not in fetched_ids
+    ]
+
+    try:
+        result = filter_and_count(
+            documents=documents,
+            field_name=field_name,
+            comparison=comparison,
+            threshold=threshold,
+        )
+    except Exception as exc:
+        logger.warning(
+            f"deterministic aggregation failed: {exc}"
+        )
+        return _empty(
+            f"deterministic aggregation failed: {exc}"
+        )
+
+    qualifying_records = [
+        {
+            "entity": record.entity,
+            "value": record.value,
+            "document_id": record.document_id,
+            "citation_id": record.citation_id,
+        }
+        for record in result.qualifying_records
+    ]
+
+    excluded_records = [
+        {
+            "entity": record.entity,
+            "value": record.value,
+            "document_id": record.document_id,
+        }
+        for record in result.excluded_records
+    ]
+
+    context = {
+        "function_call": "Deterministic_Aggregation",
+        "operation": result.operation,
+        "field_name": result.field_name,
+        "comparison": result.comparison,
+        "threshold": result.threshold,
+        "count": result.count,
+        "answer_value": result.count,
+        "documents_requested": len(normalized_ids),
+        "documents_fetched": len(documents),
+        "records_extracted": len(result.all_records),
+        "qualifying_records": qualifying_records,
+        "excluded_records": excluded_records,
+        "missing_documents": (
+            missing_ids + result.missing_documents
+        ),
+        "warnings": result.warnings,
+        "authoritative": True,
+        "instruction": (
+            "Use answer_value as the final numeric answer. "
+            "Do not recount the records with the language model."
+        ),
+    }
+
+    return _ok(
+        (
+            "deterministic aggregation computed "
+            f"{result.count} qualifying record(s)"
+        ),
+        context,
+        citations=result.citations,
+    )
 
 # --------------------------------------------------------------------------
 # Schema
