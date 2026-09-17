@@ -39,10 +39,11 @@ class LocalDocumentStore:
     """Retrieve documents from the local hackathon dataset."""
 
     DEFAULT_CORPUS_CANDIDATES = [
-        Path("hackathon_data/corpus/corpus.jsonl"),
-        Path("hackathon_data/corpus.jsonl"),
-        Path("corpus.jsonl"),
-    ]
+    Path("hackathon_data/raw/corpus.jsonl"),
+    Path("hackathon_data/corpus/corpus.jsonl"),
+    Path("hackathon_data/corpus.jsonl"),
+    Path("corpus.jsonl"),
+]
 
     DEFAULT_SMOKE_DIRECTORY = Path(
         "hackathon_data/smoke_test_documents"
