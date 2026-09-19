@@ -437,49 +437,103 @@ def consistency_update(
     return {"status": "submitted", "message": ecc_status}
 
 
-def _regen_build_conn(graphname, credentials):
-    """Async DB connection for a regenerate action (mirrors consistency_update
-    auth handling)."""
+async def _regen_build_conn(graphname, credentials):
+    """Create the async TigerGraph connection in the regeneration loop."""
+    from pyTigerGraph import AsyncTigerGraphConnection
+
     reload_db_config()
+    from common.config import db_config as live_db_config
+
+    connection_args = {
+        "host": live_db_config["hostname"],
+        "graphname": graphname,
+        "tgCloud": True,
+        "restppPort": live_db_config.get("restppPort", "443"),
+        "gsPort": live_db_config.get("gsPort", "443"),
+        "sslPort": live_db_config.get("restppPort", "443"),
+    }
+
     if isinstance(credentials, HTTPBasicCredentials):
-        conn = elevate_db_connection_to_token(
-            db_config.get("hostname"), credentials.username, credentials.password,
-            graphname, async_conn=True,
-        )
+        connection_args["username"] = credentials.username
+        connection_args["password"] = credentials.password
     elif isinstance(credentials, HTTPAuthorizationCredentials):
-        conn = get_db_connection_id_token(
-            graphname, credentials.credentials, async_conn=True
-        )
+        connection_args["apiToken"] = credentials.credentials
     else:
-        raise HTTPException(status_code=401, detail="Invalid authentication credentials")
-    asyncio.run(conn.customizeHeader(
-        timeout=db_config.get("default_timeout", 300) * 1000, responseSize=5000000
-    ))
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid authentication credentials",
+        )
+
+    conn = AsyncTigerGraphConnection(**connection_args)
+
+    await conn.customizeHeader(
+        timeout=live_db_config.get("default_timeout", 300) * 1000,
+        responseSize=5000000,
+    )
+    await conn.gsql("USE GRAPH " + graphname)
+
     return conn
 
 
+async def _run_regen_in_one_loop(
+    graphname,
+    credentials,
+    run_func,
+):
+    """Create the connection and run regeneration in one event loop."""
+    conn = await _regen_build_conn(graphname, credentials)
+    return await run_func(graphname, conn)
+
+
 def _run_regen(graphname, credentials, task_suffix, run_func):
-    """Run a targeted regenerate action synchronously, returning its counts.
-    Refuses while a rebuild or the same action is already in flight (they both
-    write embeddings)."""
+    """Run a targeted regeneration synchronously."""
     rebuild_key = f"{graphname}:graphrag"
-    if rebuild_key in running_tasks and running_tasks[rebuild_key].get("status") == "running":
+
+    if (
+        rebuild_key in running_tasks
+        and running_tasks[rebuild_key].get("status") == "running"
+    ):
         raise HTTPException(
             status_code=409,
-            detail=f"A rebuild is in progress for {graphname}; retry after it completes.",
+            detail=(
+                f"A rebuild is in progress for {graphname}; "
+                "retry after it completes."
+            ),
         )
+
     task_key = f"{graphname}:{task_suffix}"
-    if task_key in running_tasks and running_tasks[task_key].get("status") == "running":
-        raise HTTPException(status_code=409, detail=f"{task_suffix} already running for {graphname}")
-    conn = _regen_build_conn(graphname, credentials)
-    running_tasks[task_key] = {"status": "running", "started_at": time.time()}
+
+    if (
+        task_key in running_tasks
+        and running_tasks[task_key].get("status") == "running"
+    ):
+        raise HTTPException(
+            status_code=409,
+            detail=f"{task_suffix} already running for {graphname}",
+        )
+
+    running_tasks[task_key] = {
+        "status": "running",
+        "started_at": time.time(),
+    }
+
     try:
-        result = asyncio.run(run_func(graphname, conn))
-        LogWriter.info(f"Completed ECC task: {task_key} -> {result}")
-        return {"status": "completed", **result}
+        result = asyncio.run(
+            _run_regen_in_one_loop(
+                graphname,
+                credentials,
+                run_func,
+            )
+        )
+        LogWriter.info(
+            f"Completed ECC task: {task_key} -> {result}"
+        )
+        return {
+            "status": "completed",
+            **result,
+        }
     finally:
         running_tasks.pop(task_key, None)
-
 
 @app.get("/{graphname}/graphrag/regenerate_embeddings")
 def regenerate_embeddings_endpoint(graphname: str, credentials=Depends(auth_credentials)):

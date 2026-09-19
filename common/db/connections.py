@@ -44,7 +44,9 @@ def get_db_connection_id_token(
             graphname=graphname,
             apiToken=credentials,
             tgCloud=True,
-            sslPort=14240,
+            restppPort=db_config.get("restppPort", "443"),
+            gsPort=db_config.get("gsPort", "443"),
+            sslPort=db_config.get("restppPort", "443"),
         )
         asyncio.run(conn.customizeHeader(
             timeout=db_config["default_timeout"] * 1000, responseSize=5000000
@@ -55,7 +57,9 @@ def get_db_connection_id_token(
             graphname=graphname,
             apiToken=credentials,
             tgCloud=True,
-            sslPort=14240,
+            restppPort=db_config.get("restppPort", "443"),
+            gsPort=db_config.get("gsPort", "443"),
+            sslPort=db_config.get("restppPort", "443"),
         )
         conn.customizeHeader(
             timeout=db_config["default_timeout"] * 1000, responseSize=5000000
