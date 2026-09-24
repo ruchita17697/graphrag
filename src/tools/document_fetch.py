@@ -323,3 +323,14 @@ class LocalDocumentStore:
                 documents.append(record)
 
         return documents
+
+    def all_documents(self) -> list[DocumentRecord]:
+        """Return every indexed document in stable document-ID order."""
+
+        if self._index is None:
+            self.build_index()
+
+        return [
+            self._index[document_id]
+            for document_id in sorted(self._index)
+        ]

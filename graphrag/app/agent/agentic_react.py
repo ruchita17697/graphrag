@@ -54,7 +54,7 @@ from tools import tool_registry as registry
 logger = logging.getLogger(__name__)
 
 
-MAX_ITERATIONS = 30
+MAX_ITERATIONS = 12
 MAX_AGGREGATION_ANSWER_REJECTIONS = 2
 
 _DETERMINISTIC_AGGREGATE_TOOL = (
@@ -105,6 +105,23 @@ def _authoritative_aggregation_answer(context: dict) -> str:
     comparison = context.get("comparison", "")
     threshold = context.get("threshold")
     qualifying_records = context.get("qualifying_records") or []
+    operation = context.get("operation", "count")
+
+    if operation in {"max", "min"}:
+        label = "highest" if operation == "max" else "lowest"
+        opening = (
+            f"According to the provided corpus, the {label} result is "
+            f"**{answer_value}**."
+        )
+    elif operation == "lookup":
+        opening = (
+            "According to the provided corpus, the verified result is "
+            f"**{answer_value:g}**."
+            if isinstance(answer_value, (int, float))
+            else f"According to the provided corpus, the verified result is **{answer_value}**."
+        )
+    else:
+        opening = ""
 
     condition = " ".join(
         str(part)
@@ -112,12 +129,12 @@ def _authoritative_aggregation_answer(context: dict) -> str:
         if part not in (None, "")
     )
 
-    if condition:
+    if not opening and condition:
         opening = (
             f"According to the provided corpus, **{answer_value}** "
             f"record(s) satisfy `{condition}`."
         )
-    else:
+    elif not opening:
         opening = (
             "According to the provided corpus, the verified result is "
             f"**{answer_value}**."
@@ -202,9 +219,10 @@ def run_react(
     # --------------------------------------------------------------
 
     route_decision = classify_question(question)
-    is_aggregation = (
-        route_decision.question_type.value == "aggregation"
-    )
+    is_aggregation = route_decision.question_type.value in {
+        "aggregation",
+        "superlative",
+    }
 
     if is_aggregation:
         system_prompt += """
@@ -217,9 +235,10 @@ Follow this required process:
 
 1. Use hybrid or contextual search to collect all candidate source
    documents relevant to the requested category, event and time period.
-2. Keep the document IDs from every relevant retrieved chunk.
-3. Call graphrag__deterministic_aggregate with the complete candidate
-   document-ID set, numeric field, comparison operator and threshold.
+2. Call graphrag__deterministic_aggregate with the complete original
+   user question. Document IDs are optional trace evidence, not the
+   calculation boundary.
+3. Let that tool scan and strictly filter the complete local corpus.
 4. Treat answer_value returned by that tool as authoritative.
 5. Do not manually recount the records.
 6. After deterministic aggregation succeeds, stop calling tools and
@@ -370,9 +389,10 @@ Do not attempt to generate or run GSQL for this aggregation question.
                             "This is an aggregation question, so you must "
                             "call graphrag__deterministic_aggregate and "
                             "receive ok=true before answering. Use the "
-                            "retrieved chunk/document IDs below as the "
-                            "document_ids argument. Do not manually count.\n"
-                            f"Retrieved IDs: {json.dumps(retrieved_citations)}"
+                            "complete original question as the question "
+                            "argument. Do not manually calculate.\n"
+                            f"Original question: {question}\n"
+                            f"Optional retrieved IDs: {json.dumps(retrieved_citations)}"
                         )
                     )
                 )
@@ -447,6 +467,17 @@ Do not attempt to generate or run GSQL for this aggregation question.
                 )
 
             emit(_tool_label(name))
+
+            # Never trust an LLM paraphrase to preserve strict benchmark
+            # constraints. The deterministic tool always receives the exact
+            # original question, while retrieved IDs remain optional evidence.
+            if name == _DETERMINISTIC_AGGREGATE_TOOL:
+                arguments = dict(arguments or {})
+                arguments["question"] = question
+                arguments.setdefault(
+                    "document_ids",
+                    list(retrieved_citations),
+                )
 
             tool_started = time.time()
 

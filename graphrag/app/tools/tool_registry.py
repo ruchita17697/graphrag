@@ -48,31 +48,36 @@ class StructuralRetrieveArgs(BaseModel):
     question: str = Field(description="The (possibly sub-) question to answer from structured graph data via a generated query.")
 
 class DeterministicAggregateArgs(BaseModel):
+    question: str = Field(
+        min_length=1,
+        description=(
+            "The complete original user question. Explicit year, season, "
+            "sport, venue, date and numeric constraints are applied before "
+            "the calculation."
+        ),
+    )
     document_ids: list[str] = Field(
-        min_length=1,
+        default_factory=list,
         description=(
-            "Document IDs containing every candidate record "
-            "that must be included in the aggregation."
+            "Optional retrieved document IDs for traceability. The verified "
+            "calculation scans the complete local corpus."
         ),
     )
-
-    field_name: str = Field(
-        min_length=1,
+    field_name: Optional[str] = Field(
+        default=None,
         description=(
-            "Numeric field to extract, for example competitors."
+            "Optional numeric field override, for example competitors."
         ),
     )
-
-    comparison: str = Field(
+    comparison: Optional[str] = Field(
+        default=None,
         description=(
-            "Comparison operator: >, >=, <, <=, == or !=."
+            "Optional comparison override: >, >=, <, <=, == or !=."
         ),
     )
-
-    threshold: float = Field(
-        description=(
-            "Numeric threshold used by the comparison."
-        ),
+    threshold: Optional[float] = Field(
+        default=None,
+        description="Optional numeric threshold override.",
     )
 
 class HybridSearchArgs(BaseModel):
@@ -208,10 +213,9 @@ _register(
 _register(
     "graphrag__deterministic_aggregate",
     (
-        "Deterministically extract, filter and count numeric values "
-        "from complete source documents. Use after retrieval for "
-        "questions involving how many, thresholds, minimums, "
-        "maximums or comparisons. The returned answer_value is "
+        "Deterministically answer numeric lookups, filtered counts, minima "
+        "and maxima by scanning the complete local corpus and applying every "
+        "explicit constraint from the original question. The answer_value is "
         "authoritative and must not be recalculated by the LLM."
     ),
     DeterministicAggregateArgs,

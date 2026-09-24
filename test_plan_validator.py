@@ -88,13 +88,12 @@ def build_valid_aggregation_plan() -> Plan:
                 kind="structural",
                 tool="graphrag__deterministic_aggregate",
                 args={
+                    "question": QUESTION,
                     "field_name": "competitors",
                     "comparison": ">",
                     "threshold": 73,
                 },
-                arg_bindings={
-                    "document_ids": "S1.document_ids",
-                },
+                arg_bindings={},
                 depends_on=["S1"],
                 rationale=(
                     "Count events whose competitor value is greater "

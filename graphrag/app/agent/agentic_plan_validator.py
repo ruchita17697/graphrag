@@ -237,16 +237,16 @@ def validate_plan(
                     "on a retrieval step."
                 )
 
-            has_document_ids = (
-                "document_ids" in (aggregate_step.args or {})
-                or "document_ids"
+            has_question = (
+                "question" in (aggregate_step.args or {})
+                or "question"
                 in (aggregate_step.arg_bindings or {})
             )
 
-            if not has_document_ids:
+            if not has_question:
                 errors.append(
                     "The deterministic aggregation step requires "
-                    "document_ids through args or arg_bindings."
+                    "the original question through args or arg_bindings."
                 )
 
     dependency_map = {

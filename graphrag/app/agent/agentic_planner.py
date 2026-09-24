@@ -73,11 +73,16 @@ def _catalog_text(ctx=None) -> str:
     return "\n".join(lines)
 
 
-def _sanitize(plan: Plan, ctx=None) -> Plan:
-    """Drop steps referencing unknown tools; guarantee a final answer step."""
+def _sanitize(plan: Plan, ctx=None, question: str = "") -> Plan:
+    """Drop unknown tools, preserve exact constraints, and ensure an answer."""
     known = set(registry.tool_names(ctx))
     steps = []
     for s in plan.steps or []:
+        if s.tool == "graphrag__deterministic_aggregate":
+            # The planner may paraphrase or omit a constraint. Make the exact
+            # user question authoritative before validation and execution.
+            s.args = dict(s.args or {})
+            s.args["question"] = question
         if s.kind == "answer" or s.tool == "" or s.tool in known:
             steps.append(s)
         else:
@@ -139,4 +144,4 @@ def plan_question(llm, question, conversation=None, schema_rep="", prior_results
                          rationale="Answer from retrieved context."),
             ],
         )
-    return _sanitize(plan, ctx)
+    return _sanitize(plan, ctx, question)
