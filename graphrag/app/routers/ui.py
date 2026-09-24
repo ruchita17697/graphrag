@@ -563,8 +563,10 @@ def ws_basic_auth(auth_info: str, graphname=None):
             host=db_config["hostname"],
             graphname=graphname or "",
             apiToken=creds.password,
-            restppPort=db_config.get("restppPort", "9000"),
-            gsPort=db_config.get("gsPort", "14240"),
+            tgCloud=True,
+            restppPort=db_config.get("restppPort", "443"),
+            gsPort=db_config.get("gsPort", "443"),
+            sslPort=db_config.get("restppPort", "443"),
         )
         raw_conn.customizeHeader(
             timeout=db_config.get("default_timeout", 60) * 1000,

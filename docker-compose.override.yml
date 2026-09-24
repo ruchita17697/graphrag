@@ -6,6 +6,7 @@ services:
       - ./graphrag/app/tools/graphrag_tools.py:/code/tools/graphrag_tools.py:ro
       - ./graphrag/app/tools/tool_registry.py:/code/tools/tool_registry.py:ro
       - ./graphrag/app/agent/agentic_react.py:/code/agent/agentic_react.py:ro
+      - ./graphrag/app/routers/ui.py:/code/routers/ui.py:ro
 
   graphrag-ecc:
     volumes:
