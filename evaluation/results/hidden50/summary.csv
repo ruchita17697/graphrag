@@ -1,0 +1,4 @@
+pipeline,records,successful,failed,success_rate,citation_coverage,average_latency_seconds,input_tokens,output_tokens,total_tokens,average_tokens_per_question
+agentic_rag,50,50,0,1.0,1.0,100.5318,1852980,1183897,3036877,60737.54
+graphrag,50,50,0,1.0,0.24,8.3809,69490,3636,73126,12187.67
+normal_rag,50,50,0,1.0,0.78,22.9573,462327,23545,485872,13496.44

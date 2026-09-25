@@ -1,0 +1,690 @@
+﻿"question_id","pipeline","answer","latency_seconds","input_tokens","output_tokens","total_tokens","status"
+"eval-001","agentic_rag","At the Olympic Tennis Centre from 15 to 22 August 2004, two main events were held during the 2004 Summer Olympics:
+
+* **Men's Singles Tennis**: **NicolÃƒÂ¡s MassÃƒÂº** (Chile) won the gold medal, defeating Mardy Fish (United States) in the final.
+* **Women's Doubles Tennis**: **Li Ting** and **Sun Tiantian** (China) won the gold medal, defeating Conchita MartÃƒÂ­nez and Virginia Ruano Pascual (Spain) in the final.","49.85498","23643","376","24019","success"
+"eval-001","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","6.073503",,,,"success"
+"eval-001","normal_rag","At the events held at the Olympic Tennis Centre from 15 to 22 August 2004, the gold medals were won by:
+
+- **Men's Singles**: NicolÃ¡s MassÃº of Chile defeated the United States' Mardy Fish in the final, 6â€“3, 3â€“6, 2â€“6, 6â€“3, 6â€“4.
+- **Women's Doubles**: China's Li Ting and Sun Tiantian defeated Spain's Conchita MartÃ­nez and Virginia Ruano Pascual in the final, 6â€“3, 6â€“3.","35.122219","17859","865","18724","success"
+"eval-002","agentic_rag","According to the provided corpus, the verified result is **29**.
+
+Qualifying records:
+- **Fencing at the 1988 Summer Olympics Ã¢â‚¬â€œ Men's foil**: 29.0","171.123865","28325","65970","94295","success"
+"eval-002","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","8.571601",,,,"success"
+"eval-002","normal_rag","A total of 29 nations competed in Fencing at the 1988 Summer Olympics â€“ Men's foil.","32.958231","11686","502","12188","success"
+"eval-003","agentic_rag","According to the provided corpus, **8** record(s) satisfy `competitors > 30.0`.
+
+Qualifying records:
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's team sprint**: 39.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's Madison**: 32.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**: 143.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's individual road race**: 66.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's BMX**: 32.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's team pursuit**: 44.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's road time trial**: 39.0
+- **Cycling at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's cross-country**: 50.0","42.833151","20428","2520","22948","success"
+"eval-003","graphrag","According to the provided data, there were 0 cycling events at the 2008 Summer Olympics that had more than 30 competitors.","21.216078","8113","489","8602","success"
+"eval-003","normal_rag","According to the provided corpus, there were 3 cycling events at the 2008 Summer Olympics that had more than 30 competitors:
+
+* **Men's team pursuit**: 44 competitors
+* **Men's cross-country**: 50 competitors
+* **Men's road race**: 143 competitors (started out of 145 scheduled)","29.76719","10649","587","11236","success"
+"eval-004","agentic_rag","At the Sydney International Shooting Centre on 22 September 2000, two shooting events were held:
+
+1. **Men's 10 metre running target (fast run on 22 September):**
+   - **Gold Medalist:** Yang Ling (China / CHN)
+   - **Winning Score:** 681.1
+
+2. **Women's 25 metre pistol:**
+   - **Gold Medalist:** Mariya Grozdeva (Bulgaria / BUL)
+   - **Winning Score:** 690.3 (OR)","57.920956","16224","328","16552","success"
+"eval-004","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","22.808594",,,,"success"
+"eval-004","normal_rag","The gold medal in the event held at the Sydney International Shooting Centre on 22 September 2000 (the women's 25 metre pistol competition) was won by Mariya Grozdeva representing Bulgaria.","32.225592","18446","686","19132","success"
+"eval-005","agentic_rag","According to the provided corpus, the highest result is **Sailing at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's 470**.
+
+Qualifying records:
+- **Sailing at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's 470**: 52.0","148.564435","66157","1180","67337","success"
+"eval-005","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.717027",,,,"success"
+"eval-005","normal_rag","According to the provided corpus, the sailing events at the 2016 Summer Olympics and their respective number of competitors are:
+
+- **Women's Laser Radial:** 37 competitors
+- **Nacra 17:** 40 competitors
+- **Men's Laser:** 46 competitors
+- **Women's 470:** 40 competitors
+- **Men's Finn:** 23 competitors
+
+Among these events, the **Men's Laser** sailing event had the highest number of competitors, with a total of 46 competitors.","24.142329","11749","644","12393","success"
+"eval-006","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 62.0`.
+
+Qualifying records:
+- **Cross-country skiing at the 2010 Winter Olympics â€“ Women's 15 kilometre pursuit**: 68.0
+- **Cross-country skiing at the 2010 Winter Olympics â€“ Men's 15 kilometre freestyle**: 96.0
+- **Cross-country skiing at the 2010 Winter Olympics â€“ Women's 10 kilometre freestyle**: 78.0
+- **Cross-country skiing at the 2010 Winter Olympics â€“ Men's 30 kilometre pursuit**: 64.0","36.698407","21277","478","21755","success"
+"eval-006","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.953215",,,,"success"
+"eval-006","normal_rag","According to the provided corpus, there were **2** cross-country skiing events at the 2010 Winter Olympics that had more than 62 competitors:
+
+* **Men's 30 kilometre pursuit**: 64 competitors (`q848689_chunk_0`)
+* **Women's 10 kilometre freestyle**: 78 competitors (`q595962_chunk_0`)
+
+*(Note: Other events mentioned in the corpus had 54, 55, or 62 competitors, which do not exceed 62.)*","28.023791","10849","617","11466","success"
+"eval-007","agentic_rag","The Summer Olympics immediately before 2016 were the **2012 Summer Olympics** held in London. 
+
+In the men's heavyweight boxing event at the 2012 Summer Olympics, the gold medal was won by **Oleksandr Usyk** of Ukraine, who defeated Italy's Clemente Russo in the final.","256.589851","13373","65692","79065","success"
+"eval-007","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","8.189827",,,,"success"
+"eval-007","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","8.815591",,,,"success"
+"eval-008","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 46.0`.
+
+Qualifying records:
+- **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Laser**: 56.0
+- **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Men's 470**: 72.0
+- **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Soling**: 66.0
+- **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Star**: 50.0","43.723577","29228","2456","31684","success"
+"eval-008","graphrag","Based on the provided corpus, there are 3 sailing events at the 1996 Summer Olympics that had more than 46 competitors:
+
+* **Star**: 50 competitors
+* **Laser (Open One Person Dinghy)**: 56 competitors
+* **Soling**: 66 competitors
+
+*(Note: The Men's Mistral One Design had exactly 46 competitors, and the Women's 470 had 44 competitors, so neither exceeded 46.)*","31.193391","10189","620","10809","success"
+"eval-008","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.048843",,,,"success"
+"eval-009","agentic_rag","According to the provided corpus, the highest result is **Sailing at the 2004 Summer Olympics Ã¢â‚¬â€œ Men's 470**.
+
+Qualifying records:
+- **Sailing at the 2004 Summer Olympics Ã¢â‚¬â€œ Men's 470**: 54.0","25.851186","34314","3399","37713","success"
+"eval-009","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","14.633128",,,,"success"
+"eval-009","normal_rag","According to the provided corpus, the sailing events at the 2004 Summer Olympics had the following number of competitors:
+
+* **Women's Yngling**: 48 competitors
+* **Mixed Laser**: 42 competitors
+* **Mixed Tornado**: 35 competitors
+* **Men's Star**: 34 competitors
+* **Men's Finn**: 25 competitors
+
+Based on these figures, the Women's Yngling event had the highest number of competitors with 48 sailors.","38.479741","10150","629","10779","success"
+"eval-010","agentic_rag","According to the provided corpus, the verified result is **32**.
+
+Qualifying records:
+- **Boxing at the 1996 Summer Olympics Ã¢â‚¬â€œ Flyweight**: 32.0","174.43837","20107","65843","85950","success"
+"eval-010","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.654053",,,,"success"
+"eval-010","normal_rag","A total of 32 nations competed in the Flyweight boxing event at the 1996 Summer Olympics.","28.423043","10499","449","10948","success"
+"eval-011","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 24.0`.
+
+Qualifying records:
+- **Weightlifting at the 1992 Summer Olympics Ã¢â‚¬â€œ Men's 100 kg**: 25.0
+- **Weightlifting at the 1992 Summer Olympics Ã¢â‚¬â€œ Men's 60 kg**: 31.0
+- **Weightlifting at the 1992 Summer Olympics Ã¢â‚¬â€œ Men's 75 kg**: 34.0
+- **Weightlifting at the 1992 Summer Olympics Ã¢â‚¬â€œ Men's 82.5 kg**: 31.0","43.814584","21142","848","21990","success"
+"eval-011","graphrag","Based on the provided corpus, there was **1** weightlifting event at the 1992 Summer Olympics that had more than 24 competitors:
+
+* **Men's 75 kg**: 34 competitors (`q7979975_chunk_0`)
+
+For comparison, the other weightlifting events mentioned in the corpus had the following number of competitors:
+* **Men's 56 kg**: 22 competitors (`q7979972_chunk_0`)
+* **Men's 90 kg**: 23 competitors (`q7979978_chunk_0`)
+* **Men's 110 kg**: 24 competitors (`q7979969_chunk_0`)
+* **Men's +110 kg**: 20 competitors (`q7979967_chunk_0`)
+
+Therefore, only the Men's 75 kg event exceeded 24 competitors.","31.313762","10305","731","11036","success"
+"eval-011","normal_rag","According to the provided corpus, there was 1 weightlifting event at the 1992 Summer Olympics that had more than 24 competitors:
+
+* **Men's 75 kg**: 34 competitors (`q7979975_chunk_0`)
+
+For comparison, the competitor counts for the other provided events were:
+* **Men's 56 kg**: 22 competitors (`q7979972_chunk_0`)
+* **Men's 90 kg**: 23 competitors (`q7979978_chunk_0`)
+* **Men's 110 kg**: 24 competitors (`q7979969_chunk_0`)
+* **Men's +110 kg**: 20 competitors (`q7979967_chunk_0`)","28.954787","10305","723","11028","success"
+"eval-012","agentic_rag","According to the provided corpus, the verified result is **72**.
+
+Qualifying records:
+- **Swimming at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's 50 metre freestyle**: 72.0","47.210806","27988","224","28212","success"
+"eval-012","graphrag","A total of 32 nations competed in the Men's 100 metre butterfly event at the 2016 Summer Olympics.","26.148756","11636","462","12098","success"
+"eval-012","normal_rag","A total of 32 nations competed in the Swimming at the 2016 Summer Olympics â€“ Men's 100 metre butterfly event.","27.250525","11636","471","12107","success"
+"eval-013","agentic_rag","According to the provided corpus, **6** record(s) satisfy `competitors > 27.0`.
+
+Qualifying records:
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**: 144.0
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Women's individual road race**: 68.0
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Women's cross-country**: 29.0
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's cross-country**: 49.0
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's team pursuit**: 40.0
+- **Cycling at the 2016 Summer Olympics Ã¢â‚¬â€œ Women's team pursuit**: 39.0","169.108768","61600","65655","127255","success"
+"eval-013","graphrag","According to the provided corpus, there is 1 cycling event at the 2016 Summer Olympics that had more than 27 competitors: the men's cross-country cycling event, which had 49 competitors. (Note: The men's keirin, women's sprint, and men's team sprint each had exactly 27 competitors, while the women's omnium had 18 competitors.)","27.385441","11339","568","11907","success"
+"eval-013","normal_rag","Based on the provided corpus, there are **4** cycling events at the 2016 Summer Olympics that had more than 27 competitors:
+
+* **Men's cross-country**: 49 competitors (`q25476845_chunk_0`)
+* **Men's team sprint**: 27 competitors â€” wait, let's verify if it's more than 27. The men's team sprint had 27 competitors, which is not *more* than 27 (`q26259596_chunk_0`). Let's review all provided events:
+  - Men's cross-country: 49 competitors (> 27) (`q25476845_chunk_0`)
+  - Women's omnium: 18 competitors (`q25476545_chunk_0`)
+  - Men's team sprint: 27 competitors (`q26259596_chunk_0`)
+  - Women's sprint: 27 competitors (`q26265815_chunk_0`)
+  - Men's keirin: 27 competitors (`q26291516_chunk_0`)
+
+Therefore, exactly **1** cycling event listed in the corpus had more than 27 competitors (the Men's cross-country event with 49 competitors).","27.545156","11339","811","12150","success"
+"eval-014","agentic_rag","At the 2006 Winter Olympics, the event held at San Sicario on February 15, 2006, was the **Women's downhill** in Alpine skiing. 
+
+* **Gold Medalist:** Michaela Dorfmeister (Austria)
+* **Silver Medalist:** Martina Schild (Switzerland)
+* **Bronze Medalist:** Anja PÃƒÂ¤rson (Sweden)
+
+Michaela Dorfmeister won the gold medal with a winning time of 1:56.49 (116.49 seconds).","266.314058","39764","66349","106113","success"
+"eval-014","graphrag","At the 2006 Winter Olympics event held at San Sicario on February 15, 2006 (which was the Women's downhill alpine skiing competition), the gold medal was won by Michaela Dorfmeister of Austria.","32.965922","17908","766","18674","success"
+"eval-014","normal_rag","Michaela Dorfmeister won the gold medal in the women's downhill event held at San Sicario on February 15, 2006.","33.242766","17990","672","18662","success"
+"eval-015","agentic_rag","According to the provided corpus, the verified result is **79**.
+
+Qualifying records:
+- **Athletics at the 2016 Summer Olympics Ã¢â‚¬â€œ Men's marathon**: 79.0","30.257032","4502","1692","6194","success"
+"eval-015","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","23.334327",,,,"success"
+"eval-015","normal_rag","At the 2016 Summer Olympics, 35 nations competed in the men's 400 metres event.","26.842221","10915","537","11452","success"
+"eval-016","agentic_rag","According to the provided corpus, the verified result is **27**.
+
+Qualifying records:
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's decathlon**: 27.0","97.126896","36151","2613","38764","success"
+"eval-016","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.50269",,,,"success"
+"eval-016","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","25.192152",,,,"success"
+"eval-017","agentic_rag","At the 2012 Summer Olympics held at Eton Dorney, multiple rowing and canoeing events took place during the period of **28 July â€“ 4 August 2012**. The gold medalists for each specific event held during those dates are listed below:
+
+### Rowing Events
+
+*   **Men's single sculls** (28 July â€“ 3 August 2012):
+    *   **Gold Medalist:** MahÃ© Drysdale (New Zealand)
+*   **Men's coxless pair** (28 July â€“ 3 August 2012):
+    *   **Gold Medalists:** Eric Murray and Hamish Bond (New Zealand)
+*   **Men's double sculls** (28 July â€“ 2 August 2012):
+    *   **Gold Medalists:** Nathan Cohen and Joseph Sullivan (New Zealand)
+*   **Men's quadruple sculls** (28 July â€“ 3 August 2012):
+    *   **Gold Medalists:** Karl Schulze, Philipp Wende, Lauritz Schoof, and Tim Grohmann (Germany)
+*   **Men's coxless four** (30 July â€“ 4 August 2012):
+    *   **Gold Medalists:** Alex Gregory, Tom James, Pete Reed, and Andrew Triggs Hodge (Great Britain)
+*   **Men's lightweight double sculls** (29 July â€“ 4 August 2012):
+    *   **Gold Medalists:** Mads Rasmussen and Rasmus Quist Hansen (Denmark)
+*   **Women's single sculls** (28 July â€“ 4 August 2012):
+    *   **Gold Medalist:** Miroslava KnapkovÃ¡ (Czech Republic)
+*   **Women's coxless pair** (28 July â€“ 1 August 2012):
+    *   **Gold Medalists:** Helen Glover and Heather Stanning (Great Britain)
+*   **Women's double sculls** (30 July â€“ 3 August 2012):
+    *   **Gold Medalists:** Anna Watkins and Katherine Grainger (Great Britain)
+*   **Women's quadruple sculls** (28 July â€“ 3 August 2012):
+    *   **Gold Medalists:** Kateryna Tarasenko, Nataliya Dovhodko, Anastasiya Kozhenkova, and Yana Dementyeva (Ukraine)
+*   **Women's lightweight double sculls** (29 July â€“ 4 August 2012):
+    *   **Gold Medalists:** Katherine Copeland and Sophie Hosking (Great Britain)
+*   **Women's eight** (29 July â€“ 2 August 2012):
+    *   **Gold Medalists:** Erin Cafaro, Susan Francia, Esther Lofgren, Taylor Ritzel, Meghan Musnicki, Elle Logan, Caroline Lind, Caryn Davies, and Mary Whipple (United States)","45.742665","26915","3222","30137","success"
+"eval-017","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.474794",,,,"success"
+"eval-017","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.675157",,,,"success"
+"eval-018","agentic_rag","At the 2016 Summer Olympics, multiple events took place across **16Ã¢â‚¬â€œ18 August 2016**. Depending on the specific venue and event matching those dates, here are the gold medal winners:
+
+### 1. Events held at the **Olympic Stadium** (Athletics)
+* **Women's 400 metres hurdles:** Gold won by **Dalilah Muhammad** (USA), with the final held on **18 August 2016** (competition from 15Ã¢â‚¬â€œ18 August).
+* **Men's decathlon:** Gold won by **Ashton Eaton** (USA), held from **17Ã¢â‚¬â€œ18 August 2016**.
+* **Women's long jump:** Gold won by **Tianna Bartoletta** (USA), with the final held on **17 August 2016** (qualifications on 16 August).
+
+### 2. Events held at the **EstÃƒÂ¡dio OlÃƒÂ­mpico JoÃƒÂ£o Havelange** (often also referred to as the Olympic Stadium during the Games)
+* **Men's 200 metres:** Gold won by **Usain Bolt** (JAM), held from **16Ã¢â‚¬â€œ18 August 2016**.","174.477949","66915","2826","69741","success"
+"eval-018","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.38515",,,,"success"
+"eval-018","normal_rag","Based on the provided contexts, the event held at the Olympic Stadium on 17â€“19 August 2016 was the men's hammer throw (held at the Est\u00e1dio Ol\u00ympico Jo\u00e3o Havelange), where the gold medal was won by Dilshod Nazarov of Tajikistan. (Note: The men's javelin throw was also held at the Olympic Stadium with dates spanning August 17\u201320, 2016, and was won by Thomas RÃ¶hler of Germany.)","32.647738","14177","677","14854","success"
+"eval-019","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 45.0`.
+
+Qualifying records:
+- **Alpine skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Men's slalom**: 65.0
+- **Alpine skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Men's giant slalom**: 62.0
+- **Alpine skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Women's slalom**: 57.0
+- **Alpine skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Women's giant slalom**: 56.0","82.576031","30511","4743","35254","success"
+"eval-019","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.616353",,,,"success"
+"eval-019","normal_rag","Based on the provided corpus for the alpine skiing events at the 1998 Winter Olympics, the number of competitors for each event is as follows:
+
+- Men's slalom: 65 competitors
+- Men's giant slalom: 62 competitors
+- Men's combined: 38 competitors
+- Men's downhill: 43 competitors
+
+Comparing these values against the threshold of more than 45 competitors, two alpine skiing events met this criterion: the men's slalom (65 competitors) and the men's giant slalom (62 competitors). Therefore, there were 2 alpine skiing events at the 1998 Winter Olympics that had more than 45 competitors.","27.220839","10091","630","10721","success"
+"eval-020","agentic_rag","Two events were held at the Royal Artillery Barracks on **5 August 2012** during the 2012 Summer Olympics, and their respective gold medal winners are:
+
+1. **Men's 50 metre pistol:**
+   * **Gold Medalist:** Jin Jong-oh (South Korea - KOR)
+   * **Winning Score:** 662.0
+
+2. **Men's trap (Day 1 of event):**
+   * **Gold Medalist:** Giovanni Cernogoraz (Croatia - CRO)
+   * **Winning Score:** 146","219.800015","50180","66225","116405","success"
+"eval-020","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.957918",,,,"success"
+"eval-020","normal_rag","The gold medal in the men's ISSF 50 metre pistol event held at the Royal Artillery Barracks on 5 August 2012 was won by **Jin Jong-oh** of South Korea.","29.285628","14677","604","15281","success"
+"eval-021","agentic_rag","The Summer Olympics held immediately before the 2016 Summer Olympics were the **2012 Summer Olympics** in London.
+
+In the **men's 200 metre backstroke** swimming event at the 2012 Summer Olympics:
+
+* **Gold Medalist:** Tyler Clary (United States)
+* **Winning Time:** 1:53.41 (Olympic record)
+* **Silver Medalist:** Ryosuke Irie (Japan) Ã¢â‚¬â€ 1:53.78
+* **Bronze Medalist:** Ryan Lochte (United States) Ã¢â‚¬â€ 1:53.94","64.564538","34219","2799","37018","success"
+"eval-021","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.387763",,,,"success"
+"eval-021","normal_rag","The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At those Games, American swimmer Tyler Clary won the gold medal in the men's 200 metre backstroke event with a time of 1:53.41.","29.116215","11257","617","11874","success"
+"eval-022","agentic_rag","According to the provided corpus, the verified result is **40**.
+
+Qualifying records:
+- **Cross-country skiing at the 2014 Winter Olympics Ã¢â‚¬â€œ Women's 10 kilometre classical**: 40.0","178.641","19413","65857","85270","success"
+"eval-022","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.775366",,,,"success"
+"eval-022","normal_rag","A total of 40 nations competed in Cross-country skiing at the 2014 Winter Olympics â€“ Men's sprint.","34.897502","14538","632","15170","success"
+"eval-023","agentic_rag","According to the provided corpus, **7** record(s) satisfy `competitors > 42.0`.
+
+Qualifying records:
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Women's 10 metre air rifle**: 49.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Men's 10 metre air rifle**: 46.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Women's 10 metre air pistol**: 45.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Men's 10 metre air pistol**: 43.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Men's 50 metre rifle prone**: 53.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Men's 50 metre rifle three positions**: 44.0
+- **Shooting at the 2000 Summer Olympics Ã¢â‚¬â€œ Men's skeet**: 49.0","61.647067","14416","4809","19225","success"
+"eval-023","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.306777",,,,"success"
+"eval-023","normal_rag","According to the provided corpus, there are **0** shooting events at the 2000 Summer Olympics that had *more* than 42 competitors. 
+
+The referenced events in the provided contexts either had exactly 42 competitors (such as the Women's 50 metre rifle three positions and the Women's 25 metre pistol) or fewer (such as the Men's 25 metre rapid fire pistol with 20 competitors), meaning none of them exceeded 42 competitors.","27.400841","10682","608","11290","success"
+"eval-024","agentic_rag","According to the provided corpus, the highest result is **Cross-country skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Men's 10 kilometre classical**.
+
+Qualifying records:
+- **Cross-country skiing at the 1998 Winter Olympics Ã¢â‚¬â€œ Men's 10 kilometre classical**: 97.0","46.91881","16082","3884","19966","success"
+"eval-024","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.849461",,,,"success"
+"eval-024","normal_rag","According to the provided corpus, the cross-country skiing events at the 1998 Winter Olympics had the following number of competitors:
+
+- Men's 30 kilometre classical: 75 competitors
+- Women's 5 kilometre classical: 79 competitors
+- Men's 50 kilometre freestyle: 79 competitors
+- Men's 4 Ã— 10 kilometre relay: 80 competitors
+
+Based on these figures, the cross-country skiing event with the highest number of competitors was the **Men's 4 Ã— 10 kilometre relay**, which had 80 competitors.","24.969589","10242","604","10846","success"
+"eval-025","agentic_rag","According to the provided corpus, the highest result is **Rowing at the 2016 Summer Olympics Ã¢â‚¬â€œ Women's eight**.
+
+Qualifying records:
+- **Rowing at the 2016 Summer Olympics Ã¢â‚¬â€œ Women's eight**: 56.0","214.101386","64351","65696","130047","success"
+"eval-025","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.089501",,,,"success"
+"eval-025","normal_rag","According to the provided corpus, here are the competitor counts for the respective rowing events at the 2016 Summer Olympics:
+
+* Women's single sculls: 32 competitors
+* Women's eight: 56 competitors
+* Men's lightweight coxless four: 52 competitors
+* Men's double sculls: 26 competitors
+* Men's coxless four: 52 competitors
+
+Comparing these events, the rowing event with the highest number of competitors at the 2016 Summer Olympics was the **Women's eight**, with 56 competitors.","27.429056","11799","717","12516","success"
+"eval-026","agentic_rag","According to the provided corpus, the verified result is **22**.
+
+Qualifying records:
+- **Fencing at the 2000 Summer Olympics Ã¢â‚¬â€œ Women's ÃƒÂ©pÃƒÂ©e**: 22.0","43.715063","25724","501","26225","success"
+"eval-026","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.106631",,,,"success"
+"eval-026","normal_rag","A total of 22 nations competed in Fencing at the 2000 Summer Olympics â€“ Men's foil.","30.299424","10948","521","11469","success"
+"eval-027","agentic_rag","According to the provided corpus, the highest result is **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**.
+
+Qualifying records:
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**: 144.0","174.341089","12439","65616","78055","success"
+"eval-027","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.024841",,,,"success"
+"eval-027","normal_rag","According to the provided corpus, here are the competitor counts for the respective cycling events at the 2012 Summer Olympics:
+
+- **Men's team sprint:** 30 competitors
+- **Men's omnium:** 18 competitors
+- **Men's team pursuit:** 44 competitors
+- **Men's individual road race:** 144 competitors
+- **Men's cross-country:** 47 competitors (note: the text also mentions fifty cyclists from 32 countries competing)
+
+Based on these figures, the cycling event with the highest number of competitors was the **Men's individual road race** with 144 competitors.","29.912049","10928","625","11553","success"
+"eval-028","agentic_rag","According to the provided corpus, **3** record(s) satisfy `competitors > 19.0`.
+
+Qualifying records:
+- **Wrestling at the 2012 Summer Olympics Ã¢â‚¬â€œ Women's freestyle 63 kg**: 20.0
+- **Wrestling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's Greco-Roman 120 kg**: 20.0
+- **Wrestling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's Greco-Roman 84 kg**: 20.0","147.519699","19754","65620","85374","success"
+"eval-028","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.105274",,,,"success"
+"eval-028","normal_rag","Based on the provided corpus, there are **0** wrestling events at the 2012 Summer Olympics that had more than 19 competitors. 
+
+Each of the specific events mentioned in the contexts lists exactly 19 competitors:
+- Men's freestyle 66 kg: 19 competitors
+- Men's Greco-Roman 96 kg: 19 competitors
+- Men's Greco-Roman 55 kg: 19 competitors
+- Men's freestyle 74 kg: 19 competitors
+- Men's freestyle 96 kg: 19 competitors
+
+Therefore, none of these events exceeded 19 competitors.","27.533532","11041","653","11694","success"
+"eval-029","agentic_rag","According to the provided corpus, **3** record(s) satisfy `competitors > 26.0`.
+
+Qualifying records:
+- **Boxing at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's lightweight**: 28.0
+- **Boxing at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's light welterweight**: 28.0
+- **Boxing at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's welterweight**: 28.0","14.089035","12277","150","12427","success"
+"eval-029","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.312977",,,,"success"
+"eval-029","normal_rag","Based on the provided corpus, there is only **1** boxing event at the 2012 Summer Olympics that had more than 26 competitors:
+
+* **Men's lightweight boxing**: 28 competitors (`q31844_chunk_0`)
+
+For comparison, the other mentioned events had 26 or fewer competitors:
+* **Men's light flyweight boxing**: 26 competitors (`q2000524_chunk_0`)
+* **Men's flyweight boxing**: 26 competitors (`q332673_chunk_0`)
+* **Men's super heavyweight boxing**: 16 competitors (`q326382_chunk_0`)
+* **Men's heavyweight boxing**: 15 competitors (`q326384_chunk_0`)","26.929198","10892","686","11578","success"
+"eval-030","agentic_rag","According to the provided corpus, the highest result is **Alpine skiing at the 1994 Winter Olympics Ã¢â‚¬â€œ Men's super-G**.
+
+Qualifying records:
+- **Alpine skiing at the 1994 Winter Olympics Ã¢â‚¬â€œ Men's super-G**: 69.0","16.42422","31890","611","32501","success"
+"eval-030","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.947165",,,,"success"
+"eval-030","normal_rag","According to the provided corpus, here are the competitor counts for the alpine skiing events at the 1994 Winter Olympics mentioned in the sources:
+
+* **Men's slalom**: 57 competitors
+* **Men's downhill**: 55 competitors
+* **Women's combined**: 41 competitors
+* **Men's giant slalom**: 61 competitors
+
+Comparing these events, the **Men's giant slalom** had the highest number of competitors with a total of 61.","34.722268","17900","865","18765","success"
+"eval-031","agentic_rag","The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London, United Kingdom. 
+
+In the men's 62 kg weightlifting event at the 2012 Summer Olympics, the gold medal was won by **Kim Un-guk** representing North Korea (PRK).","160.880528","33284","65865","99149","success"
+"eval-031","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.702826",,,,"success"
+"eval-031","normal_rag","The Summer Olympics held immediately before the 2016 Summer Olympics were the 2012 Summer Olympics in London. In the men's 62 kg weightlifting event at those Games, **Kim Un-guk** of North Korea won the gold medal.","27.936643","18288","812","19100","success"
+"eval-032","agentic_rag","On February 20, 2010, multiple events were held at the Pacific Coliseum during the 2010 Winter Olympics. The gold medalists for these events were:
+
+* **Women's 1500 metres (Short-track speed skating):** Zhou Yang (CHN)
+* **Men's 1000 metres (Short-track speed skating):** Lee Jung-su (KOR)","29.778753","30902","963","31865","success"
+"eval-032","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.424399",,,,"success"
+"eval-032","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.513642",,,,"success"
+"eval-033","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 57.0`.
+
+Qualifying records:
+- **Alpine skiing at the 1988 Winter Olympics Ã¢â‚¬â€œ Men's slalom**: 109.0
+- **Alpine skiing at the 1988 Winter Olympics Ã¢â‚¬â€œ Men's super-G**: 94.0
+- **Alpine skiing at the 1988 Winter Olympics Ã¢â‚¬â€œ Men's giant slalom**: 117.0
+- **Alpine skiing at the 1988 Winter Olympics Ã¢â‚¬â€œ Women's giant slalom**: 64.0","18.908708","48106","461","48567","success"
+"eval-033","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.690865",,,,"success"
+"eval-033","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.888398",,,,"success"
+"eval-034","agentic_rag","The Summer Olympics held immediately before 2012 were the **2008 Summer Olympics** in Beijing, China.
+
+In the **men's freestyle 120 kg wrestling** event at the 2008 Summer Olympics:
+
+* **Artur Taymazov** of Uzbekistan originally won the gold medal, but he was subsequently disqualified on 5 April 2017 (and further confirmed in July 2019) after retesting positive for banned substances (Chlorodehydromethyltestosterone and Stanozolol).
+* **Bakhtiyar Akhmedov** of Russia, who originally won the silver medal, was awarded the gold medal following the disqualification.","13.631096","21794","337","22131","success"
+"eval-034","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.784923",,,,"success"
+"eval-034","normal_rag","The Summer Olympics held immediately before 2012 were the 2008 Summer Olympics in Beijing, China. In the men's freestyle 120 kg wrestling event at these games, Bakhtiyar Akhmedov of Russia won the gold medal following the disqualification of the original gold medalist, Artur Taymazov of Uzbekistan.","38.963075","11826","630","12456","success"
+"eval-035","agentic_rag","According to the provided corpus, the highest result is **Rowing at the 2012 Summer Olympics Ã¢â‚¬â€œ Women's eight**.
+
+Qualifying records:
+- **Rowing at the 2012 Summer Olympics Ã¢â‚¬â€œ Women's eight**: 56.0","196.619214","89004","65712","154716","success"
+"eval-035","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.193067",,,,"success"
+"eval-035","normal_rag","According to the provided corpus, here are the competitor counts for the respective rowing events at the 2012 Summer Olympics:
+
+* **Men's coxless four**: 52 competitors
+* **Women's lightweight double sculls**: 34 competitors
+* **Men's lightweight double sculls**: 40 competitors
+* **Men's lightweight coxless four**: 52 competitors
+* **Women's eight**: 56 competitors
+
+Based on these figures, the rowing event with the highest number of competitors was the **Women's eight**, with 56 competitors.","20.833511","12158","597","12755","success"
+"eval-036","agentic_rag","According to the provided corpus, **3** record(s) satisfy `competitors > 34.0`.
+
+Qualifying records:
+- **Short-track speed skating at the 2018 Winter Olympics Ã¢â‚¬â€œ Men's 1500 metres**: 37.0
+- **Short-track speed skating at the 2018 Winter Olympics Ã¢â‚¬â€œ Women's 1500 metres**: 36.0
+- **Short-track speed skating at the 2018 Winter Olympics Ã¢â‚¬â€œ Women's 3000 metre relay**: 37.0","45.745486","22666","595","23261","success"
+"eval-036","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.847982",,,,"success"
+"eval-036","normal_rag","According to the provided corpus, let's examine the number of competitors for the short-track speed skating events at the 2018 Winter Olympics:
+
+- Men's 500 metres: 33 competitors
+- Women's 1000 metres: 32 competitors
+- Men's 1000 metres: 32 competitors
+- Men's 1500 metres: 37 competitors
+
+Out of these events, only the Men's 1500 metres had more than 34 competitors, with a total of 37 competitors. Therefore, exactly 1 short-track speed skating event had more than 34 competitors.","21.082724","11581","643","12224","success"
+"eval-037","agentic_rag","According to the provided corpus, the highest result is **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Men's 470**.
+
+Qualifying records:
+- **Sailing at the 1996 Summer Olympics Ã¢â‚¬â€œ Men's 470**: 72.0","193.992558","24829","65663","90492","success"
+"eval-037","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.324175",,,,"success"
+"eval-037","normal_rag","According to the provided corpus, the sailing events at the 1996 Summer Olympics had the following number of competitors:
+
+* Star: 50 competitors
+* Soling: 66 competitors
+* Laser (Open One Person Dinghy): 56 competitors
+* Finn Men's: 31 competitors
+* Tornado: 38 competitors
+
+Based on these figures, the **Soling** event had the highest number of competitors with 66 participants.
+
+![1996 Olympic Sailing Venues](File:1996 Olympic Sailing Venues (OpenStreetMap).png)","26.620231","17123","879","18002","success"
+"eval-038","agentic_rag","According to the provided corpus, **21** record(s) satisfy `competitors > 40.0`.
+
+Qualifying records:
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's heptathlon**: 43.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 50 kilometres walk**: 61.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 400 metres**: 55.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's javelin throw**: 54.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 800 metres**: 58.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's marathon**: 95.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 110 metres hurdles**: 43.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 100 metres**: 80.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's shot put**: 44.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 200 metres**: 63.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 20 kilometres walk**: 51.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's 100 metres**: 85.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 5000 metres**: 43.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Men's 1500 metres**: 48.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's long jump**: 42.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's 200 metres**: 46.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's hammer throw**: 50.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's 400 metres**: 50.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's 20 kilometres walk**: 48.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's marathon**: 82.0
+- **Athletics at the 2008 Summer Olympics Ã¢â‚¬â€œ Women's 3000 metres steeplechase**: 50.0","149.910629","11914","48141","60055","success"
+"eval-038","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.159909",,,,"success"
+"eval-038","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.993522",,,,"success"
+"eval-039","agentic_rag","According to the provided corpus, **3** record(s) satisfy `competitors > 30.0`.
+
+Qualifying records:
+- **Boxing at the 1992 Summer Olympics Ã¢â‚¬â€œ Bantamweight**: 31.0
+- **Boxing at the 1992 Summer Olympics Ã¢â‚¬â€œ Featherweight**: 31.0
+- **Boxing at the 1992 Summer Olympics Ã¢â‚¬â€œ Flyweight**: 31.0","125.076828","20430","27757","48187","success"
+"eval-039","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.255425",,,,"success"
+"eval-039","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.994984",,,,"success"
+"eval-040","agentic_rag","The gold medal in the **Women's 1500 metres** event held at Stadium Australia on 27 September 2000 (heats), 29 September 2000 (semi-finals), and 30 September 2000 (final) was won by **Nouria MÃƒÂ©rah-Benida** representing **Algeria** (ALG).","124.66145","20005","259","20264","success"
+"eval-040","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","5.186935",,,,"success"
+"eval-040","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.647259",,,,"success"
+"eval-041","agentic_rag","According to the provided corpus, **4** record(s) satisfy `competitors > 63.0`.
+
+Qualifying records:
+- **Alpine skiing at the 2006 Winter Olympics Ã¢â‚¬â€œ Men's giant slalom**: 82.0
+- **Alpine skiing at the 2006 Winter Olympics Ã¢â‚¬â€œ Women's slalom**: 64.0
+- **Alpine skiing at the 2006 Winter Olympics Ã¢â‚¬â€œ Women's giant slalom**: 65.0
+- **Alpine skiing at the 2006 Winter Olympics Ã¢â‚¬â€œ Men's slalom**: 97.0","109.791338","109463","28964","138427","success"
+"eval-041","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.232698",,,,"success"
+"eval-041","normal_rag","Based on the provided corpus, there are **2** alpine skiing events at the 2006 Winter Olympics that had more than 63 competitors:
+
+- **Men's giant slalom**: 82 competitors
+- **Women's giant slalom**: 65 competitors
+
+*(Note: The ski jumping event is excluded as it is not alpine skiing.)*","24.315432","10246","545","10791","success"
+"eval-042","agentic_rag","The Summer Olympics held immediately before 1992 were the **1988 Summer Olympics** in Seoul. 
+
+In the mixed trap shooting event at the 1988 Summer Olympics, the gold medal was won by **Dmitry Monakov** representing the Soviet Union (URS), who defeated Miloslav BednaÃ…â„¢ÃƒÂ­k in a shoot-off (8Ã¢â‚¬â€œ7) after both finished with a score of 222.","81.827145","20908","28674","49582","success"
+"eval-042","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.191717",,,,"success"
+"eval-042","normal_rag","The Summer Olympics held immediately before 1992 were the 1988 Summer Olympics in Seoul. In the mixed trap shooting event at those Games, Dmitry Monakov of the Soviet Union won the gold medal after a shoot-off against Miloslav BednaÅ™Ã­k of Czechoslovakia.","28.113217","17659","712","18371","success"
+"eval-043","agentic_rag","The gold medal in the event held at Carioca Arena 3 on 11 August 2016 (Women's team ÃƒÂ©pÃƒÂ©e fencing competition at the 2016 Summer Olympics) was won by the team representing **Romania**, consisting of the following athletes:
+
+* **Loredana Dinu**
+* **Simona Gherman**
+* **Simona Pop**
+* **Ana Maria Popescu**","176.428959","82589","66515","149104","success"
+"eval-043","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.409387",,,,"success"
+"eval-043","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.585157",,,,"success"
+"eval-044","agentic_rag","The Summer Olympics held immediately before the 2016 Games were the **2012 Summer Olympics** in London, United Kingdom.
+
+In the women's 75 kg weightlifting event at the 2012 Summer Olympics:
+- **Gold Medalist:** **Lydia ValentÃƒÂ­n** (Spain)
+
+*(Note: Lydia ValentÃƒÂ­n originally finished fourth, but was retroactively declared the Olympic champion following the disqualification of the original medalists due to doping retests.)*","25.70742","13386","4122","17508","success"
+"eval-044","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.014615",,,,"success"
+"eval-044","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","3.853172",,,,"success"
+"eval-045","agentic_rag","The Winter Olympics held immediately before 2014 were the **2010 Winter Olympics** in Vancouver, Canada.
+
+The gold medal in the women's moguls freestyle skiing event at the 2010 Winter Olympics was won by **Hannah Kearney** of the United States, with a winning score of `26.63`.","13.266604","12971","239","13210","success"
+"eval-045","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.604699",,,,"success"
+"eval-045","normal_rag","The Winter Olympics held immediately before the 2014 Winter Olympics were the 2010 Winter Olympics in Vancouver, Canada. In the women's moguls freestyle skiing event at the 2010 Winter Olympics, the gold medal was won by Hannah Kearney of the United States.","28.760647","18557","811","19368","success"
+"eval-046","agentic_rag","The Summer Olympics held immediately before the 2004 Summer Olympics were the 2000 Summer Olympics in Sydney. 
+
+At the **2000 Summer Olympics**, the gold medal in the men's light flyweight boxing event was won by **Brahim Asloum** of **France (FRA)**.","19.835432","21048","2187","23235","success"
+"eval-046","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.007763",,,,"success"
+"eval-046","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","19.822705",,,,"success"
+"eval-047","agentic_rag","According to the provided corpus, the highest result is **Cycling at the 2004 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**.
+
+Qualifying records:
+- **Cycling at the 2004 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**: 144.0","131.559645","59118","3256","62374","success"
+"eval-047","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.964203",,,,"success"
+"eval-047","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.483007",,,,"success"
+"eval-048","agentic_rag","According to the provided corpus, **7** record(s) satisfy `competitors > 30.0`.
+
+Qualifying records:
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's BMX**: 32.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's cross-country**: 47.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's team pursuit**: 44.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Women's team pursuit**: 32.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's individual road race**: 144.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Women's individual road race**: 66.0
+- **Cycling at the 2012 Summer Olympics Ã¢â‚¬â€œ Men's road time trial**: 37.0","152.748997","21106","65619","86725","success"
+"eval-048","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.348623",,,,"success"
+"eval-048","normal_rag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.410334",,,,"success"
+"eval-049","agentic_rag","According to the provided corpus, the highest result is **Shooting at the 1988 Summer Olympics Ã¢â‚¬â€œ Men's 50 metre rifle prone**.
+
+Qualifying records:
+- **Shooting at the 1988 Summer Olympics Ã¢â‚¬â€œ Men's 50 metre rifle prone**: 55.0","27.462703","92006","249","92255","success"
+"eval-049","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.62254",,,,"success"
+"eval-049","normal_rag","Based on the provided corpus, here are the competitor counts for the respective shooting events at the 1988 Summer Olympics:
+
+* **Men's 50 metre running target**: 23 competitors
+* **Mixed trap**: 49 competitors
+* **Women's 50 metre rifle three positions**: 37 competitors
+* **Men's 50 metre rifle prone**: 55 competitors
+* **Women's 10 metre air rifle**: 45 competitors
+
+Comparing these events, the shooting event with the highest number of competitors was the **Men's 50 metre rifle prone** with 55 competitors.","30.390133","10848","643","11491","success"
+"eval-050","agentic_rag","At the 2012 Summer Olympics, multiple events were held at the Olympic Stadium during the August 6Ã¢â‚¬â€œ9 date range. Here are the relevant events and their gold medalists:
+
+- **Women's 100 metres hurdles** (6Ã¢â‚¬â€œ7 August): Won by **Sally Pearson** of Australia.
+- **Men's discus throw** (6Ã¢â‚¬â€œ7 August): Won by **Robert Harting** of Germany.
+- **Men's 110 metres hurdles** (7Ã¢â‚¬â€œ8 August): Won by **Aries Merritt** of the United States.
+- **Men's 200 metres** (7Ã¢â‚¬â€œ9 August): Won by **Usain Bolt** of Jamaica.
+- **Women's javelin throw** (7Ã¢â‚¬â€œ9 August): Won by **Barbora Ã…Â potÃƒÂ¡kovÃƒÂ¡** of the Czech Republic.","82.768815","208142","10137","218279","success"
+"eval-050","graphrag","GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a â€” see server logs for details.)","4.077563",,,,"success"
+"eval-050","normal_rag","At the 2012 Summer Olympics, the event held at the Olympic Stadium on 7â€“9 August was the Women's javelin throw. The gold medal was won by Barbora Å potÃ¡kovÃ¡ representing the Czech Republic (CZE).","25.585942","10797","641","11438","success"
