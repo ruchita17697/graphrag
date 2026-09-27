@@ -1,0 +1,16 @@
+﻿pipeline,category,total,correct,non_answer,review
+agentic_rag,aggregation,21,7,7,7
+agentic_rag,lookup,19,18,1,0
+agentic_rag,multi_hop,28,18,1,9
+agentic_rag,superlative,10,6,4,0
+agentic_rag,temporal,22,20,2,0
+graphrag,aggregation,21,0,1,20
+graphrag,lookup,19,18,0,1
+graphrag,multi_hop,28,12,0,16
+graphrag,superlative,10,7,0,3
+graphrag,temporal,22,17,1,4
+normal_rag,aggregation,21,0,2,19
+normal_rag,lookup,19,14,0,5
+normal_rag,multi_hop,28,9,2,17
+normal_rag,superlative,10,7,0,3
+normal_rag,temporal,22,11,0,11

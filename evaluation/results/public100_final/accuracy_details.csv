@@ -1,0 +1,1174 @@
+﻿pipeline,question_id,category,question,reference_answer,answer,automatic_verdict,manual_correct,notes
+agentic_rag,pub-071,lookup,How many nations competed in Biathlon at the 2018 Winter Olympics â€“ Women's pursuit?,24,"According to the provided corpus, **1** record(s) satisfy `nations == 24.0`.
+
+Qualifying records:
+- **Biathlon at the 2018 Winter Olympics â€“ Women's pursuit**: 24.0",correct,,
+agentic_rag,pub-068,lookup,How many nations competed in Cycling at the 2012 Summer Olympics â€“ Women's cross-country?,24,"According to the provided corpus, **1** record(s) satisfy `nations == 24.0`.
+
+Qualifying records:
+- **Cycling at the 2012 Summer Olympics â€“ Women's cross-country**: 24.0",correct,,
+agentic_rag,pub-034,lookup,How many nations competed in Figure skating at the 2010 Winter Olympics â€“ Women's singles?,23,"According to the provided corpus, **1** record(s) satisfy `nations == 23.0`.
+
+Qualifying records:
+- **Figure skating at the 2010 Winter Olympics â€“ Women's singles**: 23.0",correct,,
+agentic_rag,pub-052,lookup,How many nations competed in Biathlon at the 2022 Winter Olympics â€“ Women's relay?,20,"According to the provided corpus, **3** record(s) satisfy `nations == 20.0`.
+
+Qualifying records:
+- **Biathlon at the 2018 Winter Olympics â€“ Mixed relay**: 20.0
+- **Biathlon at the 2022 Winter Olympics â€“ Mixed relay**: 20.0
+- **Biathlon at the 2022 Winter Olympics â€“ Women's relay**: 20.0",correct,,
+agentic_rag,pub-035,lookup,How many nations competed in Shooting at the 1996 Summer Olympics â€“ Men's 50 metre rifle three positions?,30,"According to the provided corpus, **1** record(s) satisfy `nations == 30.0`.
+
+Qualifying records:
+- **Shooting at the 1996 Summer Olympics â€“ Men's 50 metre rifle three positions**: 30.0",correct,,
+agentic_rag,pub-074,lookup,How many nations competed in Cross-country skiing at the 2006 Winter Olympics â€“ Women's 4 Ã— 5 kilometre relay?,17,"According to the provided corpus, **1** record(s) satisfy `nations == 17.0`.
+
+Qualifying records:
+- **Cross-country skiing at the 2006 Winter Olympics â€“ Women's 4 Ã— 5 kilometre relay**: 17.0",correct,,
+agentic_rag,pub-082,aggregation,"According to the provided corpus, how many swimming events at the 1996 Summer Olympics had more than 42 competitors?",12,"According to the provided corpus, **12** record(s) satisfy `competitors > 42.0`.
+
+Qualifying records:
+- **Swimming at the 1996 Summer Olympics â€“ Men's 100 metre backstroke**: 52.0
+- **Swimming at the 1996 Summer Olympics â€“ Women's 100 metre butterfly**: 44.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 100 metre butterfly**: 61.0
+- **Swimming at the 1996 Summer Olympics â€“ Women's 100 metre breaststroke**: 46.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 100 metre breaststroke**: 45.0
+- **Swimming at the 1996 Summer Olympics â€“ Women's 100 metre freestyle**: 48.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 100 metre freestyle**: 61.0
+- **Swimming at the 1996 Summer Olympics â€“ Women's 200 metre individual medley**: 43.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 200 metre butterfly**: 43.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 200 metre freestyle**: 43.0
+- **Swimming at the 1996 Summer Olympics â€“ Women's 50 metre freestyle**: 56.0
+- **Swimming at the 1996 Summer Olympics â€“ Men's 50 metre freestyle**: 65.0",correct,,
+agentic_rag,pub-033,aggregation,"According to the provided corpus, how many judo events at the 2004 Summer Olympics had more than 32 competitors?",4,"According to the provided corpus, **4** record(s) satisfy `competitors > 32.0`.
+
+Qualifying records:
+- **Judo at the 2004 Summer Olympics â€“ Men's +100 kg**: 33.0
+- **Judo at the 2004 Summer Olympics â€“ Men's 100 kg**: 33.0
+- **Judo at the 2004 Summer Olympics â€“ Men's 60 kg**: 33.0
+- **Judo at the 2004 Summer Olympics â€“ Men's 73 kg**: 34.0",correct,,
+agentic_rag,pub-012,aggregation,"According to the provided corpus, how many rowing events at the 2020 Summer Olympics had more than 36 competitors?",6,"According to the provided corpus, **7** record(s) satisfy `competitors > 36.0`.
+
+Qualifying records:
+- **Rowing at the 2020 Summer Olympics â€“ Men's coxless four**: 40.0
+- **Rowing at the 2020 Summer Olympics â€“ Women's eight**: 63.0
+- **Rowing at the 2020 Summer Olympics â€“ Women's quadruple sculls**: 40.0
+- **Rowing at the 2020 Summer Olympics â€“ Women's coxless four**: 40.0
+- **Rowing at the 2012 Summer Olympics â€“ Men's lightweight double sculls**: 40.0
+- **Rowing at the 2020 Summer Olympics â€“ Men's quadruple sculls**: 40.0
+- **Rowing at the 1992 Summer Olympics â€“ Men's coxed pair**: 49.0",needs_manual_review,,
+agentic_rag,pub-058,aggregation,"According to the provided corpus, how many rowing events at the 1996 Summer Olympics had more than 39 competitors?",5,"According to the provided corpus, **5** record(s) satisfy `competitors > 39.0`.
+
+Qualifying records:
+- **Rowing at the 1996 Summer Olympics â€“ Women's quadruple sculls**: 40.0
+- **Rowing at the 1996 Summer Olympics â€“ Women's eight**: 72.0
+- **Rowing at the 1996 Summer Olympics â€“ Men's coxless four**: 56.0
+- **Rowing at the 1996 Summer Olympics â€“ Men's lightweight coxless four**: 68.0
+- **Rowing at the 1996 Summer Olympics â€“ Men's quadruple sculls**: 56.0",correct,,
+agentic_rag,pub-051,aggregation,"According to the provided corpus, how many canoeing events at the 2012 Summer Olympics had more than 25 competitors?",6,"According to the provided corpus, **5** record(s) satisfy `competitors > 25.0`.
+
+Qualifying records:
+- **Canoeing at the 2012 Summer Olympics â€“ Men's slalom C-2**: 28.0
+- **Canoeing at the 2012 Summer Olympics â€“ Women's K-1 200 metres**: 29.0
+- **Canoeing at the 2012 Summer Olympics â€“ Women's K-2 500 metres**: 34.0
+- **Canoeing at the 2012 Summer Olympics â€“ Men's K-2 200 metres**: 28.0
+- **Canoeing at the 2012 Summer Olympics â€“ Men's K-4 1000 metres**: 40.0",needs_manual_review,,
+agentic_rag,pub-078,aggregation,"According to the provided corpus, how many athletics events at the 1996 Summer Olympics had more than 49 competitors?",7,"According to the provided corpus, **24** record(s) satisfy `competitors > 49.0`.
+
+Qualifying records:
+- **Athletics at the 1996 Summer Olympics â€“ Men's 800 metres**: 56.0
+- **Athletics at the 1996 Summer Olympics â€“ Women's 100 metres**: 56.0
+- **Athletics at the 1992 Summer Olympics â€“ Men's 100 metres**: 81.0
+- **Athletics at the 1988 Summer Olympics â€“ Men's 100 metres**: 102.0
+- **Athletics at the 1996 Summer Olympics â€“ Men's long jump**: 52.0
+- **Athletics at the 1988 Summer Olympics â€“ Men's 200 metres**: 72.0
+- **Athletics at the 1996 Summer Olympics â€“ Men's 400 metres**: 62.0
+- **Athletics at the 1996 Summer Olympics â€“ Men's 100 metres**: 106.0
+- **Athletics at the 1992 Summer Olympics â€“ Women's 100 metres**: 55.0
+- **Athletics at the 1996 Summer Olympics â€“ Men's 20 kilometres walk**: 53.0
+- **Athletics at the 2000 Summer Olympics â€“ Men's 400 metres hurdles**: 62.0
+- **Athletics at the 1996 Summer Olympics â€“ Men's 110 metres hurdles**: 62.0
+- **Athletics at the 1992 Summer Olympics â€“ Men's long jump**: 50.0
+- **Athletics at the 2000 Summer Olympics â€“ Men's 200 metres**: 67.0
+- **Cross-country skiing at the 1992 Winter Olympics â€“ Women's 30 kilometre freestyle**: 57.0
+- **Athletics at the 1988 Summer Olympics â€“ Men's 1500 metres**: 59.0
+- **Athletics at the 1992 Summer Olympics â€“ Men's 1500 metres**: 51.0
+- **Athletics at the 2000 Summer Olympics â€“ Women's 400 metres**: 56.0
+- **Athletics at the 1988 Summer Olympics â€“ Women's 100 metres**: 64.0
+- **Athletics at the 1992 Summer Olympics â€“ Men's marathon**: 110.0
+- **Athletics at the 2000 Summer Olympics â€“ Women's marathon**: 53.0
+- **Athletics at the 1992 Summer Olympics â€“ Women's 200 metres**: 51.0
+- **Athletics at the 1988 Summer Olympics â€“ Men's 10,000 metres**: 51.0
+- **Athletics at the 1988 Summer Olympics â€“ Men's 5000 metres**: 56.0",needs_manual_review,,
+agentic_rag,pub-086,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 17 February 2010?,Shani Davis,"At the event held at the **Richmond Olympic Oval** on **17 February 2010** (the Men's 1000 metres speed skating competition at the 2010 Winter Olympics), the gold medal was won by **Shani Davis** representing the United States.",correct,,
+agentic_rag,pub-079,multi_hop,"Who won the gold medal in the event held at Centennial Parklands, Sydney on 26 September at the 2000 Summer Olympics?",Leontien Zijlaard,"At the 2000 Summer Olympics, the event held at Centennial Parklands, Sydney on 26 September was the **Women's individual road race** (cycling).
+
+The gold medal was won by **Leontien Zijlaard** representing the Netherlands (NED).",correct,,
+agentic_rag,pub-022,multi_hop,"Who won the gold medal in the event held at Beijing Science and TechnologyUniversity Gymnasium on August 12, 2008?",Ayumi Tanimoto,"At the 2008 Summer Olympics, the event held at the **Beijing Science and Technology University Gymnasium** on **August 12, 2008**, was the **Women's 63 kg** judo competition.
+
+The gold medal in this event was won by **Ayumi Tanimoto** representing Japan, who defeated France's Lucie Décosse in the final.",correct,,
+agentic_rag,pub-081,multi_hop,"Who won the gold medal in the event held at Beijing Shooting Range Hall on August 10, 2008?",Guo Wenjun,"On August 10, 2008, the event held at the Beijing Shooting Range Hall was the **Women's 10 metre air pistol** event at the 2008 Summer Olympics.
+
+The gold medal was won by **Guo Wenjun** of China, who finished with a winning score of 492.3 points (establishing a new Olympic record).",correct,,
+agentic_rag,pub-038,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 23 September 2000?,Pyrros Dimas,"At the 2000 Summer Olympics, the event held at the Sydney Convention and Exhibition Centre on **23 September 2000** was the **Men's 85 kg** weightlifting event.
+
+* **Gold Medalist:** Pyrros Dimas (Greece / GRE)",correct,,
+agentic_rag,pub-028,multi_hop,"Who won the gold medal in the event held at Olympic Aquatic Centre on August 14, 2004 (heats & final)?",Michael Phelps,"On August 14, 2004, multiple swimming events were held at the Olympic Aquatic Centre (Athens Olympic Sports Complex) featuring heats and finals on that date. Here are the events held on August 14, 2004 (heats & final) and their respective gold medal winners:
+
+1. **Men's 400 metre individual medley**
+   - **Gold Medalist:** Michael Phelps (USA)
+   - **Winning Time / Result:** 4:08.26 (World Record)
+
+2. **Men's 400 metre freestyle**
+   - **Gold Medalist:** Ian Thorpe (AUS)
+   - **Winning Time / Result:** 3:43.10
+
+3. **Women's 400 metre individual medley**
+   - **Gold Medalist:** Yana Klochkova (UKR)
+   - **Winning Time / Result:** 4:34.83",correct,,
+agentic_rag,pub-062,temporal,"Who won the gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016?",Tirunesh Dibaba,"The gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016 (the 2012 Summer Olympics in London) was won by **Tirunesh Dibaba** of Ethiopia, with a winning time of 30:20.75.",correct,,
+agentic_rag,pub-002,temporal,Who won the gold medal in the men's 20 kilometres walk athletics event at the Summer Olympics held immediately before 2016?,Chen Ding,"At the Summer Olympics held immediately before 2016 (the 2012 Summer Olympics in London), **Chen Ding** of China won the gold medal in the men's 20 kilometres walk athletics event with a winning time of `1:18:46`.",correct,,
+agentic_rag,pub-016,temporal,Who won the gold medal in the men's sprint biathlon event at the Winter Olympics held immediately before 2022?,Arnd Peiffer,"The Winter Olympics held immediately before 2022 were the **2018 Winter Olympics** in Pyeongchang, South Korea.
+
+In the **men's sprint biathlon** event at these Games, the gold medal was won by **Arnd Peiffer** of Germany.
+
+**Podium Results:**
+- **Gold:** Arnd Peiffer (GER) â€” Win value: `23:38.8`
+- **Silver:** Michal KrÄmÃ¡Å™ (CZE)
+- **Bronze:** Dominik Windisch (ITA)",correct,,
+agentic_rag,pub-055,temporal,Who won the gold medal in the men's 80 kg taekwondo event at the Summer Olympics held immediately before 2016?,Sebastián Crismanich,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-094,temporal,Who won the gold medal in the men's greco-roman 48 kg wrestling event at the Summer Olympics held immediately before 1996?,Oleg Kucherenko,"The Summer Olympics held immediately before 1996 were the 1992 Summer Olympics in Barcelona. 
+
+In the **men's Greco-Roman 48 kg** wrestling event at the 1992 Summer Olympics:
+
+* **Gold Medalist:** Oleg Kucherenko (representing the Unified Team, EUN)
+* **Silver Medalist:** Vincenzo Maenza (representing Italy, ITA)
+* **Bronze Medalist:** Wilber Sánchez (representing Cuba, CUB)",correct,,
+agentic_rag,pub-036,temporal,Who won the gold medal in the men's light flyweight boxing event at the Summer Olympics held immediately before 2016?,Zou Shiming,"The Summer Olympics held immediately before the 2016 Summer Olympics were the **2012 Summer Olympics** (held in London). 
+
+In the men's light flyweight boxing event at the 2012 Summer Olympics, the gold medal was won by **Zou Shiming** (representing China / CHN), who defeated Kaeo Pongprayoon (Thailand / THA) in the final.",correct,,
+agentic_rag,pub-044,superlative,"According to the provided corpus, which fencing event at the 2008 Summer Olympics had the highest number of competitors?",Fencing at the 2008 Summer Olympics â€“ Men's Ã©pÃ©e,"According to the provided corpus, **7** record(s) satisfy `competitors > 0.0`.
+
+Qualifying records:
+- **Fencing at the 2008 Summer Olympics â€“ Men's Ã©pÃ©e**: 41000000.0
+- **Fencing at the 2008 Summer Olympics â€“ Women's sabre**: 39.0
+- **Fencing at the 2008 Summer Olympics â€“ Men's sabre**: 40.0
+- **Fencing at the 2008 Summer Olympics â€“ Men's foil**: 26.0
+- **Fencing at the 2008 Summer Olympics â€“ Women's foil**: 41.0
+- **Fencing at the 2008 Summer Olympics â€“ Women's Ã©pÃ©e**: 25.0
+- **Fencing at the 2008 Summer Olympics â€“ Men's team Ã©pÃ©e**: 32.0",correct,,
+agentic_rag,pub-088,superlative,"According to the provided corpus, which alpine skiing event at the 1992 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1992 Winter Olympics â€“ Men's giant slalom,"According to the provided corpus, **1** record(s) satisfy `competitors == 131.0`.
+
+Qualifying records:
+- **Alpine skiing at the 1992 Winter Olympics â€“ Men's giant slalom**: 131.0",correct,,
+agentic_rag,pub-008,superlative,"According to the provided corpus, which sailing event at the 2000 Summer Olympics had the highest number of competitors?",Sailing at the 2000 Summer Olympics â€“ Soling,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-084,superlative,"According to the provided corpus, which fencing event at the 1992 Summer Olympics had the highest number of competitors?",Fencing at the 1992 Summer Olympics â€“ Men's Ã©pÃ©e,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-021,superlative,"According to the provided corpus, which alpine skiing event at the 1988 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1988 Winter Olympics â€“ Men's giant slalom,"According to the provided corpus, **1** record(s) satisfy `competitors == 117.0`.
+
+Qualifying records:
+- **Alpine skiing at the 1988 Winter Olympics â€“ Men's giant slalom**: 117.0",correct,,
+agentic_rag,pub-085,superlative,"According to the provided corpus, which sailing event at the 2008 Summer Olympics had the highest number of competitors?",Sailing at the 2008 Summer Olympics â€“ Men's 470,"According to the provided corpus, **17** record(s) satisfy `competitors > 0.0`.
+
+Qualifying records:
+- **Sailing at the 2008 Summer Olympics â€“ Women's 470**: 38.0
+- **Sailing at the 2008 Summer Olympics â€“ Yngling**: 45.0
+- **Sailing at the 2008 Summer Olympics â€“ 49er**: 38.0
+- **Sailing at the 2008 Summer Olympics â€“ Star**: 32.0
+- **Sailing at the 2008 Summer Olympics â€“ Men's 470**: 58.0
+- **Sailing at the 2004 Summer Olympics â€“ Laser**: 42.0
+- **Sailing at the 2008 Summer Olympics â€“ Finn**: 26.0
+- **Sailing at the 2008 Summer Olympics â€“ Men's RS:X**: 35.0
+- **Sailing at the 2008 Summer Olympics â€“ Laser**: 43.0
+- **Sailing at the 2008 Summer Olympics â€“ Tornado**: 30.0
+- **Sailing at the 2012 Summer Olympics â€“ Finn**: 24.0
+- **Sailing at the 2008 Summer Olympics â€“ Women's RS:X**: 27.0
+- **Sailing at the 2004 Summer Olympics â€“ 49er**: 38.0
+- **Sailing at the 2012 Summer Olympics â€“ 49er**: 40.0
+- **Sailing at the 1988 Summer Olympics â€“ Star**: 43.0
+- **Sailing at the 2012 Summer Olympics â€“ Laser**: 49.0
+- **Sailing at the 2004 Summer Olympics â€“ Star**: 34.0",correct,,
+agentic_rag,pub-001,aggregation,"According to the provided corpus, how many biathlon events at the 2018 Winter Olympics had more than 73 competitors?",5,"According to the provided corpus, **12** record(s) satisfy `competitors > 73.0`.
+
+Qualifying records:
+- **Biathlon at the 2010 Winter Olympics â€“ Men's individual**: 88.0
+- **Biathlon at the 2018 Winter Olympics â€“ Men's sprint**: 87.0
+- **Biathlon at the 2018 Winter Olympics â€“ Women's sprint**: 87.0
+- **Biathlon at the 2010 Winter Olympics â€“ Men's sprint**: 88.0
+- **Biathlon at the 2018 Winter Olympics â€“ Men's individual**: 86.0
+- **Biathlon at the 2018 Winter Olympics â€“ Mixed relay**: 80.0
+- **Biathlon at the 2022 Winter Olympics â€“ Women's sprint**: 89.0
+- **Biathlon at the 2014 Winter Olympics â€“ Men's sprint**: 87.0
+- **Biathlon at the 2022 Winter Olympics â€“ Women's individual**: 87.0
+- **Biathlon at the 2014 Winter Olympics â€“ Women's individual**: 82.0
+- **Biathlon at the 2022 Winter Olympics â€“ Mixed relay**: 80.0
+- **Biathlon at the 2018 Winter Olympics â€“ Women's individual**: 87.0",needs_manual_review,,
+agentic_rag,pub-003,aggregation,"According to the provided corpus, how many shooting events at the 2004 Summer Olympics had more than 37 competitors?",8,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-004,superlative,"According to the provided corpus, which athletics event at the 2008 Summer Olympics had the highest number of competitors?",Athletics at the 2008 Summer Olympics â€“ Men's marathon,"According to the provided corpus, **1** record(s) satisfy `competitors == 95.0`.
+
+Qualifying records:
+- **Athletics at the 2008 Summer Olympics â€“ Men's marathon**: 95.0",correct,,
+agentic_rag,pub-005,multi_hop,Who won the gold medal in the event held at Olympic Weightlifting Gymnasium on 20 September 1988?,Naim SÃ¼leymanoÄŸlu,"On 20 September 1988, at the Olympic Weightlifting Gymnasium during the 1988 Summer Olympics, the gold medal in the Men's 60 kg weightlifting event was won by **Naim SÃ¼leymanoÄŸlu** (representing Turkey).",correct,,
+agentic_rag,pub-006,temporal,Who won the gold medal in the women's 57 kg judo event at the Summer Olympics held immediately before 2020?,Rafaela Silva,"The Summer Olympics held immediately before the 2020 Summer Olympics were the 2016 Summer Olympics held in Rio de Janeiro.
+
+In the **women's 57 kg judo** event at the 2016 Summer Olympics, the gold medal was won by **Rafaela Silva** (representing Brazil).",correct,,
+agentic_rag,pub-007,temporal,Who won the gold medal in the men's pole vault athletics event at the Summer Olympics held immediately before 2016?,Renaud Lavillenie,"The Summer Olympics held immediately before 2016 were the **2012 Summer Olympics** (held in London, United Kingdom).
+
+The gold medal in the men's pole vault athletics event at the 2012 Summer Olympics was won by **Renaud Lavillenie** of **France**, who cleared a winning height of 5.97 meters and set a new Olympic record.
+
+### Medalists Summary
+
+| Medal | Athlete | Nation | Winning Height |
+| --- | --- | --- | --- |
+| **Gold** | Renaud Lavillenie | France | 5.97 m |
+| **Silver** | Björn Otto | Germany | 5.91 m |
+| **Bronze** | Raphael Holzdeppe | Germany | 5.91 m |",correct,,
+agentic_rag,pub-009,lookup,How many nations competed in Sailing at the 2016 Summer Olympics â€“ Women's RS:X?,26,"According to the provided corpus, **1** record(s) satisfy `nations == 26.0`.
+
+Qualifying records:
+- **Sailing at the 2016 Summer Olympics â€“ Women's RS:X**: 26.0",correct,,
+agentic_rag,pub-010,aggregation,"According to the provided corpus, how many cycling events at the 2000 Summer Olympics had more than 30 competitors?",4,"According to the provided corpus, **6** record(s) satisfy `competitors > 30.0`.
+
+Qualifying records:
+- **Cycling at the 2000 Summer Olympics â€“ Women's individual road race**: 57.0
+- **Cycling at the 1996 Summer Olympics â€“ Women's individual road race**: 58.0
+- **Cycling at the 2000 Summer Olympics â€“ Men's cross-country**: 49.0
+- **Cycling at the 2000 Summer Olympics â€“ Men's individual road race**: 154.0
+- **Cycling at the 1996 Summer Olympics â€“ Men's time trial**: 38.0
+- **Cycling at the 2000 Summer Olympics â€“ Men's road time trial**: 38.0",needs_manual_review,,
+agentic_rag,pub-011,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 14 February 2010?,Martina Sáblíková,The gold medal in the event held at the Richmond Olympic Oval on 14 February 2010 (the Women's 3000 metres speed skating competition) was won by **Martina Sáblíková** representing the Czech Republic (CZE) with a winning time of 4:02.53.,correct,,
+agentic_rag,pub-013,temporal,Who won the gold medal in the women's 200 metre freestyle swimming event at the Summer Olympics held immediately before 2016?,Allison Schmitt,"At the 2012 Summer Olympics in London (held immediately before the 2016 Summer Olympics), U.S. swimmer **Allison Schmitt** won the gold medal in the women's 200 metre freestyle event with a time of 1:53.61.",correct,,
+agentic_rag,pub-014,multi_hop,Who won the gold medal in the event held at Riocentro â€“ Pavilion 4 on 11â€“19 August at the 2016 Summer Olympics?,Carolina Marín,"At the 2016 Summer Olympics, two events held at **Riocentro** during the dates **11â€“19 August** (or closely overlapping) feature gold medalists:
+
+1. **Badminton â€“ Women's Singles** (held at *Riocentro â€“ Pavilion 4*, date: *11â€“19 August*):
+   - **Gold Medalist:** **Carolina MarÃ­n** (Spain)
+
+2. **Boxing â€“ Women's Lightweight** (held at *Riocentro â€“ Pavilion 6*, date: *12â€“19 August*):
+   - **Gold Medalist:** **Estelle Mossely** (France)",needs_manual_review,,
+agentic_rag,pub-015,multi_hop,Who won the gold medal in the event held at London Velopark on 3 to 4 August at the 2012 Summer Olympics?,Dani KingLaura TrottJoanna Rowsell,"At the 2012 Summer Olympics, the event held at the London Velopark from 3 to 4 August was the **women's cycling team pursuit** (Cycling at the 2012 Summer Olympics â€“ Women's team pursuit).
+
+The **gold medal** was won by the team from **Great Britain**, consisting of:
+- **Dani King**
+- **Laura Trott**
+- **Joanna Rowsell**",needs_manual_review,,
+agentic_rag,pub-017,multi_hop,Who won the gold medal in the event held at Royal Artillery Barracks on 28 July 2012?,Yi Siling,"At the 2012 Summer Olympics, the event held at the Royal Artillery Barracks on 28 July 2012 was the **Women's 10 metre air rifle** shooting event.
+
+* **Gold Medalist:** Yi Siling (China - CHN)
+* **Winning Score:** 502.9
+* **Silver Medalist:** Sylwia Bogacka (Poland - POL)
+* **Bronze Medalist:** Yu Dan (China - CHN)",correct,,
+agentic_rag,pub-018,temporal,Who won the gold medal in the men's freestyle 82 kg wrestling event at the Summer Olympics held immediately before 1996?,Kevin Jackson,"At the Summer Olympics held immediately before 1996 (the 1992 Summer Olympics in Barcelona), the gold medal in the men's freestyle 82 kg wrestling event was won by **Kevin Jackson** of the **United States**.",correct,,
+agentic_rag,pub-019,aggregation,"According to the provided corpus, how many fencing events at the 1988 Summer Olympics had more than 68 competitors?",3,"According to the provided corpus, **3** record(s) satisfy `competitors > 68.0`.
+
+Qualifying records:
+- **Fencing at the 1988 Summer Olympics â€“ Men's team foil**: 76.0
+- **Fencing at the 1988 Summer Olympics â€“ Men's team Ã©pÃ©e**: 85.0
+- **Fencing at the 1988 Summer Olympics â€“ Men's Ã©pÃ©e**: 79.0",correct,,
+agentic_rag,pub-020,aggregation,"According to the provided corpus, how many alpine skiing events at the 2014 Winter Olympics had more than 63 competitors?",4,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-023,multi_hop,"Who won the gold medal in the event held at Estadi Olímpic Lluís Companys, Barcelona on August 9 at the 1992 Summer Olympics?",Hwang Young-Cho,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+agentic_rag,pub-024,aggregation,"According to the provided corpus, how many biathlon events at the 2002 Winter Olympics had more than 74 competitors?",3,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-025,lookup,How many nations competed in Judo at the 2016 Summer Olympics â€“ Women's 57 kg?,23,"According to the provided corpus, **4** record(s) satisfy `nations == 23.0`.
+
+Qualifying records:
+- **Judo at the 2016 Summer Olympics â€“ Women's 48 kg**: 23.0
+- **Judo at the 2016 Summer Olympics â€“ Women's 57 kg**: 23.0
+- **Judo at the 2000 Summer Olympics â€“ Women's 57 kg**: 23.0
+- **Judo at the 2004 Summer Olympics â€“ Women's 57 kg**: 23.0",correct,,
+agentic_rag,pub-026,temporal,Who won the gold medal in the men's cross-country cycling event at the Summer Olympics held immediately before 2016?,Jaroslav Kulhavý,"The Summer Olympics held immediately before the 2016 Games were the **2012 Summer Olympics** in London. 
+
+In the **men's cross-country cycling** event at the 2012 Summer Olympics, the gold medal was won by **Jaroslav Kulhavý** representing the Czech Republic with a winning time of `1:29:07`.",correct,,
+agentic_rag,pub-027,aggregation,"According to the provided corpus, how many fencing events at the 2008 Summer Olympics had more than 32 competitors?",4,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-029,lookup,How many nations competed in Shooting at the 2012 Summer Olympics â€“ Men's 50 metre rifle three positions?,28,"According to the provided corpus, **1** record(s) satisfy `nations == 28.0`.
+
+Qualifying records:
+- **Shooting at the 2012 Summer Olympics â€“ Men's 50 metre rifle three positions**: 28.0",correct,,
+agentic_rag,pub-031,multi_hop,Who won the gold medal in the event held at Nikaia Olympic Weightlifting Hall on 24 August 2004?,Dmitry Berestov,"At the 2004 Summer Olympics, the weightlifting event held at the Nikaia Olympic Weightlifting Hall on **24 August 2004** was the **Men's 105 kg** event.
+
+The gold medal was won by **Dmitry Berestov** representing Russia (RUS).",correct,,
+agentic_rag,pub-032,lookup,How many nations competed in Gymnastics at the 2016 Summer Olympics â€“ Men's horizontal bar?,34,"According to the provided corpus, **1** record(s) satisfy `nations == 34.0`.
+
+Qualifying records:
+- **Gymnastics at the 2016 Summer Olympics â€“ Men's horizontal bar**: 34.0",correct,,
+agentic_rag,pub-030,multi_hop,Who won the gold medal in the event held at Carioca Arena 3 on 6 August 2016?,Emese Szász,"Based on the provided records, there was no event held at Carioca Arena 3 on 6 August 2016. The events held at this venue during the 2016 Summer Olympics took place on later dates, such as the women's sabre fencing on 8 August 2016 (won by Yana Egorian), and the taekwondo competitions held between 18 and 19 August 2016.",needs_manual_review,,
+agentic_rag,pub-037,superlative,"According to the provided corpus, which shooting event at the 2008 Summer Olympics had the highest number of competitors?",Shooting at the 2008 Summer Olympics – Men's 50 metre rifle prone,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-039,temporal,Who won the gold medal in the women's discus throw athletics event at the Summer Olympics held immediately before 2016?,Sandra Perković,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. The gold medal in the women's discus throw athletics event at these games was won by **Sandra Perković** representing Croatia, with a winning distance of 69.11 meters.",correct,,
+agentic_rag,pub-040,temporal,Who won the gold medal in the individual normal hill/10 km nordic combined event at the Winter Olympics held immediately before 2014?,Jason Lamy Chappuis,"At the 2010 Winter Olympics in Vancouver, Canada—held immediately before the 2014 Winter Olympics—**Jason Lamy Chappuis** of France won the gold medal in the men's individual normal hill/10 km Nordic combined event.",correct,,
+agentic_rag,pub-041,multi_hop,Who won the gold medal in the event held at Mountain Bike Centre on 21 August at the 2016 Summer Olympics?,Nino Schurter,"At the 2016 Summer Olympics, the gold medal in the men's cross-country cycling event held at the Mountain Bike Centre on 21 August was won by Nino Schurter representing Switzerland.",correct,,
+agentic_rag,pub-042,lookup,How many nations competed in Alpine skiing at the 1992 Winter Olympics – Men's giant slalom?,47,"According to the provided corpus, **1** record(s) satisfy `nations == 47.0`.
+
+Qualifying records:
+- **Alpine skiing at the 1992 Winter Olympics – Men's giant slalom**: 47.0",correct,,
+agentic_rag,pub-043,multi_hop,Who won the gold medal in the event held at Val-d'Isère on 16 February 1992?,Kjetil André Aamodt,"At the 1992 Winter Olympics in Albertville, the men's super-G alpine skiing event was held at Val-d'Isère on **16 February 1992**.
+
+- **Gold Medalist:** **Kjetil André Aamodt** (Norway), with a winning time of `1:13.04` (73.04 seconds).
+- **Silver Medalist:** Marc Girardelli (Luxembourg)
+- **Bronze Medalist:** Jan Einar Thorsen (Norway)",correct,,
+agentic_rag,pub-045,aggregation,"According to the provided corpus, how many athletics events at the 2004 Summer Olympics had more than 41 competitors?",20,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-046,lookup,How many nations competed in Cross-country skiing at the 2010 Winter Olympics – Men's 15 kilometre freestyle?,50,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-047,lookup,How many nations competed in Athletics at the 1992 Summer Olympics – Men's 3000 metres steeplechase?,24,"According to the provided corpus, **1** record(s) satisfy `nations == 24.0`.
+
+Qualifying records:
+- **Athletics at the 1992 Summer Olympics – Men's 3000 metres steeplechase**: 24.0",correct,,
+agentic_rag,pub-048,temporal,Who won the gold medal in the men's 68 kg taekwondo event at the Summer Olympics held immediately before 2016?,Servet Tazegül,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-049,temporal,Who won the gold medal in the men's pursuit biathlon event at the Winter Olympics held immediately before 2022?,Martin Fourcade,"The Winter Olympics held immediately before 2022 were the **2018 Winter Olympics** in Pyeongchang, South Korea. 
+
+In the **men's pursuit biathlon** event at these Games, the gold medal was won by **Martin Fourcade** representing France.
+
+* **Gold Medalist:** Martin Fourcade (France)
+* **Silver Medalist:** Sebastian Samuelsson (Sweden)
+* **Bronze Medalist:** Benedikt Doll (Germany)
+* **Winning Time:** 32:51.7",correct,,
+agentic_rag,pub-050,multi_hop,Who won the gold medal in the event held at Adler Arena Skating Center on 11 February 2014?,Lee Sang-hwa,"At the Adler Arena Skating Center on 11 February 2014, the event held was the **Women's 500 metres** speed skating competition.
+
+* **Gold Medalist:** Lee Sang-hwa (South Korea)
+* **Silver Medalist:** Olga Fatkulina (Russia)
+* **Bronze Medalist:** Margot Boer (Netherlands)",correct,,
+agentic_rag,pub-053,superlative,"According to the provided corpus, which shooting event at the 2016 Summer Olympics had the highest number of competitors?",Shooting at the 2016 Summer Olympics – Women's 10 metre air rifle,"According to the provided corpus, **1** record(s) satisfy `competitors == 51.0`.
+
+Qualifying records:
+- **Shooting at the 2016 Summer Olympics – Women's 10 metre air rifle**: 51.0",correct,,
+agentic_rag,pub-054,lookup,How many nations competed in Marathon swimming at the 2016 Summer Olympics – Women's 10 kilometre?,24,"According to the provided corpus, **1** record(s) satisfy `nations == 24.0`.
+
+Qualifying records:
+- **Marathon swimming at the 2016 Summer Olympics – Women's 10 kilometre**: 24.0",correct,,
+agentic_rag,pub-056,temporal,Who won the gold medal in the men's 30 kilometre pursuit cross-country skiing event at the Winter Olympics held immediately before 2010?,Yevgeny Dementyev,"At the Winter Olympics held immediately before 2010 (the 2006 Winter Olympics in Turin, Italy), the gold medal in the men's 30 kilometre pursuit cross-country skiing event was won by **Yevgeny Dementyev** of Russia.",correct,,
+agentic_rag,pub-057,temporal,Who won the gold medal in the women's 200 metres athletics event at the Summer Olympics held immediately before 2016?,Allyson Felix,"The Summer Olympics held immediately before 2016 were the **2012 Summer Olympics** in London, United Kingdom. 
+
+In the women's 200 metres athletics event at the 2012 Summer Olympics, the gold medal was won by **Allyson Felix** representing the United States, with a winning time of **21.88 seconds**.",correct,,
+agentic_rag,pub-059,temporal,Who won the gold medal in the women's sprint biathlon event at the Winter Olympics held immediately before 2022?,Laura Dahlmeier,"Laura Dahlmeier won the gold medal in the women's sprint biathlon event at the 2018 Winter Olympics in Pyeongchang, South Korea, which was held immediately before the 2022 Winter Olympics.",correct,,
+agentic_rag,pub-060,multi_hop,Who won the gold medal in the event held at ExCeL Exhibition Centre on 30 July at the 2012 Summer Olympics?,Yana Shemyakina,"At the 2012 Summer Olympics, the women's épée fencing event was held at the ExCeL Exhibition Centre on 30 July 2012. Yana Shemyakina from Ukraine won the gold medal in this event.",correct,,
+agentic_rag,pub-061,lookup,How many nations competed in Boxing at the 1988 Summer Olympics – Light flyweight?,34,"According to the provided corpus, **1** record(s) satisfy `nations == 34.0`.
+
+Qualifying records:
+- **Boxing at the 1988 Summer Olympics – Light flyweight**: 34.0",correct,,
+agentic_rag,pub-063,lookup,How many nations competed in Swimming at the 1988 Summer Olympics – Men's 200 metre freestyle?,41,"According to the provided corpus, **1** record(s) satisfy `nations == 41.0`.
+
+Qualifying records:
+- **Swimming at the 1988 Summer Olympics – Men's 200 metre freestyle**: 41.0",correct,,
+agentic_rag,pub-064,multi_hop,Who won the gold medal in the event held at ANZ Stadium on 22 September 2000 (heats)25 September 2000 (final)?,Gabriela Szabo,"Based on the provided context, the gold medal in the Men's 10,000 metres event held at Stadium Australia (also referred to as ANZ Stadium) with heats on 22 September and the final on 25 September 2000 was won by **Haile Gebrselassie** of Ethiopia.",needs_manual_review,,
+agentic_rag,pub-065,aggregation,"According to the provided corpus, how many biathlon events at the 2014 Winter Olympics had more than 68 competitors?",5,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-066,superlative,"According to the provided corpus, which weightlifting event at the 1992 Summer Olympics had the highest number of competitors?",Weightlifting at the 1992 Summer Olympics – Men's 75 kg,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-067,multi_hop,Who won the gold medal in the event held at North Greenwich Arena on 4 August at the 2012 Summer Olympics?,Rosannagh MacLennan,"At the 2012 Summer Olympics, the event held at the North Greenwich Arena on 4 August was the **women's trampoline** competition in gymnastics.
+
+- **Gold Medalist:** Rosannagh MacLennan (Canada)
+- **Silver Medalist:** Huang Shanshan (China)
+- **Bronze Medalist:** He Wenna (China)",correct,,
+agentic_rag,pub-069,aggregation,"According to the provided corpus, how many fencing events at the 2000 Summer Olympics had more than 39 competitors?",3,I gathered some information but couldn't finalize an answer within the iteration budget (30).,incorrect_non_answer,,
+agentic_rag,pub-070,aggregation,"According to the provided corpus, how many speed skating events at the 2010 Winter Olympics had more than 36 competitors?",3,"According to the provided corpus, **10** record(s) satisfy `competitors > 36.0`.
+
+Qualifying records:
+- **Speed skating at the 2010 Winter Olympics – Men's 1500 metres**: 37.0
+- **Speed skating at the 2006 Winter Olympics – Men's 1500 metres**: 41.0
+- **Speed skating at the 1994 Winter Olympics – Men's 500 metres**: 40.0
+- **Speed skating at the 2014 Winter Olympics – Men's 1000 metres**: 40.0
+- **Speed skating at the 2014 Winter Olympics – Men's 500 metres**: 40.0
+- **Speed skating at the 2014 Winter Olympics – Men's 1500 metres**: 40.0
+- **Speed skating at the 1988 Winter Olympics – Men's 500 metres**: 37.0
+- **Speed skating at the 2010 Winter Olympics – Men's 500 metres**: 39.0
+- **Speed skating at the 2006 Winter Olympics – Men's 1000 metres**: 41.0
+- **Cross-country skiing at the 2002 Winter Olympics – Women's sprint**: 58.0",needs_manual_review,,
+agentic_rag,pub-072,temporal,Who won the gold medal in the women's 500 metres speed skating event at the Winter Olympics held immediately before 2014?,Lee Sang-hwa,"The Winter Olympics immediately held before 2014 were the **2010 Winter Olympics** in Vancouver, Canada.
+
+The gold medal in the women's 500 metres speed skating event at the 2010 Winter Olympics was won by **Lee Sang-hwa** representing South Korea, with a winning cumulative time of `76.09`.
+
+### Podium Results
+
+| Medal | Athlete | Nation | Cumulative Time / Details |
+| :--- | :--- | :--- | :--- |
+| **Gold** | Lee Sang-hwa | KOR | `76.09` |
+| **Silver** | Jenny Wolf | GER | `76.14` |
+| **Bronze** | Wang Beixing | CHN | `76.63` |",correct,,
+agentic_rag,pub-073,multi_hop,Who won the gold medal in the event held at Sydney International Shooting Centre on 21 September 2000 (slow)22 September 2000 (fast)?,Yang Ling,"Based on the events held at the Sydney International Shooting Centre on the specified dates, two distinct events took place:
+
+1. **Men's 50 metre rifle prone** (held on **21 September 2000**): The gold medal was won by **Jonas Edman** representing Sweden (SWE).
+2. **Women's 25 metre pistol** (held on **22 September 2000**): The gold medal was won by **Mariya Grozdeva** representing Bulgaria (BUL).",needs_manual_review,,
+agentic_rag,pub-075,lookup,How many nations competed in Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle?,32,"According to the provided corpus, **1** record(s) satisfy `nations == 32.0`.
+
+Qualifying records:
+- **Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle**: 32.0",correct,,
+agentic_rag,pub-076,multi_hop,"Who won the gold medal in the event held at Sestriere on February 24, 2006?",Julia Mancuso,"The gold medal in the event held at Sestriere on February 24, 2006 (the women's giant slalom) was won by **Julia Mancuso** representing the United States.",correct,,
+agentic_rag,pub-077,multi_hop,"Who won the gold medal in the event held at Xiaohaituo Bobsleigh and Luge TrackBeijing on 13, 14 February 2022?",Kaillie Humphries,"At the women's monobob bobsleigh event held at the Xiaohaituo Bobsleigh and Luge Track in Beijing on 13 and 14 February 2022, **Kaillie Humphries** of the United States won the gold medal.",correct,,
+agentic_rag,pub-080,lookup,How many nations competed in Beach volleyball at the 2008 Summer Olympics – Women's tournament?,17,"According to the provided corpus, **2** record(s) satisfy `nations == 17.0`.
+
+Qualifying records:
+- **Beach volleyball at the 2008 Summer Olympics – Women's tournament**: 17.0
+- **Beach volleyball at the 2016 Summer Olympics – Women's tournament**: 17.0",correct,,
+agentic_rag,pub-083,multi_hop,"Who won the gold medal in the event held at Kvitfjell and Hafjell on February 20–21, 1994?",Pernilla Wiberg,"Pernilla Wiberg of Sweden won the gold medal in the women's combined event held at Kvitfjell and Hafjell on February 20–21, 1994.",correct,,
+agentic_rag,pub-087,aggregation,"According to the provided corpus, how many athletics events at the 1988 Summer Olympics had more than 41 competitors?",17,"According to the provided corpus, **17** record(s) satisfy `competitors > 41.0`.
+
+Qualifying records:
+- **Athletics at the 1988 Summer Olympics – Women's 200 metres**: 59.0
+- **Athletics at the 1988 Summer Olympics – Men's 800 metres**: 70.0
+- **Athletics at the 1988 Summer Olympics – Men's 5000 metres**: 56.0
+- **Athletics at the 1988 Summer Olympics – Men's 10,000 metres**: 51.0
+- **Athletics at the 1988 Summer Olympics – Women's marathon**: 70.0
+- **Athletics at the 1988 Summer Olympics – Men's 1500 metres**: 59.0
+- **Athletics at the 1988 Summer Olympics – Men's 20 kilometres walk**: 53.0
+- **Athletics at the 1988 Summer Olympics – Men's 50 kilometres walk**: 42.0
+- **Swimming at the 1988 Summer Olympics – Men's 100 metre freestyle**: 77.0
+- **Athletics at the 1988 Summer Olympics – Women's 400 metres**: 46.0
+- **Athletics at the 1988 Summer Olympics – Women's 10,000 metres**: 42.0
+- **Athletics at the 1988 Summer Olympics – Men's marathon**: 118.0
+- **Athletics at the 1988 Summer Olympics – Men's 400 metres**: 75.0
+- **Athletics at the 1988 Summer Olympics – Men's 100 metres**: 102.0
+- **Athletics at the 1988 Summer Olympics – Women's 100 metres**: 64.0
+- **Athletics at the 1988 Summer Olympics – Men's 4 × 400 metres relay**: 99.0
+- **Athletics at the 1988 Summer Olympics – Men's 200 metres**: 72.0",correct,,
+agentic_rag,pub-089,aggregation,"According to the provided corpus, how many boxing events at the 1988 Summer Olympics had more than 39 competitors?",5,"According to the provided corpus, **5** record(s) satisfy `competitors > 39.0`.
+
+Qualifying records:
+- **Boxing at the 1988 Summer Olympics – Bantamweight**: 48.0
+- **Boxing at the 1988 Summer Olympics – Featherweight**: 48.0
+- **Boxing at the 1988 Summer Olympics – Flyweight**: 44.0
+- **Boxing at the 1988 Summer Olympics – Light welterweight**: 45.0
+- **Boxing at the 1988 Summer Olympics – Welterweight**: 44.0",correct,,
+agentic_rag,pub-090,temporal,Who won the gold medal in the men's greco-roman 96 kg wrestling event at the Summer Olympics held immediately before 2012?,Aslanbek Khushtov,"The Summer Olympics held immediately before the 2012 Summer Olympics were the **2008 Summer Olympics** in Beijing, China.
+
+In the **men's Greco-Roman 96 kg** wrestling event at the 2008 Summer Olympics, the gold medal was won by **Aslanbek Khushtov** representing Russia.",correct,,
+agentic_rag,pub-091,lookup,How many nations competed in Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg?,18,"According to the provided corpus, **5** record(s) satisfy `nations == 18.0`.
+
+Qualifying records:
+- **Wrestling at the 1992 Summer Olympics – Men's freestyle 57 kg**: 18.0
+- **Wrestling at the 1988 Summer Olympics – Men's Greco-Roman 100 kg**: 18.0
+- **Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg**: 18.0
+- **Wrestling at the 1992 Summer Olympics – Men's freestyle 52 kg**: 18.0
+- **Wrestling at the 1992 Summer Olympics – Men's freestyle 74 kg**: 18.0",correct,,
+agentic_rag,pub-092,aggregation,"According to the provided corpus, how many shooting events at the 1992 Summer Olympics had more than 44 competitors?",6,"According to the provided corpus, **6** record(s) satisfy `competitors > 44.0`.
+
+Qualifying records:
+- **Shooting at the 1992 Summer Olympics – Men's 10 metre air pistol**: 45.0
+- **Shooting at the 1992 Summer Olympics – Men's 50 metre rifle prone**: 52.0
+- **Shooting at the 1992 Summer Olympics – Mixed skeet**: 60.0
+- **Shooting at the 1992 Summer Olympics – Mixed trap**: 54.0
+- **Shooting at the 1992 Summer Olympics – Women's 10 metre air pistol**: 47.0
+- **Shooting at the 1992 Summer Olympics – Women's 10 metre air rifle**: 45.0",correct,,
+agentic_rag,pub-093,aggregation,"According to the provided corpus, how many biathlon events at the 2006 Winter Olympics had more than 72 competitors?",4,"According to the provided corpus, **9** record(s) satisfy `competitors > 72.0`.
+
+Qualifying records:
+- **Biathlon at the 2002 Winter Olympics – Men's sprint**: 87.0
+- **Biathlon at the 2006 Winter Olympics – Men's sprint**: 90.0
+- **Biathlon at the 2006 Winter Olympics – Women's sprint**: 84.0
+- **Biathlon at the 2010 Winter Olympics – Men's sprint**: 88.0
+- **Biathlon at the 2006 Winter Olympics – Men's individual**: 88.0
+- **Biathlon at the 1998 Winter Olympics – Men's sprint**: 73.0
+- **Biathlon at the 2006 Winter Olympics – Women's individual**: 82.0
+- **Biathlon at the 2002 Winter Olympics – Women's sprint**: 74.0
+- **Biathlon at the 2010 Winter Olympics – Women's sprint**: 89.0",needs_manual_review,,
+agentic_rag,pub-095,multi_hop,Who won the gold medal in the event held at Beijing National Stadium on 16 August 2008?,Valerie Vili,"Multiple athletic events were held at the Beijing National Stadium on **16 August 2008** during the 2008 Summer Olympics, resulting in multiple gold medalists depending on the specific event:
+
+* **Men's 100 metres (Final):** Won by **Usain Bolt** of Jamaica in a world record time of 9.69 seconds.
+* **Men's 3000 metres steeplechase (Heats):** The heats for this event were held on 16 August 2008 (with the final won by Brimin Kiprop Kipruto of Kenya on 18 August).
+* **Women's 400 metres (Heats):** The heats for this event took place on 16 August 2008 (with the final won by Christine Ohuruogu of Great Britain on 19 August).
+* **Women's pole vault (Qualification):** The qualification round took place on 16 August 2008 (with the final won by Yelena Isinbayeva of Russia on 18 August).",needs_manual_review,,
+agentic_rag,pub-096,multi_hop,Who won the gold medal in the event held at Riocentro – Pavilion 6 on 10–21 August 2016?,Fazliddin Gaibnazarov,"At the 2016 Summer Olympics, the event held at **Riocentro – Pavilion 6** from **13–21 August 2016** was the **Men's flyweight boxing** competition.
+
+The gold medal in this event was won by **Shakhobidin Zoirov** (representing Uzbekistan, UZB).",needs_manual_review,,
+agentic_rag,pub-097,temporal,Who won the gold medal in the women's épée fencing event at the Summer Olympics held immediately before 2016?,Yana Shemyakina,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. In the women's individual épée fencing event at these games:
+
+- **Gold Medal Winner:** Yana Shemyakina (Ukraine)
+- **Silver Medal Winner:** Britta Heidemann (Germany)
+- **Bronze Medal Winner:** Sun Yujie (China)",correct,,
+agentic_rag,pub-098,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 18 September to 1 October 2000?,Bekzat Sattarkhanov,"At the 2000 Summer Olympics, multiple events were held at the **Sydney Convention and Exhibition Centre** on **18 September 2000**. Depending on the specific event held on that date, the gold medalists were:
+
+* **Men's 73 kg (Judo):** Giuseppe Maddaloni (Italy)
+* **Women's 53 kg (Weightlifting):** Yang Xia (China)
+* **Women's 57 kg (Judo):** Isabel Fernández (Spain)",needs_manual_review,,
+agentic_rag,pub-099,multi_hop,Who won the gold medal in the event held at Laura Biathlon & Ski Complex on 22 February 2014?,Erik LesserDaniel BöhmArnd PeifferSimon Schempp,"On 22 February 2014, two events were held at the Laura Biathlon & Ski Complex during the 2014 Winter Olympics in Sochi:
+
+1. **Biathlon – Men's Relay (4 × 7.5 km)**
+   * **Gold Medalist(s):** Germany (team members: Erik Lesser, Daniel Böhm, Arnd Peiffer, and Simon Schempp)
+   * *Note:* The Russian team initially finished first, but was subsequently disqualified due to doping violations, and the gold medal was reallocated to Germany.
+
+2. **Cross-country skiing – Women's 30 kilometre freestyle (mass start)**
+   * **Gold Medalist:** Marit Bjørgen (Norway)",needs_manual_review,,
+agentic_rag,pub-100,temporal,Who won the gold medal in the women's 200 metre backstroke swimming event at the Summer Olympics held immediately before 2016?,Missy Franklin,"The Summer Olympics held immediately before the 2016 Summer Olympics were the **2012 Summer Olympics** in London, United Kingdom.
+
+In the **women's 200 metre backstroke** swimming event at the 2012 Summer Olympics:
+* **Gold Medalist:** Missy Franklin (United States)
+* **Winning Time:** 2:04.06 (World Record)
+* **Silver Medalist:** Anastasia Zuyeva (Russia) — 2:05.92
+* **Bronze Medalist:** Elizabeth Beisel (United States) — 2:06.55",correct,,
+graphrag,pub-071,lookup,How many nations competed in Biathlon at the 2018 Winter Olympics – Women's pursuit?,24,A total of 24 nations competed in the Biathlon at the 2018 Winter Olympics – Women's pursuit.,correct,,
+graphrag,pub-068,lookup,How many nations competed in Cycling at the 2012 Summer Olympics – Women's cross-country?,24,A total of 24 nations competed in Cycling at the 2012 Summer Olympics – Women's cross-country.,correct,,
+graphrag,pub-034,lookup,How many nations competed in Figure skating at the 2010 Winter Olympics – Women's singles?,23,"At the 2010 Winter Olympics, the women's singles figure skating competition featured 30 skaters representing 23 nations.",correct,,
+graphrag,pub-052,lookup,How many nations competed in Biathlon at the 2022 Winter Olympics – Women's relay?,20,A total of 20 nations competed in the Biathlon at the 2022 Winter Olympics – Women's relay.,correct,,
+graphrag,pub-035,lookup,How many nations competed in Shooting at the 1996 Summer Olympics – Men's 50 metre rifle three positions?,30,A total of 30 nations competed in the Men's 50 metre rifle three positions event at the 1996 Summer Olympics.,correct,,
+graphrag,pub-074,lookup,How many nations competed in Cross-country skiing at the 2006 Winter Olympics – Women's 4 × 5 kilometre relay?,17,A total of 17 nations competed in the Cross-country skiing at the 2006 Winter Olympics – Women's 4 × 5 kilometre relay.,correct,,
+graphrag,pub-082,aggregation,"According to the provided corpus, how many swimming events at the 1996 Summer Olympics had more than 42 competitors?",12,"Based on the provided corpus, none of the swimming events at the 1996 Summer Olympics had more than 42 competitors. The events mentioned have the following number of competitors:
+
+* Women's 200 metre freestyle: 42 competitors
+* Women's 400 metre individual medley: 31 competitors
+* Women's 200 metre breaststroke: 42 competitors
+* Men's 400 metre freestyle: 35 competitors
+* Men's 200 metre breaststroke: 36 competitors
+
+Therefore, there are **0** events with more than 42 competitors.",needs_manual_review,,
+graphrag,pub-033,aggregation,"According to the provided corpus, how many judo events at the 2004 Summer Olympics had more than 32 competitors?",4,"Based on the provided corpus, there were 2 judo events at the 2004 Summer Olympics that had more than 32 competitors:
+
+- **Men's 73 kg**: 34 competitors
+- **Men's +100 kg**: 33 competitors
+
+In contrast, the other weight classes listed had fewer competitors (Women's +78 kg with 22, Women's 52 kg with 24, and Women's 70 kg with 23). Therefore, a total of 2 events exceeded 32 competitors.",needs_manual_review,,
+graphrag,pub-012,aggregation,"According to the provided corpus, how many rowing events at the 2020 Summer Olympics had more than 36 competitors?",6,"Based on the provided corpus, there are 4 rowing events at the 2020 Summer Olympics that had more than 36 competitors:
+
+* **Women's quadruple sculls**: 40 competitors
+* **Women's coxless four**: 40 competitors
+* **Men's lightweight double sculls**: 36 competitors (Note: this has 36, which is not *more* than 36)
+* **Women's lightweight double sculls**: 36 competitors (Note: this has 36, which is not *more* than 36)
+* **Men's single sculls**: 32 competitors
+
+Listing the candidate events and their competitor counts from the provided contexts:
+* **Women's quadruple sculls**: 40 competitors (> 36)
+* **Women's coxless four**: 40 competitors (> 36)
+* **Men's lightweight double sculls**: 36 competitors (not > 36)
+* **Women's lightweight double sculls**: 36 competitors (not > 36)
+* **Men's single sculls**: 32 competitors (not > 36)
+
+Therefore, exactly **2** rowing events from the provided corpus had more than 36 competitors.",needs_manual_review,,
+graphrag,pub-058,aggregation,"According to the provided corpus, how many rowing events at the 1996 Summer Olympics had more than 39 competitors?",5,"According to the provided corpus, there are 3 rowing events at the 1996 Summer Olympics that had more than 39 competitors:
+
+- **Women's eight**: 72 competitors
+- **Men's coxless four**: 56 competitors
+- **Men's coxless pair**: 36 competitors (Note: Events with 39 or fewer competitors include the Men's double sculls with 39 competitors and the Men's lightweight double sculls with 38 competitors, which do not exceed 39).
+
+Therefore, a total of 2 events had strictly *more* than 39 competitors (Women's eight with 72 and Men's coxless four with 56).",needs_manual_review,,
+graphrag,pub-051,aggregation,"According to the provided corpus, how many canoeing events at the 2012 Summer Olympics had more than 25 competitors?",6,"According to the provided corpus, the number of competitors for each of the mentioned canoeing events at the 2012 Summer Olympics is as follows:
+
+- Men's canoe sprint C-1 1000 metres: 17 competitors (`q526367_chunk_0`)
+- Women's K-2 500 metres: 34 competitors (`q919261_chunk_0`)
+- Women's canoe sprint K-1 200 metres: 29 competitors (`q919242_chunk_0`)
+- Men's canoe sprint C-1 200m: 25 competitors (`q2390636_chunk_0`)
+- Men's canoe sprint K-1 1,000 metres: 22 competitors (`q2648878_chunk_0`)
+
+Out of these events, there were **2** canoeing events that had more than 25 competitors: the Women's K-2 500 metres (34 competitors) and the Women's canoe sprint K-1 200 metres (29 competitors).",needs_manual_review,,
+graphrag,pub-078,aggregation,"According to the provided corpus, how many athletics events at the 1996 Summer Olympics had more than 49 competitors?",7,"According to the provided data, there were 0 athletics events at the 1996 Summer Olympics that had more than 49 competitors.",needs_manual_review,,
+graphrag,pub-086,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 17 February 2010?,Shani Davis,"Based on the provided contexts, no specific speed skating event is recorded as taking place at the Richmond Olympic Oval on 17 February 2010. However, the events held on surrounding dates include the women's 1000 metres on 18 February 2010 (won by Christine Nesbitt) and the men's 1500 metres on 20 February 2010 (won by Mark Tuitert).",needs_manual_review,,
+graphrag,pub-079,multi_hop,"Who won the gold medal in the event held at Centennial Parklands, Sydney on 26 September at the 2000 Summer Olympics?",Leontien Zijlaard,"At the 2000 Summer Olympics, the gold medal in the women's individual road race held at Centennial Parklands, Sydney on 26 September was won by Leontien Zijlaard of the Netherlands (NED).",correct,,
+graphrag,pub-022,multi_hop,"Who won the gold medal in the event held at Beijing Science and TechnologyUniversity Gymnasium on August 12, 2008?",Ayumi Tanimoto,"Based on the provided contexts, the event held at the Beijing Science and Technology University Gymnasium on August 12, 2008, is not specifically detailed for that exact date with a gold medalist in the provided snippets. However, multiple events took place at this venue during the 2008 Summer Olympics:
+
+- **Women's +78 kg (Judo)**: Held on August 15, 2008, where **Tong Wen** of China won the gold medal.
+- **Women's 49 kg (Taekwondo)**: Held on August 20, 2008, where **Wu Jingyu** of China won the gold medal.
+- **Women's +67 kg (Taekwondo)**: Held on August 23, 2008, where **María del Rosario Espinoza** of Mexico won the gold medal.",needs_manual_review,,
+graphrag,pub-081,multi_hop,"Who won the gold medal in the event held at Beijing Shooting Range Hall on August 10, 2008?",Guo Wenjun,"The gold medal in the Women's 10 metre air pistol event held at the Beijing Shooting Range Hall on August 10, 2008, was won by **Guo Wenjun** of China.",correct,,
+graphrag,pub-038,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 23 September 2000?,Pyrros Dimas,"Based on the provided information, the gold medal in the men's 94 kg weightlifting event held at the Sydney Convention and Exhibition Centre on 24 September 2000 was won by Akakios Kakiasvilis.",needs_manual_review,,
+graphrag,pub-028,multi_hop,"Who won the gold medal in the event held at Olympic Aquatic Centre on August 14, 2004 (heats & final)?",Michael Phelps,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-062,temporal,"Who won the gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016?",Tirunesh Dibaba,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London, United Kingdom. At these games, the gold medal in the women's 10,000 metres athletics event was won by Tirunesh Dibaba of Ethiopia.",correct,,
+graphrag,pub-002,temporal,Who won the gold medal in the men's 20 kilometres walk athletics event at the Summer Olympics held immediately before 2016?,Chen Ding,The Summer Olympics held immediately before the 2016 Summer Olympics were the 2012 Summer Olympics in London. The gold medal in the men's 20 kilometres walk athletics event at the 2012 Summer Olympics was won by Chen Ding of China.,correct,,
+graphrag,pub-016,temporal,Who won the gold medal in the men's sprint biathlon event at the Winter Olympics held immediately before 2022?,Arnd Peiffer,"The Winter Olympics held immediately before 2022 were the 2018 Winter Olympics in Pyeongchang, South Korea. The gold medal in the men's sprint biathlon event at these games was won by Arnd Peiffer of Germany with a win value of 23:38.8.",correct,,
+graphrag,pub-055,temporal,Who won the gold medal in the men's 80 kg taekwondo event at the Summer Olympics held immediately before 2016?,Sebastián Crismanich,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-094,temporal,Who won the gold medal in the men's greco-roman 48 kg wrestling event at the Summer Olympics held immediately before 1996?,Oleg Kucherenko,"The Summer Olympics held immediately before the 1996 Summer Olympics were the 1992 Summer Olympics. At the 1992 Summer Olympics, the gold medal in the men's Greco-Roman 48 kg wrestling event was won by Oleg Kucherenko (competing for the Unified Team, EUN).",correct,,
+graphrag,pub-036,temporal,Who won the gold medal in the men's light flyweight boxing event at the Summer Olympics held immediately before 2016?,Zou Shiming,"The Summer Olympics held immediately before the 2016 Games were the 2012 Summer Olympics in London. At these games, the gold medal in the men's light flyweight boxing event was won by Zou Shiming representing China.",correct,,
+graphrag,pub-044,superlative,"According to the provided corpus, which fencing event at the 2008 Summer Olympics had the highest number of competitors?",Fencing at the 2008 Summer Olympics – Men's épée,"According to the provided corpus, the fencing events at the 2008 Summer Olympics had the following number of competitors:
+
+* **Men's foil:** 26 competitors
+* **Men's épée:** 41 competitors
+* **Women's sabre:** 39 competitors
+* **Men's sabre:** 40 competitors
+
+Comparing these values, the **Men's épée** event had the highest number of competitors with 41.",correct,,
+graphrag,pub-088,superlative,"According to the provided corpus, which alpine skiing event at the 1992 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1992 Winter Olympics – Men's giant slalom,"According to the provided corpus, the alpine skiing events at the 1992 Winter Olympics had the following number of competitors:
+
+- Women's combined: 40 competitors
+- Men's combined: 66 competitors
+- Men's giant slalom: 131 competitors
+- Women's giant slalom: 69 competitors
+- Men's slalom: 119 competitors
+
+Among these events, the **Men's giant slalom** had the highest number of competitors, with a total of 131 competitors.",correct,,
+graphrag,pub-008,superlative,"According to the provided corpus, which sailing event at the 2000 Summer Olympics had the highest number of competitors?",Sailing at the 2000 Summer Olympics – Soling,"Based on the provided corpus, the sailing events at the 2000 Summer Olympics had the following number of competitors:
+
+- **Open Two Person Keelboat (Star):** 32 competitors
+- **Open Multihull (Tornado):** 32 competitors
+- **Men's Mistral One Design:** 36 competitors
+- **Finn:** 25 competitors
+- **Open One Person Dinghy (Laser):** 43 competitors
+
+Among these events, the **Open One Person Dinghy (Laser)** sailing event had the highest number of competitors with 43 participants.",needs_manual_review,,
+graphrag,pub-084,superlative,"According to the provided corpus, which fencing event at the 1992 Summer Olympics had the highest number of competitors?",Fencing at the 1992 Summer Olympics – Men's épée,"Based on the provided corpus, here are the competitor counts for the fencing events at the 1992 Summer Olympics mentioned:
+
+* **Men's sabre**: 44 competitors
+* **Men's team épée**: 60 competitors
+* **Men's épée**: 70 competitors
+
+Comparing these events, the **men's épée** event had the highest number of competitors with 70 participants.",correct,,
+graphrag,pub-021,superlative,"According to the provided corpus, which alpine skiing event at the 1988 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1988 Winter Olympics – Men's giant slalom,"Based on the provided corpus for the alpine skiing events at the 1988 Winter Olympics, the number of competitors for each event is as follows:
+
+- **Men's giant slalom**: 117 competitors
+- **Men's slalom**: 109 competitors
+- **Men's combined**: 56 competitors
+- **Men's downhill**: 51 competitors
+- **Women's combined**: 39 competitors
+
+Among these events, the **Men's giant slalom** had the highest number of competitors, with a total of 117 participants.",correct,,
+graphrag,pub-085,superlative,"According to the provided corpus, which sailing event at the 2008 Summer Olympics had the highest number of competitors?",Sailing at the 2008 Summer Olympics – Men's 470,"According to the provided corpus, here are the competitor counts for the respective sailing events at the 2008 Summer Olympics:
+
+* **Women's Yngling:** 45 competitors
+* **Mixed Finn:** 26 competitors
+* **Men's Laser:** 43 competitors
+* **Men's Star:** 32 competitors
+* **Women's 470:** 38 competitors
+
+Based on these numbers, the **Women's Yngling** event had the highest number of competitors with 45 sailors.",correct,,
+graphrag,pub-001,aggregation,"According to the provided corpus, how many biathlon events at the 2018 Winter Olympics had more than 73 competitors?",5,"According to the provided corpus, there are **2** biathlon events at the 2018 Winter Olympics that had more than 73 competitors:
+
+* **Mixed relay**: 80 competitors
+* **Men's relay**: 73 competitors (Note: While the men's relay has 73 competitors, the mixed relay exceeds the threshold with 80 competitors. Additionally, the men's mass start and women's mass start both had 30 competitors, and the women's relay had 72 competitors.)
+
+Therefore, counting the events with strictly more than 73 competitors, only the Mixed relay (80) meets the criterion. (If interpreted as 73 or more, the Men's relay would also be included, but strictly more than 73 applies to the Mixed relay).",needs_manual_review,,
+graphrag,pub-003,aggregation,"According to the provided corpus, how many shooting events at the 2004 Summer Olympics had more than 37 competitors?",8,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-004,superlative,"According to the provided corpus, which athletics event at the 2008 Summer Olympics had the highest number of competitors?",Athletics at the 2008 Summer Olympics – Men's marathon,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-005,multi_hop,Who won the gold medal in the event held at Olympic Weightlifting Gymnasium on 20 September 1988?,Naim Süleymanoğlu,"At the Olympic Weightlifting Gymnasium on 20 September 1988, the gold medal in the men's 60 kg weightlifting event was won by Naim Süleymanoğlu representing Turkey.",correct,,
+graphrag,pub-006,temporal,Who won the gold medal in the women's 57 kg judo event at the Summer Olympics held immediately before 2020?,Rafaela Silva,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+graphrag,pub-007,temporal,Who won the gold medal in the men's pole vault athletics event at the Summer Olympics held immediately before 2016?,Renaud Lavillenie,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London, United Kingdom. At these Games, the gold medal in the men's pole vault athletics event was won by **Renaud Lavillenie** of France.",correct,,
+graphrag,pub-009,lookup,How many nations competed in Sailing at the 2016 Summer Olympics – Women's RS:X?,26,"At the 2016 Summer Olympics Women's RS:X sailing event, 26 nations competed.",correct,,
+graphrag,pub-010,aggregation,"According to the provided corpus, how many cycling events at the 2000 Summer Olympics had more than 30 competitors?",4,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+graphrag,pub-011,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 14 February 2010?,Martina Sáblíková,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-013,temporal,Who won the gold medal in the women's 200 metre freestyle swimming event at the Summer Olympics held immediately before 2016?,Allison Schmitt,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-014,multi_hop,Who won the gold medal in the event held at Riocentro – Pavilion 4 on 11–19 August at the 2016 Summer Olympics?,Carolina Marín,"At the 2016 Summer Olympics, the badminton women's singles tournament took place at Riocentro – Pavilion 4 from 11–19 August (and 11–20 August). Spain's Carolina Marín won the gold medal in this event by defeating India's P. V. Sindhu in the final with scores of 19–21, 21–12, 21–15.",correct,,
+graphrag,pub-015,multi_hop,Who won the gold medal in the event held at London Velopark on 3 to 4 August at the 2012 Summer Olympics?,Dani KingLaura TrottJoanna Rowsell,"At the 2012 Summer Olympics, the event held at the London Velopark from 2 to 3 August was the men's team pursuit. The gold medal was won by the team from Great Britain, consisting of Ed Clancy, Geraint Thomas, Steven Burke, and Peter Kennaugh.",needs_manual_review,,
+graphrag,pub-017,multi_hop,Who won the gold medal in the event held at Royal Artillery Barracks on 28 July 2012?,Yi Siling,The gold medal in the Women's 10 metre air rifle event held at the Royal Artillery Barracks on 28 July 2012 was won by Yi Siling of China.,correct,,
+graphrag,pub-018,temporal,Who won the gold medal in the men's freestyle 82 kg wrestling event at the Summer Olympics held immediately before 1996?,Kevin Jackson,"The Summer Olympics held immediately before 1996 were the 1992 Summer Olympics in Barcelona. At these games, Kevin Jackson won the gold medal in the men's freestyle 82 kg wrestling event.",correct,,
+graphrag,pub-019,aggregation,"According to the provided corpus, how many fencing events at the 1988 Summer Olympics had more than 68 competitors?",3,"According to the provided corpus, there was **1** fencing event at the 1988 Summer Olympics that had more than 68 competitors: the Men's team foil event, which had 76 competitors.
+
+Here are the competitor counts for the referenced events:
+- **Men's team foil**: 76 competitors (`q5443138_chunk_0`)
+- **Men's foil**: 68 competitors (`q5443136_chunk_0`)
+- **Women's team foil**: 60 competitors (`q5443145_chunk_0`)
+- **Women's foil**: 45 competitors (`q5443144_chunk_0`)
+- **Men's sabre**: 40 competitors (`q5443137_chunk_0`)
+
+Therefore, only the Men's team foil event exceeds the threshold of 68 competitors.",needs_manual_review,,
+graphrag,pub-020,aggregation,"According to the provided corpus, how many alpine skiing events at the 2014 Winter Olympics had more than 63 competitors?",4,"According to the provided corpus, there were 2 alpine skiing events at the 2014 Winter Olympics that had more than 63 competitors:
+
+* **Men's giant slalom**: 109 competitors
+* **Men's slalom**: 115 competitors
+
+In comparison, the other alpine skiing events mentioned had fewer competitors:
+* **Women's combined**: 36 competitors
+* **Women's downhill**: 41 competitors",needs_manual_review,,
+graphrag,pub-023,multi_hop,"Who won the gold medal in the event held at Estadi Olímpic Lluís Companys, Barcelona on August 9 at the 1992 Summer Olympics?",Hwang Young-Cho,"Based on the provided contexts, there is no mention of an event held on August 9, 1992, at the Estadi Olímpic Lluís Companys in Barcelona during the 1992 Summer Olympics. The available records mention events held on August 1, August 2, August 3, and August 5, but none specify an event on August 9.",needs_manual_review,,
+graphrag,pub-024,aggregation,"According to the provided corpus, how many biathlon events at the 2002 Winter Olympics had more than 74 competitors?",3,"According to the provided corpus, there were 2 biathlon events at the 2002 Winter Olympics that had more than 74 competitors:
+
+- **Men's biathlon relay**: 76 competitors
+- **Men's biathlon sprint**: 87 competitors",needs_manual_review,,
+graphrag,pub-025,lookup,How many nations competed in Judo at the 2016 Summer Olympics – Women's 57 kg?,23,A total of 23 nations competed in the Judo at the 2016 Summer Olympics – Women's 57 kg event.,correct,,
+graphrag,pub-026,temporal,Who won the gold medal in the men's cross-country cycling event at the Summer Olympics held immediately before 2016?,Jaroslav Kulhavý,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-027,aggregation,"According to the provided corpus, how many fencing events at the 2008 Summer Olympics had more than 32 competitors?",4,"Based on the provided corpus, several fencing events at the 2008 Summer Olympics had more than 32 competitors:
+
+- **Women's sabre**: 39 competitors (`q2570068_chunk_0`)
+- **Men's sabre**: 40 competitors (`q2570149_chunk_0`)
+- **Men's épée**: 41 competitors (`q2570052_chunk_1`)
+
+In total, there were 3 events with more than 32 competitors among those detailed in the corpus.",needs_manual_review,,
+graphrag,pub-029,lookup,How many nations competed in Shooting at the 2012 Summer Olympics – Men's 50 metre rifle three positions?,28,A total of 28 nations competed in the Men's 50 metre rifle three positions event at the 2012 Summer Olympics.,correct,,
+graphrag,pub-030,multi_hop,Who won the gold medal in the event held at Carioca Arena 3 on 6 August 2016?,Emese Szász,"Based on the provided contexts, no event is recorded as taking place at Carioca Arena 3 specifically on 6 August 2016. However, events held at Carioca Arena 3 during the 2016 Summer Olympics include:
+
+- **Women's sabre (Fencing)**: Held on 8 August 2016, where **Yana Egorian** won the gold medal.
+- **Men's 68 kg (Taekwondo)**: Held on 18 August 2016, where Ahmad Abughaush won the gold medal.
+- **Women's 57 kg (Taekwondo)**: Held on 18 August 2016, where Jade Jones won the gold medal.
+- **Men's 80 kg (Taekwondo)**: Held on 19 August 2016, where Cheick Sallah Cissé won the gold medal.",needs_manual_review,,
+graphrag,pub-031,multi_hop,Who won the gold medal in the event held at Nikaia Olympic Weightlifting Hall on 24 August 2004?,Dmitry Berestov,"Based on the provided contexts, there is no mention of a weightlifting event held at the Nikaia Olympic Weightlifting Hall on 24 August 2004, nor is there any record of who won a gold medal on that specific date. The available contexts only cover events that took place on August 14, 15, 16, and 21, 2004.",needs_manual_review,,
+graphrag,pub-032,lookup,How many nations competed in Gymnastics at the 2016 Summer Olympics – Men's horizontal bar?,34,"At the 2016 Summer Olympics, there were 34 nations that competed in Gymnastics – Men's horizontal bar.",correct,,
+graphrag,pub-037,superlative,"According to the provided corpus, which shooting event at the 2008 Summer Olympics had the highest number of competitors?",Shooting at the 2008 Summer Olympics – Men's 50 metre rifle prone,"According to the provided corpus, the shooting events at the 2008 Summer Olympics had the following number of competitors:
+
+- Men's 50 metre rifle prone: 56 competitors
+- Men's 50 metre rifle three positions: 49 competitors
+- Women's 25 metre pistol: 41 competitors
+- Men's trap: 35 competitors
+
+Comparing these events, the **Men's 50 metre rifle prone** event had the highest number of competitors with 56 participants.",correct,,
+graphrag,pub-039,temporal,Who won the gold medal in the women's discus throw athletics event at the Summer Olympics held immediately before 2016?,Sandra Perković,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics. According to the records for the women's discus throw event at the 2016 Summer Olympics, the previous edition took place in 2012, where Sandra Perković won the gold medal.",correct,,
+graphrag,pub-040,temporal,Who won the gold medal in the individual normal hill/10 km nordic combined event at the Winter Olympics held immediately before 2014?,Jason Lamy Chappuis,"The Winter Olympics immediately held before 2014 were the 2010 Winter Olympics in Vancouver, Canada. In the individual normal hill/10 km Nordic combined event at those games, the gold medal was won by **Jason Lamy Chappuis** representing France.",correct,,
+graphrag,pub-041,multi_hop,Who won the gold medal in the event held at Mountain Bike Centre on 21 August at the 2016 Summer Olympics?,Nino Schurter,"At the 2016 Summer Olympics, the gold medal in the men's cross-country cycling event held at the Mountain Bike Centre on 21 August was won by Nino Schurter representing Switzerland.",correct,,
+graphrag,pub-042,lookup,How many nations competed in Alpine skiing at the 1992 Winter Olympics – Men's giant slalom?,47,"At the 1992 Winter Olympics, 47 nations competed in the Men's giant slalom event.",correct,,
+graphrag,pub-043,multi_hop,Who won the gold medal in the event held at Val-d'Isère on 16 February 1992?,Kjetil André Aamodt,The gold medal in the men's super-G event held at Val-d'Isère on 16 February 1992 was won by Kjetil André Aamodt of Norway.,correct,,
+graphrag,pub-045,aggregation,"According to the provided corpus, how many athletics events at the 2004 Summer Olympics had more than 41 competitors?",20,"Based on the provided corpus, there are 4 athletics events at the 2004 Summer Olympics that had more than 41 competitors:
+
+* **Men's 3000 metres steeplechase**: 41 competitors
+* **Women's 400 metres**: 42 competitors
+* **Men's 200 metres**: 54 competitors
+* **Women's javelin throw**: 45 competitors
+
+*(Note: Women's 400 metres hurdles had 34 competitors, which is not more than 41.)*",needs_manual_review,,
+graphrag,pub-046,lookup,How many nations competed in Cross-country skiing at the 2010 Winter Olympics – Men's 15 kilometre freestyle?,50,A total of 50 nations competed in the Cross-country skiing at the 2010 Winter Olympics – Men's 15 kilometre freestyle event.,correct,,
+graphrag,pub-047,lookup,How many nations competed in Athletics at the 1992 Summer Olympics – Men's 3000 metres steeplechase?,24,There were 24 nations that competed in Athletics at the 1992 Summer Olympics – Men's 3000 metres steeplechase.,correct,,
+graphrag,pub-048,temporal,Who won the gold medal in the men's 68 kg taekwondo event at the Summer Olympics held immediately before 2016?,Servet Tazegül,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At these games, Servet Tazegül representing Turkey won the gold medal in the men's 68 kg taekwondo event.",correct,,
+graphrag,pub-049,temporal,Who won the gold medal in the men's pursuit biathlon event at the Winter Olympics held immediately before 2022?,Martin Fourcade,"The Winter Olympics held immediately before the 2022 Winter Games were the 2018 Winter Olympics in Pyeongchang, South Korea. The gold medal in the men's pursuit biathlon event at the 2018 Winter Olympics was won by Martin Fourcade of France.",correct,,
+graphrag,pub-050,multi_hop,Who won the gold medal in the event held at Adler Arena Skating Center on 11 February 2014?,Lee Sang-hwa,Lee Sang-hwa won the gold medal in the women's 500 metres speed skating event held at the Adler Arena Skating Center on 11 February 2014.,correct,,
+graphrag,pub-053,superlative,"According to the provided corpus, which shooting event at the 2016 Summer Olympics had the highest number of competitors?",Shooting at the 2016 Summer Olympics – Women's 10 metre air rifle,"Based on the provided corpus, here are the competitor counts for the shooting events at the 2016 Summer Olympics mentioned in the records:
+
+* Women's 50 metre rifle three positions: 37 competitors
+* Men's 50 metre rifle prone: 47 competitors
+* Men's 50 metre pistol: 41 competitors
+* Women's 25 metre pistol: 40 competitors
+* Men's 50 metre rifle three positions: 44 competitors
+
+Comparing these values, the shooting event with the highest number of competitors was the **Men's 50 metre rifle prone** event, with 47 competitors.",needs_manual_review,,
+graphrag,pub-054,lookup,How many nations competed in Marathon swimming at the 2016 Summer Olympics – Women's 10 kilometre?,24,A total of 24 nations competed in the Women's 10 kilometre marathon swimming event at the 2016 Summer Olympics.,correct,,
+graphrag,pub-056,temporal,Who won the gold medal in the men's 30 kilometre pursuit cross-country skiing event at the Winter Olympics held immediately before 2010?,Yevgeny Dementyev,"The Winter Olympics held immediately before 2010 were the 2006 Winter Olympics in Turin, Italy. The gold medal in the men's 30 kilometre pursuit cross-country skiing event at those Games was won by Yevgeny Dementyev of Russia, with a winning time of 1:17:00.8.",correct,,
+graphrag,pub-057,temporal,Who won the gold medal in the women's 200 metres athletics event at the Summer Olympics held immediately before 2016?,Allyson Felix,"The Summer Olympics held immediately before the 2016 Games were the 2012 Summer Olympics in London. In the women's 200 metres athletics event at those games, the gold medal was won by Allyson Felix representing the United States.",correct,,
+graphrag,pub-059,temporal,Who won the gold medal in the women's sprint biathlon event at the Winter Olympics held immediately before 2022?,Laura Dahlmeier,"The Winter Olympics held immediately before 2022 were the 2018 Winter Olympics in Pyeongchang, South Korea. The gold medal in the women's sprint biathlon event at these games was won by Laura Dahlmeier of Germany.",correct,,
+graphrag,pub-060,multi_hop,Who won the gold medal in the event held at ExCeL Exhibition Centre on 30 July at the 2012 Summer Olympics?,Yana Shemyakina,Yana Shemyakina from Ukraine won the gold medal in the women's épée fencing event held at the ExCeL Exhibition Centre on 30 July at the 2012 Summer Olympics.,correct,,
+graphrag,pub-061,lookup,How many nations competed in Boxing at the 1988 Summer Olympics – Light flyweight?,34,"At the 1988 Summer Olympics, 34 nations competed in the men's light flyweight boxing event.",correct,,
+graphrag,pub-063,lookup,How many nations competed in Swimming at the 1988 Summer Olympics – Men's 200 metre freestyle?,41,A total of 41 nations competed in the Men's 200 metre freestyle event at the 1988 Summer Olympics.,correct,,
+graphrag,pub-064,multi_hop,Who won the gold medal in the event held at ANZ Stadium on 22 September 2000 (heats)25 September 2000 (final)?,Gabriela Szabo,"At the 2000 Summer Olympics events held at Stadium Australia (also referred to as ANZ Stadium) with heats on 22 September 2000 and the final on 25 September 2000, the gold medals were won by:
+
+- **Men's 10,000 metres**: Haile Gebrselassie of Ethiopia (with a winning time of 27:18.20)
+- **Women's 5000 metres**: Gabriela Szabo of Romania",correct,,
+graphrag,pub-065,aggregation,"According to the provided corpus, how many biathlon events at the 2014 Winter Olympics had more than 68 competitors?",5,"Based on the provided corpus, there were 2 biathlon events at the 2014 Winter Olympics that had more than 68 competitors:
+
+- **Men's individual**: 89 competitors
+- **Men's relay**: 76 competitors
+
+(Note: The women's relay had exactly 68 competitors, and the women's mass start had 30 competitors.)",needs_manual_review,,
+graphrag,pub-066,superlative,"According to the provided corpus, which weightlifting event at the 1992 Summer Olympics had the highest number of competitors?",Weightlifting at the 1992 Summer Olympics – Men's 75 kg,"Based on the provided corpus, here are the competitor counts for the weightlifting events at the 1992 Summer Olympics:
+
+* Men's 52 kg: 17 competitors
+* Men's 56 kg: 22 competitors
+* Men's 75 kg: 34 competitors
+* Men's 90 kg: 23 competitors
+* Men's +110 kg: 20 competitors
+
+Among these events, the Men's 75 kg weightlifting event had the highest number of competitors, with a total of 34 competitors.",correct,,
+graphrag,pub-067,multi_hop,Who won the gold medal in the event held at North Greenwich Arena on 4 August at the 2012 Summer Olympics?,Rosannagh MacLennan,"At the 2012 Summer Olympics, the gold medal for the women's trampoline event held at the North Greenwich Arena on 4 August was won by Rosannagh MacLennan representing Canada.",correct,,
+graphrag,pub-069,aggregation,"According to the provided corpus, how many fencing events at the 2000 Summer Olympics had more than 39 competitors?",3,"According to the provided corpus, there was **1** fencing event at the 2000 Summer Olympics that had more than 39 competitors: the **Women's foil** event, which featured 40 competitors.
+
+For comparison, other individual events mentioned in the corpus had the following number of competitors:
+- **Men's sabre**: 39 competitors
+- **Women's épée**: 39 competitors",needs_manual_review,,
+graphrag,pub-070,aggregation,"According to the provided corpus, how many speed skating events at the 2010 Winter Olympics had more than 36 competitors?",3,"Based on the provided corpus, there are **2** speed skating events at the 2010 Winter Olympics that had more than 36 competitors:
+
+1. **Men's 500 metres**: 39 competitors
+2. **Men's 1500 metres**: 37 competitors
+
+(Note: The Women's 500 metres, Women's 1000 metres, and Women's 1500 metres events each had exactly 36 competitors.)",needs_manual_review,,
+graphrag,pub-072,temporal,Who won the gold medal in the women's 500 metres speed skating event at the Winter Olympics held immediately before 2014?,Lee Sang-hwa,"The Winter Olympics held immediately before 2014 were the 2010 Winter Olympics in Vancouver. In the women's 500 metres speed skating event at these games, Lee Sang-hwa representing South Korea won the gold medal.",correct,,
+graphrag,pub-073,multi_hop,Who won the gold medal in the event held at Sydney International Shooting Centre on 21 September 2000 (slow)22 September 2000 (fast)?,Yang Ling,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-075,lookup,How many nations competed in Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle?,32,A total of 32 nations competed in the Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle event.,correct,,
+graphrag,pub-076,multi_hop,"Who won the gold medal in the event held at Sestriere on February 24, 2006?",Julia Mancuso,"At the 2006 Winter Olympics event held at Sestriere on February 24, 2006, the gold medal for the women's slalom was won by Anja Pärson of Sweden.",needs_manual_review,,
+graphrag,pub-077,multi_hop,"Who won the gold medal in the event held at Xiaohaituo Bobsleigh and Luge TrackBeijing on 13, 14 February 2022?",Kaillie Humphries,The gold medal in the women's monobob event held at the Xiaohaituo Bobsleigh and Luge Track in Beijing on 13 and 14 February 2022 was won by Kaillie Humphries representing the United States.,correct,,
+graphrag,pub-080,lookup,How many nations competed in Beach volleyball at the 2008 Summer Olympics – Women's tournament?,17,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-083,multi_hop,"Who won the gold medal in the event held at Kvitfjell and Hafjell on February 20–21, 1994?",Pernilla Wiberg,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-087,aggregation,"According to the provided corpus, how many athletics events at the 1988 Summer Olympics had more than 41 competitors?",17,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+graphrag,pub-089,aggregation,"According to the provided corpus, how many boxing events at the 1988 Summer Olympics had more than 39 competitors?",5,"Based on the provided corpus, here are the boxing events at the 1988 Summer Olympics with their respective competitor counts:
+
+- **Lightweight event (`q10572462_chunk_0`)**: 39 competitors
+- **Featherweight event (`q10495988_chunk_0`)**: 48 competitors
+- **Bantamweight event (`q10426128_chunk_0`)**: 48 competitors
+- **Light heavyweight event (`q10572432_chunk_0`)**: 26 competitors
+- **Light welterweight event (`q10572440_chunk_0`)**: 45 competitors
+
+Comparing these values against the threshold of more than 39 competitors:
+- Light heavyweight (26) is not more than 39.
+- Lightweight (39) is not more than 39.
+- Light welterweight (45) is more than 39.
+- Featherweight (48) is more than 39.
+- Bantamweight (48) is more than 39.
+
+Therefore, there were **3** boxing events at the 1988 Summer Olympics that had more than 39 competitors.",needs_manual_review,,
+graphrag,pub-090,temporal,Who won the gold medal in the men's greco-roman 96 kg wrestling event at the Summer Olympics held immediately before 2012?,Aslanbek Khushtov,"At the 2008 Summer Olympics, which were held immediately before the 2012 Summer Olympics, Aslanbek Khushtov won the gold medal in the men's Greco-Roman 96 kg wrestling event.",correct,,
+graphrag,pub-091,lookup,How many nations competed in Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg?,18,There were 18 nations that competed in Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg.,correct,,
+graphrag,pub-092,aggregation,"According to the provided corpus, how many shooting events at the 1992 Summer Olympics had more than 44 competitors?",6,"Based on the provided corpus, there was **1** shooting event at the 1992 Summer Olympics that had more than 44 competitors:
+
+* **Men's 50 metre rifle prone**: 52 competitors (`q7500768_chunk_0`)
+
+For comparison, the other events mentioned in the provided records had 44 or fewer competitors:
+* **Men's 50 metre pistol**: 44 competitors (`q7500761_chunk_0`)
+* **Men's 10 metre air rifle**: 44 competitors (`q7500758_chunk_0`)
+* **Women's 50 metre rifle three positions**: 36 competitors (`q7500779_chunk_0`)",needs_manual_review,,
+graphrag,pub-093,aggregation,"According to the provided corpus, how many biathlon events at the 2006 Winter Olympics had more than 72 competitors?",4,"According to the provided corpus, there were 2 biathlon events at the 2006 Winter Olympics that had more than 72 competitors:
+
+- **Women's sprint**: had 84 competitors.
+- **Women's individual**: had 82 competitors.
+
+(Note: The Women's relay had exactly 72 competitors, the Women's mass start had 30 competitors, and the Men's pursuit had 57 competitors.)",needs_manual_review,,
+graphrag,pub-095,multi_hop,Who won the gold medal in the event held at Beijing National Stadium on 16 August 2008?,Valerie Vili,"The gold medal in the men's 100 metres event held at the Beijing National Stadium on 16 August 2008 was won by Usain Bolt of Jamaica, who finished with a world record time of 9.69 seconds.",needs_manual_review,,
+graphrag,pub-096,multi_hop,Who won the gold medal in the event held at Riocentro – Pavilion 6 on 10–21 August 2016?,Fazliddin Gaibnazarov,"Based on the provided contexts, there is no event listed that took place specifically on ""10–21 August 2016"" at Riocentro – Pavilion 6. However, several badminton and table tennis events took place at Riocentro during the 2016 Summer Olympics across different venues (such as Pavilion 4 and Riocentro generally) and dates:
+
+- **Men's Singles Table Tennis** (Venue: Riocentro, Date: 6–11 August 2016): **Ma Long** won the gold medal.
+- **Men's Singles Badminton** (Venue: Riocentro - Pavilion 4, Date: 11–20 August 2016): **Chen Long** won the gold medal.
+- **Women's Singles Badminton** (Venue: Riocentro - Pavilion 4, Date: 11–19 / 11–20 August 2016): **Carolina Marín** won the gold medal.
+- **Mixed Doubles Badminton** (Venue: Riocentro - Pavilion 4, Date: 11–17 August 2016): **Tontowi Ahmad and Liliyana Natsir** won the gold medal.",needs_manual_review,,
+graphrag,pub-097,temporal,Who won the gold medal in the women's épée fencing event at the Summer Olympics held immediately before 2016?,Yana Shemyakina,"At the 2016 Summer Olympics, the women's épée fencing event took place. (Note: The Summer Olympics held immediately before 2016 was the 2012 Summer Olympics, but the provided context details the 2016 Summer Olympics event where Hungary's Emese Szász won the gold medal in the women's épée competition.)",needs_manual_review,,
+graphrag,pub-098,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 18 September to 1 October 2000?,Bekzat Sattarkhanov,The gold medal in the men's flyweight boxing competition held at the Sydney Convention and Exhibition Centre from 19 September to 1 October 2000 was won by Wijan Ponlid from Thailand.,needs_manual_review,,
+graphrag,pub-099,multi_hop,Who won the gold medal in the event held at Laura Biathlon & Ski Complex on 22 February 2014?,Erik LesserDaniel BöhmArnd PeifferSimon Schempp,"On 22 February 2014, two events were held at the Laura Biathlon & Ski Complex, and their respective gold medal winners were:
+
+* **Women's 30 kilometre freestyle cross-country skiing:** Marit Bjørgen (representing Norway)
+* **Men's relay biathlon:** The German team consisting of Erik Lesser, Daniel Böhm, Arnd Peiffer, and Simon Schempp",needs_manual_review,,
+graphrag,pub-100,temporal,Who won the gold medal in the women's 200 metre backstroke swimming event at the Summer Olympics held immediately before 2016?,Missy Franklin,"The Summer Olympics held immediately before the 2016 Games were the 2012 Summer Olympics in London. At these games, Missy Franklin from the United States won the gold medal in the women's 200 metre backstroke swimming event with a time of 2:04.06.",correct,,
+normal_rag,pub-071,lookup,How many nations competed in Biathlon at the 2018 Winter Olympics – Women's pursuit?,24,A total of 24 nations competed in the Biathlon at the 2018 Winter Olympics – Women's pursuit event.,correct,,
+normal_rag,pub-068,lookup,How many nations competed in Cycling at the 2012 Summer Olympics – Women's cross-country?,24,A total of 24 nations competed in Cycling at the 2012 Summer Olympics – Women's cross-country.,correct,,
+normal_rag,pub-034,lookup,How many nations competed in Figure skating at the 2010 Winter Olympics – Women's singles?,23,A total of 23 nations competed in the Figure skating at the 2010 Winter Olympics – Women's singles competition.,correct,,
+normal_rag,pub-052,lookup,How many nations competed in Biathlon at the 2022 Winter Olympics – Women's relay?,20,A total of 20 nations competed in the Biathlon at the 2022 Winter Olympics – Women's relay.,correct,,
+normal_rag,pub-035,lookup,How many nations competed in Shooting at the 1996 Summer Olympics – Men's 50 metre rifle three positions?,30,There were 30 nations that competed in the Men's 50 metre rifle three positions event at the 1996 Summer Olympics.,correct,,
+normal_rag,pub-074,lookup,How many nations competed in Cross-country skiing at the 2006 Winter Olympics – Women's 4 × 5 kilometre relay?,17,There were 17 nations that competed in the Cross-country skiing at the 2006 Winter Olympics – Women's 4 × 5 kilometre relay.,correct,,
+normal_rag,pub-082,aggregation,"According to the provided corpus, how many swimming events at the 1996 Summer Olympics had more than 42 competitors?",12,"According to the provided corpus, there are **0** swimming events at the 1996 Summer Olympics that had more than 42 competitors. 
+
+Here is the breakdown of the competitor counts for the events included in the corpus:
+* **Women's 400 metre individual medley**: 31 competitors
+* **Women's 200 metre freestyle**: 42 competitors
+* **Men's 400 metre freestyle**: 35 competitors
+* **Women's 200 metre breaststroke**: 42 competitors
+* **Men's 200 metre breaststroke**: 36 competitors
+
+Since none of these events exceed 42 competitors (the highest count is 42), the answer is 0.",needs_manual_review,,
+normal_rag,pub-033,aggregation,"According to the provided corpus, how many judo events at the 2004 Summer Olympics had more than 32 competitors?",4,"Based on the provided corpus, there are **2** judo events at the 2004 Summer Olympics that had more than 32 competitors:
+
+1. **Men's +100 kg**: Had **33** competitors.
+2. **Men's 73 kg**: Had **34** competitors.
+
+In comparison, the other provided weight classes had fewer competitors (Women's +78 kg with 22, Women's 70 kg with 23, and Women's 52 kg with 24). Therefore, exactly 2 events featured more than 32 competitors.",needs_manual_review,,
+normal_rag,pub-012,aggregation,"According to the provided corpus, how many rowing events at the 2020 Summer Olympics had more than 36 competitors?",6,"According to the provided corpus, there were 2 rowing events at the 2020 Summer Olympics that had more than 36 competitors:
+
+* **Women's coxless four**: 40 competitors
+* **Women's quadruple sculls**: 40 competitors
+
+(Note: The men's lightweight double sculls and women's lightweight double sculls each had 36 competitors, while the men's single sculls had 32 competitors.)",needs_manual_review,,
+normal_rag,pub-058,aggregation,"According to the provided corpus, how many rowing events at the 1996 Summer Olympics had more than 39 competitors?",5,"According to the provided corpus, there are **2** rowing events at the 1996 Summer Olympics that had more than 39 competitors:
+
+* **Men's coxless four** (`q22964456_chunk_0`): 56 competitors
+* **Women's eight** (`q22964454_chunk_0`): 72 competitors
+
+For reference, the other mentioned events had 39 or fewer competitors:
+* Men's lightweight double sculls (`q17515790_chunk_0`): 38 competitors
+* Men's coxless pair (`q22964459_chunk_0`): 36 competitors
+* Men's double sculls (`q22964455_chunk_0`): 39 competitors",needs_manual_review,,
+normal_rag,pub-051,aggregation,"According to the provided corpus, how many canoeing events at the 2012 Summer Olympics had more than 25 competitors?",6,"Based on the provided corpus, there are 2 canoeing events at the 2012 Summer Olympics that had more than 25 competitors:
+
+- **Women's K-2 500 metres**: 34 competitors
+- **Women's K-1 200 metres**: 29 competitors
+
+For comparison, the other events listed had 25 or fewer competitors:
+- Men's C-1 1000 metres: 17 competitors
+- Men's C-1 200 metres: 25 competitors
+- Men's K-1 1000 metres: 22 competitors",needs_manual_review,,
+normal_rag,pub-078,aggregation,"According to the provided corpus, how many athletics events at the 1996 Summer Olympics had more than 49 competitors?",7,"Based on the provided corpus, there are 4 athletics events at the 1996 Summer Olympics that had more than 49 competitors:
+
+- **Men's 110 metres hurdles**: 62 competitors ([Q3628792_chunk_0])
+- **Women's 100 metres**: 56 competitors ([q1426735_chunk_0])
+- **Women's 100 metres hurdles**: 44 competitors (Note: This has 44 competitors, which is not more than 49) — wait, let's look at the remaining events.
+- **Men's 400 metres**: 62 competitors ([q2308435_chunk_0])
+- **Women's 400 metres**: 49 competitors ([q942846_chunk_0])
+
+Listing the candidate events and their competitor counts:
+- Men's 110 metres hurdles: 62 competitors
+- Women's 100 metres: 56 competitors
+- Women's 100 metres hurdles: 44 competitors
+- Men's 400 metres: 62 competitors
+- Women's 400 metres: 49 competitors
+
+Out of these, the events with *more than* 49 competitors are the Men's 110 metres hurdles (62), Women's 100 metres (56), and Men's 400 metres (62). Therefore, exactly 3 of the provided events had more than 49 competitors.",needs_manual_review,,
+normal_rag,pub-086,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 17 February 2010?,Shani Davis,"Based on the records for the 2010 Winter Olympics events held at the Richmond Olympic Oval on specific dates around that time:
+
+- On **18 February 2010**, the women's 1000 metres speed skating event was held, and the gold medal was won by **Christine Nesbitt** (representing Canada).
+- *(Note: If you meant the event held on 17 February 2010 specifically, no speed skating event details for that exact date are provided in the current records, but the closest events held at the Richmond Olympic Oval during the February 2010 Games include those on February 18, 20, 21, 23, and 24.)*
+
+Please let me know if you are looking for a different sport or event that took place on 17 February 2010!",needs_manual_review,,
+normal_rag,pub-079,multi_hop,"Who won the gold medal in the event held at Centennial Parklands, Sydney on 26 September at the 2000 Summer Olympics?",Leontien Zijlaard,"At the 2000 Summer Olympics, the gold medal for the women's individual road race—held at Centennial Parklands, Sydney on 26 September—was won by Leontien Zijlaard representing the Netherlands.",correct,,
+normal_rag,pub-022,multi_hop,"Who won the gold medal in the event held at Beijing Science and TechnologyUniversity Gymnasium on August 12, 2008?",Ayumi Tanimoto,"Based on the provided records, there are no events held at the Beijing Science and Technology University Gymnasium on August 12, 2008. The events held at this venue during the 2008 Summer Olympics took place on August 15, August 20, and August 23, 2008.",needs_manual_review,,
+normal_rag,pub-081,multi_hop,"Who won the gold medal in the event held at Beijing Shooting Range Hall on August 10, 2008?",Guo Wenjun,"The gold medal in the Women's 10 metre air pistol event held at the Beijing Shooting Range Hall on August 10, 2008, was won by Guo Wenjun of China.",correct,,
+normal_rag,pub-038,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 23 September 2000?,Pyrros Dimas,"Based on the provided information, multiple events took place at the Sydney Convention and Exhibition Centre on 23 September 2000, but none of the specific event documents list a gold medal winner whose event occurred on that exact date. 
+
+However, the events held at the venue during the 2000 Summer Olympics include:
+* **Men's 94 kg weightlifting**: Won by Akakios Kakiasvilis (held on 24 September 2000)
+* **Men's 73 kg judo**: Won by Giuseppe Maddaloni (held on 18 September 2000)
+* **Men's light flyweight boxing**: Won by Brahim Asloum (held from 17 September to 30 September 2000)
+* **Men's heavyweight boxing**: Won by Félix Savón (held from 21 September to 30 September 2000)
+* **Men's Greco-Roman 58 kg wrestling**: Won by Armen Nazaryan (held from 25 September to 27 September 2000)",needs_manual_review,,
+normal_rag,pub-028,multi_hop,"Who won the gold medal in the event held at Olympic Aquatic Centre on August 14, 2004 (heats & final)?",Michael Phelps,"American swimmer Michael Phelps won the gold medal in the men's 400 metre individual medley event held at the Olympic Aquatic Centre on August 14, 2004 (heats & final).",correct,,
+normal_rag,pub-062,temporal,"Who won the gold medal in the women's 10,000 metres athletics event at the Summer Olympics held immediately before 2016?",Tirunesh Dibaba,"The Summer Olympics held immediately before the 2016 Summer Olympics were the 2012 Summer Olympics in London, United Kingdom. At these games, the gold medal in the women's 10,000 metres athletics event was won by Tirunesh Dibaba of Ethiopia with a winning time of 30:20.75.",correct,,
+normal_rag,pub-002,temporal,Who won the gold medal in the men's 20 kilometres walk athletics event at the Summer Olympics held immediately before 2016?,Chen Ding,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At these games, the gold medal in the men's 20 kilometres walk athletics event was won by Chen Ding of China.",correct,,
+normal_rag,pub-016,temporal,Who won the gold medal in the men's sprint biathlon event at the Winter Olympics held immediately before 2022?,Arnd Peiffer,"The Winter Olympics held immediately before 2022 were the 2018 Winter Olympics in Pyeongchang, South Korea. The gold medal in the men's sprint biathlon event at these games was won by Arnd Peiffer of Germany, with a winning time of 23:38.8.",correct,,
+normal_rag,pub-055,temporal,Who won the gold medal in the men's 80 kg taekwondo event at the Summer Olympics held immediately before 2016?,Sebastián Crismanich,"The Summer Olympics held immediately before the 2016 Summer Olympics were the 2012 Summer Olympics. However, the provided context for the 2012 Summer Olympics corresponds to the men's +80 kg event, where Carlo Molfetta won the gold medal. 
+
+For the men's 80 kg taekwondo event specifically, the gold medalists at the surrounding Olympic games were:
+- **2004 Summer Olympics**: Steven López (USA)
+- **2008 Summer Olympics**: Hadi Saei (IRI)
+- **2016 Summer Olympics**: Cheick Sallah Cissé (CIV)",needs_manual_review,,
+normal_rag,pub-094,temporal,Who won the gold medal in the men's greco-roman 48 kg wrestling event at the Summer Olympics held immediately before 1996?,Oleg Kucherenko,"The Summer Olympics held immediately before the 1996 Games were the 1992 Summer Olympics in Barcelona. In the men's Greco-Roman 48 kg wrestling event at the 1992 Summer Olympics, the gold medal was won by Oleg Kucherenko representing the Unified Team (EUN).",correct,,
+normal_rag,pub-036,temporal,Who won the gold medal in the men's light flyweight boxing event at the Summer Olympics held immediately before 2016?,Zou Shiming,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At these games, the gold medal in the men's light flyweight boxing event was won by Zou Shiming representing China.",correct,,
+normal_rag,pub-044,superlative,"According to the provided corpus, which fencing event at the 2008 Summer Olympics had the highest number of competitors?",Fencing at the 2008 Summer Olympics – Men's épée,"Based on the provided corpus, here are the competitor counts for the respective fencing events at the 2008 Summer Olympics:
+
+- **Men's épée**: 41 competitors
+- **Men's foil**: 26 competitors
+- **Men's sabre**: 40 competitors
+- **Women's sabre**: 39 competitors
+
+Comparing these values, the fencing event with the highest number of competitors was the **Men's épée** with 41 competitors.",correct,,
+normal_rag,pub-088,superlative,"According to the provided corpus, which alpine skiing event at the 1992 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1992 Winter Olympics – Men's giant slalom,"According to the provided corpus, the alpine skiing events at the 1992 Winter Olympics had the following number of competitors:
+
+* **Women's combined**: 40 competitors
+* **Men's giant slalom**: 131 competitors
+* **Men's slalom**: 119 competitors
+* **Men's combined**: 66 competitors
+* **Women's giant slalom**: 69 competitors
+
+Comparing these values, the **Men's giant slalom** event had the highest number of competitors with a total of 131 competitors.",correct,,
+normal_rag,pub-008,superlative,"According to the provided corpus, which sailing event at the 2000 Summer Olympics had the highest number of competitors?",Sailing at the 2000 Summer Olympics – Soling,"Based on the provided corpus, here are the competitor counts for the respective sailing events at the 2000 Summer Olympics:
+
+* Finn: 25 competitors
+* Open Multihull (Tornado): 32 competitors
+* Men's Mistral One Design: 36 competitors
+* Open Two Person Keelboat (Star): 32 competitors
+* Open One Person Dinghy (Laser): 43 competitors
+
+Among these events, the **Open One Person Dinghy (Laser)** had the highest number of competitors, with a total of 43 competitors.",needs_manual_review,,
+normal_rag,pub-084,superlative,"According to the provided corpus, which fencing event at the 1992 Summer Olympics had the highest number of competitors?",Fencing at the 1992 Summer Olympics – Men's épée,"Based on the provided corpus, here are the competitor counts for the fencing events at the 1992 Summer Olympics mentioned:
+
+- **Men's sabre**: 44 competitors
+- **Men's team épée**: 60 competitors
+- **Men's épée**: 70 competitors
+
+Among these events, the **Men's épée** had the highest number of competitors, with a total of 70 fencers.",correct,,
+normal_rag,pub-021,superlative,"According to the provided corpus, which alpine skiing event at the 1988 Winter Olympics had the highest number of competitors?",Alpine skiing at the 1988 Winter Olympics – Men's giant slalom,"According to the provided corpus, the alpine skiing events at the 1988 Winter Olympics had the following number of competitors:
+
+* Men's giant slalom: 117 competitors
+* Women's combined: 39 competitors
+* Men's downhill: 51 competitors
+* Men's combined: 56 competitors
+* Men's slalom: 109 competitors
+
+Based on these figures, the alpine skiing event with the highest number of competitors at the 1988 Winter Olympics was the **Men's giant slalom** with 117 competitors.",correct,,
+normal_rag,pub-085,superlative,"According to the provided corpus, which sailing event at the 2008 Summer Olympics had the highest number of competitors?",Sailing at the 2008 Summer Olympics – Men's 470,"According to the provided corpus, the sailing events at the 2008 Summer Olympics had the following number of competitors:
+
+- **Women's Yngling**: 45 competitors
+- **Men's Laser**: 43 competitors
+- **Women's 470**: 38 competitors
+- **Men's Star**: 32 competitors
+- **Mixed Finn**: 26 competitors
+
+Based on these figures, the sailing event with the highest number of competitors was the **Women's Yngling** with 45 competitors.",correct,,
+normal_rag,pub-001,aggregation,"According to the provided corpus, how many biathlon events at the 2018 Winter Olympics had more than 73 competitors?",5,"Based on the provided corpus, there is **1** biathlon event at the 2018 Winter Olympics that had more than 73 competitors:
+
+* **Mixed relay**: 80 competitors (`q47155555_chunk_0`)
+
+For comparison, the competitor counts for the other listed events are:
+* **Women's mass start**: 30 competitors (`q47155467_chunk_0`)
+* **Men's mass start**: 30 competitors (`q47155815_chunk_0`)
+* **Women's relay**: 72 competitors (`q47155505_chunk_0`)
+* **Men's relay**: 73 competitors (`q47155541_chunk_0`)",needs_manual_review,,
+normal_rag,pub-003,aggregation,"According to the provided corpus, how many shooting events at the 2004 Summer Olympics had more than 37 competitors?",8,"Based on the provided corpus for the 2004 Summer Olympics, here are the competitor counts for the included shooting events:
+
+- **Men's 25 metre rapid fire pistol:** 17 competitors (`q7500830_chunk_0`)
+- **Women's 25 metre pistol:** 37 competitors (`q7500838_chunk_0`)
+- **Men's 50 metre rifle three positions:** 40 competitors (`q5395306_chunk_0`)
+- **Men's 10 metre air rifle:** 47 competitors (`q7500829_chunk_0`)
+
+Among these events, two had more than 37 competitors:
+1. Men's 50 metre rifle three positions (40 competitors)
+2. Men's 10 metre air rifle (47 competitors)
+
+Therefore, there were 2 shooting events in the provided corpus that had more than 37 competitors.",needs_manual_review,,
+normal_rag,pub-004,superlative,"According to the provided corpus, which athletics event at the 2008 Summer Olympics had the highest number of competitors?",Athletics at the 2008 Summer Olympics – Men's marathon,"Based on the provided corpus, here are the competitor counts for the mentioned athletics events at the 2008 Summer Olympics:
+
+* **Men's 5000 metres**: 43 competitors
+* **Women's high jump**: 31 competitors
+* **Women's 800 metres**: 40 competitors
+* **Women's marathon**: 82 competitors
+* **Women's hammer throw**: 50 competitors
+
+Among the provided events, the **women's marathon** had the highest number of competitors, with a total of 82 participants.",correct,,
+normal_rag,pub-005,multi_hop,Who won the gold medal in the event held at Olympic Weightlifting Gymnasium on 20 September 1988?,Naim Süleymanoğlu,The gold medal in the men's 60 kg weightlifting event held at the Olympic Weightlifting Gymnasium on 20 September 1988 was won by Naim Süleymanoğlu of Turkey.,correct,,
+normal_rag,pub-006,temporal,Who won the gold medal in the women's 57 kg judo event at the Summer Olympics held immediately before 2020?,Rafaela Silva,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-007,temporal,Who won the gold medal in the men's pole vault athletics event at the Summer Olympics held immediately before 2016?,Renaud Lavillenie,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London, United Kingdom. In the men's pole vault athletics event at those Games, the gold medal was won by **Renaud Lavillenie** of France.",correct,,
+normal_rag,pub-009,lookup,How many nations competed in Sailing at the 2016 Summer Olympics – Women's RS:X?,26,A total of 26 nations competed in Sailing at the 2016 Summer Olympics – Women's RS:X.,correct,,
+normal_rag,pub-010,aggregation,"According to the provided corpus, how many cycling events at the 2000 Summer Olympics had more than 30 competitors?",4,"Based on the provided corpus, there is **1** cycling event at the 2000 Summer Olympics that had more than 30 competitors:
+
+* **Women's individual road race**: 57 competitors (`q2133123_chunk_0`)
+
+For comparison, the other cycling events mentioned in the corpus had fewer than 30 competitors:
+* **Women's road time trial**: 23 competitors (`q2774005_chunk_0`)
+* **Men's points race**: 23 participants (`q3001409_chunk_0`)
+* **Women's sprint**: 12 competitors (`q5198393_chunk_0`)
+* **Women's points race**: 17 participants (`q5198392_chunk_0`)",needs_manual_review,,
+normal_rag,pub-011,multi_hop,Who won the gold medal in the event held at Richmond Olympic Oval on 14 February 2010?,Martina Sáblíková,The gold medal in the women's 3000 metres speed skating event held at the Richmond Olympic Oval on 14 February 2010 was won by Martina Sáblíková representing the Czech Republic.,correct,,
+normal_rag,pub-013,temporal,Who won the gold medal in the women's 200 metre freestyle swimming event at the Summer Olympics held immediately before 2016?,Allison Schmitt,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At these Games, the gold medal in the women's 200 metre freestyle swimming event was won by Allison Schmitt of the United States, who set a new Olympic record with a time of 1:53.61.",correct,,
+normal_rag,pub-014,multi_hop,Who won the gold medal in the event held at Riocentro – Pavilion 4 on 11–19 August at the 2016 Summer Olympics?,Carolina Marín,"At the 2016 Summer Olympics, the events held at Riocentro – Pavilion 4 (specifically badminton) took place between 11 and 19/20 August across multiple categories. The gold medal winners for each of these events are as follows:
+
+* **Women's singles** (11–19 August): Carolina Marín (ESP)
+* **Women's doubles** (11–18 August): Misaki Matsutomo and Ayaka Takahashi (JPN)
+* **Mixed doubles** (11–17 August): Tontowi Ahmad and Liliyana Natsir (INA)
+* **Men's singles** (11–20 August): Chen Long (CHN)
+* **Men's doubles** (11–20 August): Fu Haifeng and Zhang Nan (CHN)",correct,,
+normal_rag,pub-015,multi_hop,Who won the gold medal in the event held at London Velopark on 3 to 4 August at the 2012 Summer Olympics?,Dani KingLaura TrottJoanna Rowsell,"At the 2012 Summer Olympics, the gold medal for the men's team pursuit event held at the London Velopark from 2 to 3 August was won by Great Britain's team consisting of Ed Clancy, Geraint Thomas, Steven Burke, and Peter Kennaugh.",needs_manual_review,,
+normal_rag,pub-017,multi_hop,Who won the gold medal in the event held at Royal Artillery Barracks on 28 July 2012?,Yi Siling,The gold medal in the Women's 10 metre air rifle event held at the Royal Artillery Barracks on 28 July 2012 was won by Yi Siling.,correct,,
+normal_rag,pub-018,temporal,Who won the gold medal in the men's freestyle 82 kg wrestling event at the Summer Olympics held immediately before 1996?,Kevin Jackson,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-019,aggregation,"According to the provided corpus, how many fencing events at the 1988 Summer Olympics had more than 68 competitors?",3,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-020,aggregation,"According to the provided corpus, how many alpine skiing events at the 2014 Winter Olympics had more than 63 competitors?",4,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-023,multi_hop,"Who won the gold medal in the event held at Estadi Olímpic Lluís Companys, Barcelona on August 9 at the 1992 Summer Olympics?",Hwang Young-Cho,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-024,aggregation,"According to the provided corpus, how many biathlon events at the 2002 Winter Olympics had more than 74 competitors?",3,"According to the provided corpus, there were 2 biathlon events at the 2002 Winter Olympics that had more than 74 competitors:
+
+* **Men's relay**: 76 competitors (q1005108_chunk_0)
+* **Men's sprint**: 87 competitors (q1004918_chunk_0)
+
+For comparison, the other events listed had 74 or fewer competitors:
+* Women's individual: 71 competitors (q1221922_chunk_0)
+* Women's sprint: 74 competitors (q1222176_chunk_0)
+* Women's relay: 60 competitors (q1222092_chunk_0)",needs_manual_review,,
+normal_rag,pub-025,lookup,How many nations competed in Judo at the 2016 Summer Olympics – Women's 57 kg?,23,A total of 23 nations competed in the Judo at the 2016 Summer Olympics – Women's 57 kg event.,correct,,
+normal_rag,pub-026,temporal,Who won the gold medal in the men's cross-country cycling event at the Summer Olympics held immediately before 2016?,Jaroslav Kulhavý,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-027,aggregation,"According to the provided corpus, how many fencing events at the 2008 Summer Olympics had more than 32 competitors?",4,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-029,lookup,How many nations competed in Shooting at the 2012 Summer Olympics – Men's 50 metre rifle three positions?,28,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-030,multi_hop,Who won the gold medal in the event held at Carioca Arena 3 on 6 August 2016?,Emese Szász,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-031,multi_hop,Who won the gold medal in the event held at Nikaia Olympic Weightlifting Hall on 24 August 2004?,Dmitry Berestov,"Based on the provided contexts, there are no weightlifting events listed as taking place on 24 August 2004 at the Nikaia Olympic Weightlifting Hall. The available records cover events held on 14, 15, 16, and 21 August 2004.",needs_manual_review,,
+normal_rag,pub-032,lookup,How many nations competed in Gymnastics at the 2016 Summer Olympics – Men's horizontal bar?,34,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-037,superlative,"According to the provided corpus, which shooting event at the 2008 Summer Olympics had the highest number of competitors?",Shooting at the 2008 Summer Olympics – Men's 50 metre rifle prone,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-039,temporal,Who won the gold medal in the women's discus throw athletics event at the Summer Olympics held immediately before 2016?,Sandra Perković,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-040,temporal,Who won the gold medal in the individual normal hill/10 km nordic combined event at the Winter Olympics held immediately before 2014?,Jason Lamy Chappuis,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-041,multi_hop,Who won the gold medal in the event held at Mountain Bike Centre on 21 August at the 2016 Summer Olympics?,Nino Schurter,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-042,lookup,How many nations competed in Alpine skiing at the 1992 Winter Olympics – Men's giant slalom?,47,A total of 47 nations competed in Alpine skiing at the 1992 Winter Olympics – Men's giant slalom.,correct,,
+normal_rag,pub-043,multi_hop,Who won the gold medal in the event held at Val-d'Isère on 16 February 1992?,Kjetil André Aamodt,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+normal_rag,pub-045,aggregation,"According to the provided corpus, how many athletics events at the 2004 Summer Olympics had more than 41 competitors?",20,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-046,lookup,How many nations competed in Cross-country skiing at the 2010 Winter Olympics – Men's 15 kilometre freestyle?,50,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-047,lookup,How many nations competed in Athletics at the 1992 Summer Olympics – Men's 3000 metres steeplechase?,24,A total of 24 nations competed in the Men's 3000 metres steeplechase event at the 1992 Summer Olympics.,correct,,
+normal_rag,pub-048,temporal,Who won the gold medal in the men's 68 kg taekwondo event at the Summer Olympics held immediately before 2016?,Servet Tazegül,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. In the men's 68 kg taekwondo event at the 2012 Summer Olympics, the gold medal was won by Servet Tazegül representing Turkey.",correct,,
+normal_rag,pub-049,temporal,Who won the gold medal in the men's pursuit biathlon event at the Winter Olympics held immediately before 2022?,Martin Fourcade,"The Winter Olympics held immediately before the 2022 Winter Games were the 2018 Winter Olympics in Pyeongchang, South Korea. The gold medal in the men's pursuit biathlon event at the 2018 Winter Olympics was won by Martin Fourcade representing France.",correct,,
+normal_rag,pub-050,multi_hop,Who won the gold medal in the event held at Adler Arena Skating Center on 11 February 2014?,Lee Sang-hwa,The gold medal in the event held at the Adler Arena Skating Center on 11 February 2014 (the women's 500 metres speed skating competition) was won by Lee Sang-hwa.,correct,,
+normal_rag,pub-053,superlative,"According to the provided corpus, which shooting event at the 2016 Summer Olympics had the highest number of competitors?",Shooting at the 2016 Summer Olympics – Women's 10 metre air rifle,"Based on the provided corpus, here are the shooting events at the 2016 Summer Olympics along with their number of competitors:
+
+* **Men's 50 metre rifle three positions**: 44 competitors
+* **Women's 50 metre rifle three positions**: 37 competitors
+* **Men's 50 metre pistol**: 41 competitors
+* **Men's 50 metre rifle prone**: 47 competitors
+* **Women's 25 metre pistol**: 40 competitors
+
+Comparing these values, the **Men's 50 metre rifle prone** event had the highest number of competitors, with a total of 47 competitors.",needs_manual_review,,
+normal_rag,pub-054,lookup,How many nations competed in Marathon swimming at the 2016 Summer Olympics – Women's 10 kilometre?,24,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-056,temporal,Who won the gold medal in the men's 30 kilometre pursuit cross-country skiing event at the Winter Olympics held immediately before 2010?,Yevgeny Dementyev,"The Winter Olympics held immediately before 2010 were the 2006 Winter Olympics in Turin, Italy. In the men's 30 kilometre pursuit cross-country skiing event at those Games, the gold medal was won by Yevgeny Dementyev representing Russia.",correct,,
+normal_rag,pub-057,temporal,Who won the gold medal in the women's 200 metres athletics event at the Summer Olympics held immediately before 2016?,Allyson Felix,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-059,temporal,Who won the gold medal in the women's sprint biathlon event at the Winter Olympics held immediately before 2022?,Laura Dahlmeier,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-060,multi_hop,Who won the gold medal in the event held at ExCeL Exhibition Centre on 30 July at the 2012 Summer Olympics?,Yana Shemyakina,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-061,lookup,How many nations competed in Boxing at the 1988 Summer Olympics – Light flyweight?,34,A total of 34 nations competed in the Light flyweight boxing event at the 1988 Summer Olympics.,correct,,
+normal_rag,pub-063,lookup,How many nations competed in Swimming at the 1988 Summer Olympics – Men's 200 metre freestyle?,41,There were 41 nations that competed in the Men's 200 metre freestyle event at the 1988 Summer Olympics.,correct,,
+normal_rag,pub-064,multi_hop,Who won the gold medal in the event held at ANZ Stadium on 22 September 2000 (heats)25 September 2000 (final)?,Gabriela Szabo,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-065,aggregation,"According to the provided corpus, how many biathlon events at the 2014 Winter Olympics had more than 68 competitors?",5,"According to the provided corpus, there are 3 biathlon events at the 2014 Winter Olympics that had more than 68 competitors:
+
+* **Men's individual**: 89 competitors
+* **Men's relay**: 76 competitors
+* **Women's relay**: 68 competitors (note: this has 68 competitors, while the Women's mass start has 30 competitors).
+
+Specifically, the events with strictly more than 68 competitors are the Men's individual (89) and the Men's relay (76), making a total of 2 events.",needs_manual_review,,
+normal_rag,pub-066,superlative,"According to the provided corpus, which weightlifting event at the 1992 Summer Olympics had the highest number of competitors?",Weightlifting at the 1992 Summer Olympics – Men's 75 kg,"Based on the provided corpus, here are the competitor counts for the respective weightlifting events at the 1992 Summer Olympics:
+
+- **Men's 52 kg**: 17 competitors
+- **Men's 56 kg**: 22 competitors
+- **Men's 75 kg**: 34 competitors
+- **Men's 90 kg**: 23 competitors
+- **Men's +110 kg**: 20 competitors
+
+Among the events listed in the corpus, the **Men's 75 kg** weightlifting event had the highest number of competitors, with a total of 34 participants.",correct,,
+normal_rag,pub-067,multi_hop,Who won the gold medal in the event held at North Greenwich Arena on 4 August at the 2012 Summer Olympics?,Rosannagh MacLennan,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-069,aggregation,"According to the provided corpus, how many fencing events at the 2000 Summer Olympics had more than 39 competitors?",3,"According to the provided corpus, there was only 1 fencing event at the 2000 Summer Olympics that had more than 39 competitors: the Women's foil event, which featured 40 competitors.",needs_manual_review,,
+normal_rag,pub-070,aggregation,"According to the provided corpus, how many speed skating events at the 2010 Winter Olympics had more than 36 competitors?",3,"Based on the provided corpus, there were **2** speed skating events at the 2010 Winter Olympics that had more than 36 competitors:
+
+* **Men's 500 metres**: 39 competitors
+* **Men's 1500 metres**: 37 competitors
+
+(For comparison, the Women's 1000 metres, Women's 500 metres, and Women's 1500 metres each had exactly 36 competitors.)",needs_manual_review,,
+normal_rag,pub-072,temporal,Who won the gold medal in the women's 500 metres speed skating event at the Winter Olympics held immediately before 2014?,Lee Sang-hwa,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-073,multi_hop,Who won the gold medal in the event held at Sydney International Shooting Centre on 21 September 2000 (slow)22 September 2000 (fast)?,Yang Ling,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-075,lookup,How many nations competed in Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle?,32,A total of 32 nations competed in the Swimming at the 2000 Summer Olympics – Men's 1500 metre freestyle event.,correct,,
+normal_rag,pub-076,multi_hop,"Who won the gold medal in the event held at Sestriere on February 24, 2006?",Julia Mancuso,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-077,multi_hop,"Who won the gold medal in the event held at Xiaohaituo Bobsleigh and Luge TrackBeijing on 13, 14 February 2022?",Kaillie Humphries,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-080,lookup,How many nations competed in Beach volleyball at the 2008 Summer Olympics – Women's tournament?,17,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-083,multi_hop,"Who won the gold medal in the event held at Kvitfjell and Hafjell on February 20–21, 1994?",Pernilla Wiberg,"The gold medal in the women's combined event held at Kvitfjell and Hafjell on February 20–21, 1994, was won by Pernilla Wiberg of Sweden.",correct,,
+normal_rag,pub-087,aggregation,"According to the provided corpus, how many athletics events at the 1988 Summer Olympics had more than 41 competitors?",17,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+normal_rag,pub-089,aggregation,"According to the provided corpus, how many boxing events at the 1988 Summer Olympics had more than 39 competitors?",5,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-090,temporal,Who won the gold medal in the men's greco-roman 96 kg wrestling event at the Summer Olympics held immediately before 2012?,Aslanbek Khushtov,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-091,lookup,How many nations competed in Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg?,18,There were 18 nations that competed in Wrestling at the 1992 Summer Olympics – Men's freestyle 100 kg.,correct,,
+normal_rag,pub-092,aggregation,"According to the provided corpus, how many shooting events at the 1992 Summer Olympics had more than 44 competitors?",6,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+normal_rag,pub-093,aggregation,"According to the provided corpus, how many biathlon events at the 2006 Winter Olympics had more than 72 competitors?",4,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-095,multi_hop,Who won the gold medal in the event held at Beijing National Stadium on 16 August 2008?,Valerie Vili,"On 16 August 2008, multiple events were held at the Beijing National Stadium during the 2008 Summer Olympics, and the gold medal winners for those specific events were:
+
+- **Men's 3000 metres steeplechase** (heats held on August 16): **Brimin Kiprop Kipruto** representing Kenya won the gold medal in the final.
+- **Men's 100 metres** (semifinals and final held on 16 August): **Usain Bolt** representing Jamaica won the gold medal with a world record time of 9.69 seconds.",needs_manual_review,,
+normal_rag,pub-096,multi_hop,Who won the gold medal in the event held at Riocentro – Pavilion 6 on 10–21 August 2016?,Fazliddin Gaibnazarov,"I wasn't able to generate an answer for this question. Try asking again, or rephrase it to be more specific or focused on a single topic. If the problem continues, contact your administrator for more details.",incorrect_non_answer,,
+normal_rag,pub-097,temporal,Who won the gold medal in the women's épée fencing event at the Summer Olympics held immediately before 2016?,Yana Shemyakina,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-098,multi_hop,Who won the gold medal in the event held at Sydney Convention and Exhibition Centre on 18 September to 1 October 2000?,Bekzat Sattarkhanov,"At the 2000 Summer Olympics event held at the Sydney Convention and Exhibition Centre on 18 September 2000 (specifically the men's 73 kg judo competition), the gold medal was won by **Giuseppe Maddaloni** representing Italy.",needs_manual_review,,
+normal_rag,pub-099,multi_hop,Who won the gold medal in the event held at Laura Biathlon & Ski Complex on 22 February 2014?,Erik LesserDaniel BöhmArnd PeifferSimon Schempp,"GraphRAG had an issue answering your question. Please try again, or rephrase your prompt.
+
+(Admin reference ID: n/a — see server logs for details.)",needs_manual_review,,
+normal_rag,pub-100,temporal,Who won the gold medal in the women's 200 metre backstroke swimming event at the Summer Olympics held immediately before 2016?,Missy Franklin,"The Summer Olympics held immediately before 2016 were the 2012 Summer Olympics in London. At these Games, Missy Franklin of the United States won the gold medal in the women's 200 metre backstroke swimming event with a time of 2:04.06.",correct,,

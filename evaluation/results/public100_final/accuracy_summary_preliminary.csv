@@ -1,0 +1,4 @@
+﻿pipeline,questions,automatic_correct,non_answers,needs_manual_review,confirmed_accuracy_lower_bound
+agentic_rag,100,69,15,16,0.69
+graphrag,100,54,2,44,0.54
+normal_rag,100,41,4,55,0.41

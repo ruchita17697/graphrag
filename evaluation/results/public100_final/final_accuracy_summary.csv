@@ -1,0 +1,4 @@
+﻿pipeline,questions,correct,incorrect,accuracy,execution_success,non_answers
+agentic_rag,100,72,28,0.72,1.00,15
+graphrag,100,55,45,0.55,1.00,2
+normal_rag,100,41,59,0.41,1.00,4
