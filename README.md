@@ -1,4 +1,4 @@
-# TigerGraph GraphRAG
+# From Retrieval to Investigation: Comparing RAG, GraphRAG and Agentic GraphRAG with TigerGraph
 
 > ⚠️ **Disclaimer**  
 > - **Supported Backend:** TigerGraph is the only Vector and Graph DB supported in this project. Hybrid Search is the officially supported retrieval method; other retrieval methods, and the agentic chat engine that orchestrates them, are provided as-is for self-service use.
@@ -6,63 +6,430 @@
 
 ## Table of Contents
 
+- [Hackathon Project Overview](#hackathon-project-overview)
+- [Problem Statement](#problem-statement)
+- [Comparing the Three Pipelines](#comparing-the-three-pipelines)
+  - [Normal RAG](#1-normal-rag)
+  - [GraphRAG](#2-graphrag)
+  - [Agentic GraphRAG](#3-agentic-graphrag)
+- [Agentic Investigation Architecture](#agentic-investigation-architecture)
+- [TigerGraph's Role](#tigergraphs-role)
+- [Knowledge Construction and Retrieval](#knowledge-construction-and-retrieval)
+- [Engineering Corrections & Reliability Improvements](#engineering-corrections--reliability-improvements)
+- [Reproducible Evaluation](#reproducible-evaluation)
+- [Repository Structure](#repository-structure)
+- [Branch Structure](#branch-structure)
+- [Technology Stack](#technology-stack)
+- [Key Takeaway](#key-takeaway)
+- [Hackathon Context](#hackathon-context)
 - [Releases](#releases)
 - [Overview](#overview)
-  - [Nature Language Query](#nature-language-query)
-  - [Knowledge Graph Query](#knowledge-graph-query)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Quick Start](#quick-start)
-    - [Use TigerGraph Docker-Based Instance](#use-tigergraph-docker-based-instance)
-    - [Use Pre-Installed TigerGraph Instance](#use-pre-installed-tigergraph-instance)
-  - [Deploy GraphRAG Manually](#deploy-graphrag-manually)
-    - [Manual Deploy of GraphRAG with Docker Compose](#manual-deploy-of-graphrag-with-docker-compose)
-    - [Use Standalone TigerGraph instance (If preferred)](#use-standalone-tigergraph-instance-if-preferred)
-    - [Manual Deploy of GraphRAG with Kubernetes](#manual-deploy-of-graphrag-with-kubernetes)
 - [Use TigerGraph GraphRAG](#use-tigergraph-graphrag)
-  - [Run Demo with Preloaded GraphRAG](#run-demo-with-preloaded-graphrag)
-  - [Manually Build GraphRAG From Scratch](#manually-build-graphrag-from-scratch)
 - [Chat Engines and Agents](#chat-engines-and-agents)
-  - [Agentic](#agentic)
-  - [Classic](#classic)
 - [Document Ingestion for Knowledge Graph](#document-ingestion-for-knowledge-graph)
-  - [Ingest Documents from the UI](#ingest-documents-from-the-ui)
-    - [Local File Upload](#local-file-upload)
-    - [Download from Cloud](#download-from-cloud)
-    - [Use Amazon BDA](#use-amazon-bda)
-  - [Ingest Documents via API](#ingest-documents-via-api)
 - [More Detailed Configurations](#more-detailed-configurations)
-  - [DB configuration](#db-configuration)
-  - [GraphRAG configuration](#graphrag-configuration)
-  - [Chat History Configuration](#chat-history-configuration)
-  - [MCP servers (agentic tools)](#mcp-servers-agentic-tools)
-  - [LLM provider configuration](#llm-provider-configuration)
-    - [Supported parameters](#supported-parameters)
-    - [Provider examples](#provider-examples)
-    - [OpenAI](#openai)
-    - [Google GenAI](#google-genai)
-    - [GCP VertexAI](#gcp-vertexai)
-    - [Azure](#azure)
-    - [AWS Bedrock](#aws-bedrock)
-    - [Ollama](#ollama)
-    - [Hugging Face](#hugging-face)
-    - [Groq](#groq)
 - [Tuning Guideline](#tuning-guideline)
-  - [Tune in the right order](#1-tune-in-the-right-order)
-  - [Chunking](#2-chunking--get-the-granularity-right)
-  - [Extraction](#3-extraction--make-the-graph-clean-before-tuning-retrieval)
-  - [Retrieval](#4-retrieval--match-context-size-to-the-question)
-  - [Prompts](#5-prompts--last-resort-biggest-leverage-when-the-rest-is-right)
-  - [Performance / cost knobs](#6-performance--cost-knobs)
-  - [A working tuning loop](#7-a-working-tuning-loop)
 - [Customization and Extensibility](#customization-and-extensibility)
-  - [Test Your Code Changes](#test-your-code-changes)
-    - [Testing with Pytest](#testing-with-pytest)
-    - [Test Code Change in Docker Container](#test-code-change-in-docker-container)
-  - [Test Script Options](#test-script-options)
-    - [Configure LLM Service](#configure-llm-service)
-    - [Configure Testing Graphs](#configure-testing-graphs)
-    - [Configure Weights and Biases](#configure-weights-and-biases)
+
+---
+
+## Hackathon Project Overview
+
+This project compares three approaches for question answering over the same knowledge base:
+
+1. **Normal RAG** — retrieves semantically similar text and generates an answer.
+2. **GraphRAG** — uses graph entities, relationships, and supporting content to provide structured context.
+3. **Agentic GraphRAG** — dynamically plans and executes multiple retrieval and reasoning steps when a question requires deeper investigation.
+
+The central question addressed by this project is:
+
+> **When does a complex question require an agentic, multi-step investigation rather than a single RAG or GraphRAG retrieval?**
+
+We implemented and compared these three pipelines on the same questions and evaluation framework, with emphasis on dynamic planning, tool selection, evidence evaluation, and multi-step investigation. TigerGraph provides the **graph layer** for the graph-based retrieval and reasoning components.
+
+## Problem Statement
+
+Traditional retrieval systems work well when the required information can be obtained through a single retrieval operation. Complex questions may instead require identifying entities, connecting relationships, retrieving supporting documents, performing aggregation or numerical reasoning, and determining whether additional investigation is still required.
+
+This creates a distinction between **retrieving information** and **investigating a question**.
+
+```text
+RAG
+  ↓
+Retrieve relevant information
+  ↓
+Answer
+```
+
+```text
+GraphRAG
+  ↓
+Connect entities and relationships
+  ↓
+Retrieve structured context
+  ↓
+Answer
+```
+
+```text
+Agentic GraphRAG
+  ↓
+Plan
+  ↓
+Investigate
+  ↓
+Evaluate evidence
+  ↓
+Investigate further if required
+  ↓
+Answer
+```
+
+## Comparing the Three Pipelines
+
+### 1. Normal RAG
+
+```text
+Question
+   ↓
+Similarity Search
+   ↓
+Relevant Text Chunks
+   ↓
+Answer Generation
+```
+
+Normal RAG retrieves semantically similar text chunks and uses the retrieved context to generate an answer.
+
+### 2. GraphRAG
+
+```text
+Question
+   ↓
+Entity / Graph Retrieval
+   ↓
+Relationships and Supporting Content
+   ↓
+Multi-hop Context
+   ↓
+Answer Generation
+```
+
+GraphRAG uses entities and relationships in the knowledge graph to provide structured context for answering questions. TigerGraph provides the graph layer used for graph-based retrieval and relationship traversal.
+
+### 3. Agentic GraphRAG
+
+The key difference is that the agentic pipeline does not rely only on one fixed retrieval sequence. The next action can depend on the original question, information already retrieved, available entities and graph relationships, evidence collected so far, and information still missing.
+
+For example, one question may require only graph retrieval, while another may require similarity search, entity identification, graph traversal, document retrieval, and aggregation before an answer can be produced.
+
+## Agentic Investigation Architecture
+
+```text
+                         USER QUESTION
+                               ↓
+                        QUERY ROUTER
+                      (src/router.py)
+                               ↓
+                  ┌─────────────────────────┐
+                  │   AGENTIC EXECUTION     │
+                  │                         │
+                  │  Agent                  │
+                  │  Planner                │
+                  │  Executor               │
+                  │  ReAct / Validation    │
+                  │                         │
+                  │  State + Context        │
+                  │  Evidence + Planning    │
+                  └────────────┬────────────┘
+                               ↓
+                       SELECT NEXT ACTION
+                               ↓
+          ┌────────────────────┼────────────────────┐
+          ↓                    ↓                    ↓
+   Similarity /          Graph Retrieval      Document Retrieval
+   Hybrid Search          / Traversal
+          ↓                    ↓                    ↓
+          └────────────────────┼────────────────────┘
+                               ↓
+                    Aggregation / Reasoning
+                               ↓
+                       PLAN VALIDATION
+                               ↓
+                    ┌──────────┴──────────┐
+                    ↓                     ↓
+             Evidence sufficient?    Gap remains?
+                    ↓                     ↓
+               FINAL ANSWER        Back to Planner
+```
+
+### Agentic Investigation Loop
+
+```text
+Question
+   ↓
+Plan
+   ↓
+Select Action
+   ↓
+Retrieve / Reason
+   ↓
+Observe Evidence
+   ↓
+Evaluate
+   ↓
+ ┌─────────────────────────────┐
+ │ Is sufficient evidence      │
+ │ available?                  │
+ └──────────────┬──────────────┘
+                │
+          ┌─────┴─────┐
+          ↓           ↓
+         YES          NO
+          ↓           ↓
+       Answer     Plan Again
+                      ↓
+                Select Another
+                    Action
+```
+
+The agentic execution layer manages the investigation state, context, evidence, planning, and execution. The orchestrator determines what needs to be investigated and selects the next action.
+
+## TigerGraph's Role
+
+```text
+                    AGENTIC EXECUTION
+                           ↓
+                   SELECT NEXT ACTION
+                           ↓
+              ┌────────────┴────────────┐
+              ↓                         ↓
+       Retrieval Tools             Graph Tools
+              ↓                         ↓
+   Similarity / Hybrid Search       TIGERGRAPH
+   Document Retrieval               Graph / Entities
+   Aggregation                      Relationships
+              └────────────┬────────────┘
+                           ↓
+                    EVIDENCE / RESULTS
+                           ↓
+                    PLAN VALIDATION
+                           ↓
+                 ┌─────────┴─────────┐
+                 ↓                   ↓
+              Sufficient?        Gap remains?
+                 ↓                   ↓
+            FINAL ANSWER       Back to Planner
+```
+
+**The agentic execution layer decides what to investigate next, while TigerGraph provides the graph layer used during graph-based retrieval and reasoning.**
+
+## Knowledge Construction and Retrieval
+
+```text
+Documents
+    ↓
+Document Ingestion
+    ↓
+Chunking
+    ↓
+Knowledge Graph Extraction
+    ↓
+Graph Processing
+    ↓
+TigerGraph
+    ↓
+Graph / Retrieval Tools
+    ↓
+Question Answering
+```
+
+## Engineering Corrections & Reliability Improvements
+
+A significant part of the implementation involved identifying and correcting issues that affected reliable execution and evaluation of the three pipelines.
+
+### Planned-Agent Path
+
+Corrected the planned-agent execution path so that multi-step questions route through the appropriate deterministic, retrieval, and graph tools while preserving evidence traces.
+
+### Full-Corpus Retrieval
+
+Corrected retrieval from the smoke/limited dataset to the complete-corpus document lookup path, enabling full-corpus evidence recovery.
+
+### Corpus Validation
+
+Validated the reported document count and confirmed that:
+
+```text
+2,951 total documents
+        =
+2,938 full-corpus documents
+        +
+13 smoke documents
+```
+
+The count therefore did not represent corruption or duplicate ingestion.
+
+### Embedding Reliability
+
+Embedding generation was made resumable using:
+
+```text
+reuse_embedding=true
+```
+
+This allowed existing completed embeddings to be reused instead of recomputing the entire dataset. Targeted regeneration was then performed for the missing embeddings until all **13,527 vectors** were available.
+
+```text
+reuse_embedding=true
+        ↓
+Reuse existing embeddings
+        ↓
+Identify missing embeddings
+        ↓
+Targeted regeneration
+        ↓
+13,527 / 13,527 vectors available
+```
+
+### TigerGraph Cloud Connectivity
+
+Corrected the TigerGraph Cloud connectivity path to use **HTTPS / Port 443** instead of relying on a hard-coded port `14240`.
+
+### Runtime Reliability
+
+Repaired the asynchronous event-loop lifecycle associated with the ECC runtime.
+
+### Reproducible Evaluation
+
+Built reproducible WebSocket runners for:
+
+```text
+Classic / Similarity
+Classic / Hybrid
+Agentic / Planned
+```
+
+and corrected qtype mapping and nested token extraction.
+
+### Authentication Diagnosis
+
+Authentication failures were traced to database readiness rather than an invalid token. The existing token was verified using a three-pipeline test.
+
+## Reproducible Evaluation
+
+The three pipelines are evaluated using the same questions and evaluation framework.
+
+```text
+                     SAME QUESTIONS
+                           ↓
+          ┌────────────────┼────────────────┐
+          ↓                ↓                ↓
+       NORMAL RAG       GRAPHRAG       AGENTIC GRAPHRAG
+          ↓                ↓                ↓
+          └────────────────┼────────────────┘
+                           ↓
+                  COMMON EVALUATION
+                           ↓
+                  PUBLIC + HIDDEN
+                    BENCHMARK SETS
+```
+
+This provides a consistent basis for comparing Normal RAG, GraphRAG, and Agentic GraphRAG. The evaluation framework contains benchmark execution, accuracy calculation, metrics, and stored evaluation artifacts.
+
+## Repository Structure
+
+The hackathon implementation extends the existing GraphRAG project with agentic execution, retrieval tools, deterministic reasoning utilities, evaluation scripts, and tests.
+
+```text
+graphrag/
+│
+├── graphrag/
+│   └── app/
+│       ├── agent/
+│       │   ├── agentic_agent.py
+│       │   ├── agentic_executor.py
+│       │   ├── agentic_planner.py
+│       │   ├── agentic_plan_validator.py
+│       │   └── agentic_react.py
+│       │
+│       └── tools/
+│           ├── graphrag_tools.py
+│           └── tool_registry.py
+│
+├── src/
+│   ├── router.py
+│   └── tools/
+│       ├── aggregate.py
+│       └── document_fetch.py
+│
+├── evaluation/
+│   ├── accuracy.py
+│   ├── benchmark.py
+│   ├── metrics.py
+│   └── results/
+│
+├── test_aggregate.py
+├── test_aggregation_pipeline.py
+├── test_document_fetch.py
+├── test_hybrid_search.py
+├── test_numeric_constraints.py
+├── test_plan_validator.py
+├── test_router.py
+├── test_state.py
+└── test_vector_search.py
+```
+
+> The structure above highlights the hackathon-related implementation areas and is not intended to be an exhaustive listing of the upstream repository.
+
+## Branch Structure
+
+The repository uses the following branch structure:
+
+```text
+main
+  │
+  └── hackathon-development   ← Default branch
+```
+
+- **`main`** — Base project branch containing the original project history.
+- **`hackathon-development`** — Default branch containing the hackathon implementation, agentic extensions, evaluation framework, reliability improvements, and submission-related work.
+
+All current hackathon development and evaluation work is maintained on `hackathon-development`.
+
+## Technology Stack
+
+- **TigerGraph** — graph database and graph retrieval layer
+- **GraphRAG** — graph-augmented retrieval
+- **Agentic execution** — planning, execution, validation, and adaptive investigation
+- **Similarity / Hybrid Search** — retrieval capabilities
+- **Document Retrieval** — supporting evidence recovery
+- **Aggregation / Deterministic Reasoning** — numerical and structured reasoning
+- **WebSocket Evaluation Runners** — reproducible pipeline execution
+- **Benchmarking** — common evaluation across the three approaches
+
+## Key Takeaway
+
+```text
+RAG
+  ↓
+RETRIEVE
+
+GraphRAG
+  ↓
+CONNECT
+
+Agentic GraphRAG
+  ↓
+INVESTIGATE
+```
+
+The goal of this project is not simply to add an agent. It is to understand **when adaptive, multi-step investigation is necessary** for answering complex questions, and to compare that behavior against conventional RAG and graph-based retrieval under the same evaluation setup.
+
+## Hackathon Context
+
+This work was developed for the **TigerGraph Hackathon 2026**. The project uses TigerGraph as the graph layer while focusing the contribution on the comparison of RAG, GraphRAG, and Agentic GraphRAG, together with dynamic planning, tool selection, evidence evaluation, reliability improvements, and reproducible benchmarking.
 
 ---
 
